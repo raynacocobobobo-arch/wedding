@@ -71,3 +71,51 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
  .workspace{display:block}.work-sidebar{padding:17px 13px;border:0;border-bottom:1px solid var(--line)}.sidebar-heading{margin-bottom:10px}.work-list{max-height:none;display:flex;flex-direction:row;overflow:auto;padding-bottom:6px}.work-item{flex:0 0 175px}
  .editor-pane{padding:22px 12px 50px}.editor-toolbar{align-items:start}.editor-toolbar h1{font-size:22px}.toolbar-actions{flex-direction:column}.toolbar-actions .button{padding:8px 10px}.panel{padding:15px}.details-list{grid-template-columns:repeat(2,minmax(0,1fr))}.login-card{padding:27px}
 }
+
+
+/* Customer actions: inquiries, favorites, sharing, contact details */
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+.main-nav{gap:25px}.card-photo{display:block}.work-card .card-caption{display:flex;justify-content:space-between;align-items:start;gap:10px;padding-top:9px}
+.work-card h3{margin:0 0 3px}.work-card p{margin:0}
+.fav-button{border:0;background:transparent;color:#4b4743;font-size:26px;line-height:30px;min-width:35px;min-height:35px;flex-shrink:0}
+.fav-button.active{color:#b28553}.fav-button:hover{color:#b28553}
+.detail-cta{display:flex;gap:11px;margin-top:24px;flex-wrap:wrap}
+.detail-cta .button{font-size:12px}.detail-cta .fav-button-detail{color:var(--gold)}
+.home-contact{background:#f6f3ee;text-align:center;padding:56px 24px 65px;margin:10px auto 0}
+.home-contact h2{font-size:clamp(23px,3vw,33px);font-weight:400;margin:10px 0 8px}
+.home-contact>p:not(.overline){color:var(--muted);font-size:13px;margin:0 0 25px}
+.home-contact .button{min-width:175px}
+.sticky-actions{position:fixed;left:0;right:0;bottom:0;z-index:48;display:flex;gap:10px;justify-content:center;align-items:center;
+  background:#fffefaee;border-top:1px solid #e9e5de;backdrop-filter:blur(13px);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px))}
+.sticky-actions>*{min-width:155px;height:45px;font-size:13px}
+.site-toast{position:fixed;bottom:calc(85px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);
+  z-index:90;background:#25221e;color:#fff;padding:11px 18px;border-radius:4px;text-align:center;max-width:calc(100vw - 32px);font-size:12px;white-space:nowrap}
+.site-footer{padding-bottom:34px}.site-footer span:last-child{letter-spacing:0}
+.inquiry-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(235px,.75fr);gap:32px;align-items:start;max-width:960px;margin:5px auto}
+.inquiry-form{background:#fff;border:1px solid var(--line);padding:30px 32px 35px;box-shadow:var(--shadow)}
+.inquiry-form>label,.inquiry-form .form-cols label{display:block;font-size:13px;font-weight:500;margin-bottom:19px}
+.inquiry-form label span{color:#ad6a5a}
+.inquiry-form input:not([type=hidden]),.inquiry-form select,.inquiry-form textarea{display:block;width:100%;
+  background:#fff;border:1px solid #dcd7ce;border-radius:3px;padding:11px 12px;margin-top:8px;font-size:13px;color:var(--ink)}
+.inquiry-form textarea{resize:vertical}
+.inquiry-form .form-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.form-privacy{font-size:11px;line-height:1.7;color:var(--muted);margin:9px 0 21px}
+.inquiry-form button[type=submit]{min-width:170px}
+.inquiry-form button:disabled{opacity:.6;cursor:wait}
+#inquiry-status{font-size:12px;color:var(--muted);min-height:1.2em;margin:13px 0 0}
+.inquiry-success{padding:46px 10px;text-align:center}.inquiry-success h3{font-size:23px;font-weight:400}
+.inquiry-success p{font-size:13px;color:var(--muted);margin:12px 0 27px}
+.contact-panel{background:#f7f4ef;padding:30px 24px;border:1px solid var(--line)}
+.contact-panel h3{font-size:20px;font-weight:400;margin:7px 0 24px}
+.contact-panel>p:not(.overline):not(.helper){padding-bottom:12px;border-bottom:1px solid #e7e1d8;font-size:13px;overflow-wrap:anywhere}
+.honeypot{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:760px){
+ .main-nav{gap:15px}.main-nav a{font-size:12px}
+ .inquiry-layout{display:block}.inquiry-form{padding:21px 17px;margin-bottom:18px}
+ .contact-panel{padding:23px 19px}.detail-cta{gap:9px}
+ .sticky-actions{justify-content:stretch;padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px))}
+ .sticky-actions>*{min-width:0;flex:1}
+ .site-footer{font-size:11px;letter-spacing:0;overflow-wrap:anywhere}
+ .site-toast{white-space:normal;min-width:160px}
+}
+@media(max-width:440px){.inquiry-form .form-cols{grid-template-columns:1fr;gap:0}}
