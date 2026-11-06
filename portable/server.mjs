@@ -22,6 +22,7 @@ const HOST = process.env.HOST || '127.0.0.1';
 const PASSWORD = process.env.ADMIN_PASSWORD || '';
 const SECRET = process.env.COOKIE_SECRET || '';
 const SECURE = process.env.COOKIE_SECURE === '1';
+const TRUST_PROXY = process.env.TRUST_PROXY === '1';
 const CATEGORIES = [
   ['traditional_chinese', '传统中式'], ['coffee_drapery', '布幔｜咖色系'],
   ['pink_drapery', '布幔｜粉色系'], ['new_chinese', '新中式'],
@@ -160,7 +161,7 @@ function headers(res, status, type, extra = {}) {
     'Content-Type': type, 'X-Content-Type-Options': 'nosniff',
     'Referrer-Policy': 'no-referrer', 'X-Frame-Options': 'DENY',
     'Cache-Control': 'no-store',
-    'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'",
+    'Content-Security-Policy': "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
     ...extra
   });
 }
@@ -206,6 +207,14 @@ function getSession(req) {
 function requireAdmin(req) {
   if (!getSession(req)) throw error(401, '请先登录管理后台');
 }
+function clientIp(req) {
+  const remote = req.socket.remoteAddress || 'unknown';
+  if (TRUST_PROXY && /^(::1|127\.0\.0\.1|::ffff:127\.0\.0\.1)$/.test(remote)) {
+    const real = String(req.headers['x-real-ip'] || '').trim();
+    if (real.length >= 3 && real.length <= 45 && /^[0-9a-fA-F:.]+$/.test(real)) return real;
+  }
+  return remote;
+}
 function guardChange(req) {
   const origin = req.headers.origin;
   if (origin) {
@@ -244,6 +253,12 @@ async function removeUploaded(src) {
 async function staticFile(req, res, path, isUpload = false) {
   const base = isUpload ? UPLOAD : PUBLIC;
   const relative = path.replace(/^\/+/, '');
+  if (isUpload) {
+    const src = '/uploads/' + relative;
+    const publiclyReferenced = works.some(w => w.published &&
+      (w.cover === src || w.details.some(d => d.src === src)));
+    if (!publiclyReferenced && !getSession(req)) throw error(404, '文件不存在');
+  }
   const file = resolve(base, relative);
   if (!file.startsWith(base + sep)) throw error(403, '禁止访问此路径');
   let st;
@@ -268,7 +283,7 @@ async function handle(req, res) {
   if (api && method !== 'GET') guardChange(req);
   if (p === '/api/site-config' && method === 'GET') return send(res,200,{contacts:CONTACT});
   if (p === '/api/inquiry' && method === 'POST') {
-    const ip=(req.socket.remoteAddress||'unknown').slice(0,100);
+    const ip=clientIp(req).slice(0,100);
     const rate=inquiryAttempts.get(ip)||[];
     const recent=rate.filter(t=>t>Date.now()-60*60*1000);
     if (recent.length>=6) throw error(429,'提交次数较多，请稍后再试');
@@ -288,7 +303,7 @@ async function handle(req, res) {
       .sort((a,b) => a.position - b.position).map(w => ({ ...w })));
   }
   if (p === '/api/admin/login' && method === 'POST') {
-    const ip = (req.socket.remoteAddress || '').slice(0, 80);
+    const ip = clientIp(req).slice(0, 80);
     const entry = failures.get(ip) || { count: 0, expires: 0 };
     if (entry.expires > Date.now() && entry.count >= 8) throw error(429, '尝试次数过多，请稍后再试');
     const data = await jsonBody(req);
