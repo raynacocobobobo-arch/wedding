@@ -11,6 +11,78 @@
 .form{padding:20px 18px 50px}.form label{display:block;font-size:13px;margin-bottom:14px}.form input,.form select,.form textarea{display:block;border:0;border-bottom:1px solid #ddd;width:100%;padding:13px 0;outline:none;margin-top:5px;font-size:14px;background:white}.form textarea{height:80px}.submit{padding:13px;width:100%;background:#222;color:white;margin-top:16px}.form-hint{font-size:11px;color:#999;line-height:1.8}.empty{padding:70px 20px;text-align:center;color:#999}.empty button{padding:20px;color:#222;text-decoration:underline}.toast{position:fixed;left:50%;top:119px;z-index:80;transform:translateX(-50%);background:#222;color:white;font-size:12px;padding:12px 20px;border-radius:6px;box-shadow:0 3px 15px #0002;max-width:80%;text-align:center}
 @media (min-width:431px){.float-mine{right:calc(50% - 202px)}}
 .gallery-page{position:relative}.gallery-toggle{position:absolute;right:10px;top:10px;background:#fff;font-size:23px;line-height:18px;padding:0 5px;box-shadow:-8px 0 10px 0 #fff;z-index:2}.tile-image{aspect-ratio:1.595;object-fit:cover}.collection{padding-bottom:34px}.tile-caption{font-size:13px}.gallery-page .tile-caption{font-size:13px}.detail-grid .tile-image{aspect-ratio:1.595}.footer{height:80px}.collection .filter-scroll{margin-bottom:19px}
+
+/* V5.1: responsive editorial website; no simulated device chrome */
+body{background:#fff}.phone{max-width:1100px;width:100%;box-shadow:none;background:#fff}
+.nav{position:sticky;top:0;height:66px;background:rgba(255,255,255,.97);border-bottom:1px solid #eee;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,3.4vw,34px);backdrop-filter:blur(12px)}
+.nav-left,.nav-actions{display:flex;align-items:center}.nav-left{gap:12px}.nav-actions{gap:25px}
+.nav-brand{display:inline-flex;align-items:center;gap:11px;font-size:16px;font-weight:600;letter-spacing:.025em;white-space:nowrap}.nav-mark{font-family:Georgia,serif;font-size:25px;font-style:italic;letter-spacing:-.12em;font-weight:400;padding-right:5px}.nav-actions button{font-size:13px;color:#444;line-height:24px}.nav-actions button.active{font-weight:600;color:#101010}
+.back{position:static!important;top:auto!important;left:auto!important;font-size:27px;display:inline-flex;align-items:center;justify-content:center;width:32px;height:40px;font-weight:300}
+.app{min-height:calc(100vh - 66px);padding-bottom:80px}
+.hero{position:relative;height:clamp(370px,52vw,540px);background:#e8e4e0}
+.hero img{height:100%;width:100%;object-fit:cover}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.62),rgba(0,0,0,0) 66%);pointer-events:none}
+.hero-content{position:absolute;z-index:2;left:clamp(22px,5vw,65px);bottom:66px;color:white;max-width:85%}
+.eyebrow{display:block;font-size:10px;letter-spacing:.24em;font-weight:500}
+.hero-content h1{font-size:clamp(32px,5vw,53px);font-weight:500;letter-spacing:.09em;margin:11px 0 9px}
+.hero-content p{font-size:13px;margin:0 0 22px;color:#fffdf0}
+.hero-link{font-size:13px;color:#fff;border:1px solid #ffffffaa;padding:10px 22px;letter-spacing:.05em}
+.hero-controls{position:absolute;z-index:3;right:25px;bottom:28px;color:white;display:flex;gap:15px;align-items:center;font-size:12px}
+.hero-controls button{font-size:28px;color:white;line-height:26px;width:26px;height:30px;text-align:center}
+.home-intro{padding:44px clamp(18px,4vw,44px) 16px;display:flex;justify-content:space-between;align-items:end;gap:18px}
+.home-intro h2,.gallery-heading h1{font-size:clamp(26px,3.6vw,34px);font-weight:500;margin:11px 0}
+.home-intro p,.gallery-heading p{font-size:13px;line-height:1.8;color:#777;margin:0}
+.intro-all{font-size:13px;border-bottom:1px solid #444;padding-bottom:5px;white-space:nowrap}
+.collection{padding:22px clamp(18px,4vw,44px) 55px}
+.filter-scroll,.collection .filter-scroll{margin:0 0 23px}
+.filter-row{gap:20px;padding:0}
+.filter{color:#8c8c8c;font-size:13px;padding:7px 0;border-bottom:1px solid transparent}
+.filter.active,.home-filter .filter.active{color:#111;font-weight:600;border-bottom:1px solid #111}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:15px;row-gap:29px}
+.tile{width:100%;text-align:left;display:block;padding:0;cursor:pointer}
+.tile-image{aspect-ratio:1.595;object-fit:cover;transition:opacity .2s ease}
+.tile:hover .tile-image{opacity:.87}
+.tile-caption,.gallery-page .tile-caption{margin:10px 0 0;display:flex;flex-direction:column;gap:3px;font-size:14px;line-height:1.5;white-space:normal;overflow:visible}
+.tile-caption strong{font-size:14px;font-weight:500}.tile-caption span{font-size:12px;color:#777}
+.home-contact{padding:54px 22px 65px;text-align:center;background:#f8f7f5}
+.home-contact h2{font-size:clamp(22px,3.5vw,32px);font-weight:500;line-height:1.5;margin:13px 0}
+.home-contact p{font-size:13px;line-height:1.8;color:#777;margin:0 0 25px}
+.home-contact button{background:#1d1d1d;color:white;padding:13px 32px;font-size:13px}
+.gallery-page{padding:24px clamp(18px,4vw,44px) 65px}
+.gallery-heading{margin:10px 0 29px}.gallery-page .filter-scroll{margin-bottom:25px}.gallery-page .grid{row-gap:28px}
+.detail-top{max-width:100%;position:relative}
+.detail-top img{height:auto;max-height:680px;aspect-ratio:1.595;object-fit:cover;width:100%;cursor:zoom-in}
+.detail-expand{position:absolute;right:18px;bottom:17px;background:#ffffffed;color:#111;font-size:12px;padding:10px 17px}
+.detail-info{padding:37px clamp(20px,6vw,75px) 75px;max-width:830px;margin:auto}
+.detail-info .detail-en{font-size:11px;color:#999;letter-spacing:.22em}
+.detail-info h1{font-size:clamp(28px,4vw,40px);font-weight:500;margin:10px 0 12px}
+.detail-info p{font-size:14px;line-height:2;color:#656565}
+.detail-tags{gap:10px;flex-wrap:wrap;margin:24px 0}
+.detail-tags span{border:1px solid #e4e4e4;padding:7px 12px;font-size:12px;color:#777}
+.detail-actions{display:flex;gap:10px;padding:10px 0 0}
+.detail-actions button{flex:1;width:auto;padding:14px;font-size:13px}
+.back-works{margin-top:32px;font-size:13px;color:#666;text-decoration:underline;text-underline-offset:5px}
+.page-head{padding:35px clamp(18px,4vw,44px) 23px}
+.form{max-width:640px;margin:auto;padding:28px 22px 70px}.form label{font-size:13px}
+.footer{z-index:40;width:min(1100px,100%);height:64px;padding:7px clamp(14px,3vw,30px);gap:10px;justify-content:flex-end;align-items:center;box-shadow:0 -3px 15px #00000008}
+.footer-share,.footer-consult{height:44px;font-size:13px;padding:0 22px;border:1px solid #dedede}
+.footer-consult{background:#202020;color:white;border-color:#202020;min-width:152px}
+.footer-consult span{padding-left:16px}
+.toast{top:auto;bottom:85px}
+.lightbox[hidden]{display:none!important}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(5,5,5,.96);display:flex;align-items:center;justify-content:center;padding:50px 12px}
+.lightbox img{max-width:100%;max-height:92vh;object-fit:contain}
+.lightbox-close{position:absolute;right:18px;top:14px;color:white;font-size:34px;width:45px;height:45px}
+@media(max-width:640px){
+ .nav{height:59px;padding:0 15px}.nav-left{gap:5px}.nav-brand{font-size:15px;gap:7px}.nav-mark{font-size:22px}.nav-actions{gap:18px}.nav-actions button{font-size:12px}.app{min-height:calc(100vh - 59px);padding-bottom:75px}
+ .hero{height:clamp(310px,79vw,450px);min-height:0}.hero-content{left:22px;bottom:70px}.hero-content h1{font-size:33px}.hero-controls{right:15px;bottom:19px}
+ .home-intro{padding:32px 15px 6px;align-items:start}.home-intro h2,.gallery-heading h1{font-size:25px}.home-intro p{max-width:245px}.intro-all{font-size:12px;margin-top:44px}
+ .collection{padding:19px 9px 42px}.collection>.filter-scroll{padding:0 6px}.filter-row{gap:18px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:9px;row-gap:21px}
+ .tile-caption,.gallery-page .tile-caption{margin:8px 4px 0}.tile-caption strong{font-size:13px}.tile-caption span{font-size:11px}
+ .gallery-page{padding:20px 10px 48px}.gallery-heading{padding:0 6px;margin-bottom:22px}.gallery-page .filter-scroll{padding:0 6px}
+ .detail-top img{max-height:none;aspect-ratio:1.595}.detail-info{padding:27px 18px 55px}.detail-info h1{font-size:29px}.detail-actions{gap:8px}
+ .footer{height:64px;padding:7px 10px}.footer-share,.footer-consult{flex:1}.footer-consult{min-width:0}
+}
 </style></head><body><div class="phone"><header class="nav"><div class="nav-left"><button id="back" class="back" onclick="back()" aria-label="返回上一页" style="display:none">‹</button><button class="nav-brand" onclick="go('home')" aria-label="婚礼精选 首页"><span class="nav-mark">W.</span><span>婚礼精选</span></button></div><nav class="nav-actions" aria-label="网站导航"><button id="works-nav" onclick="go('gallery')">作品</button><button id="mine" onclick="go('mine')">收藏</button></nav></header><main class="app" id="app"></main><footer class="footer"><button class="footer-share" onclick="share()">分享</button><button class="footer-consult" onclick="go('inquiry')">婚礼咨询 <span>→</span></button></footer></div><div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="婚礼作品大图" hidden><button class="lightbox-close" onclick="closeFull()" aria-label="关闭大图">×</button><img id="lightbox-image" alt="婚礼作品大图"></div>
 <script>
 const D={"styles":[{"id":"traditional_chinese","name":"传统中式","en":"TRADITIONAL CHINESE","subtitle":"红金华彩 · 龙凤月景","tags":["中式","红金","宴会厅"],"cover":"/images/traditional_chinese.jpg","hero":"/images/traditional_chinese.jpg","images":["/images/traditional_chinese.jpg"],"desc":"以红幔、龙凤吊装与月景舞台构成大气庄重的传统中式婚礼氛围。"},{"id":"coffee_drapery","name":"布幔｜咖色系","en":"COFFEE DRAPERY","subtitle":"咖色帷幔 · 立体花艺","tags":["咖色","布幔","室内婚礼"],"cover":"/images/coffee_drapery.jpg","hero":"/images/coffee_drapery.jpg","images":["/images/coffee_drapery.jpg"],"desc":"环形顶部布幔与暖调花艺构成沉稳高级的仪式空间。"},{"id":"pink_drapery","name":"布幔｜粉色系","en":"PINK DRAPERY","subtitle":"柔粉花廊 · 轻盈布幔","tags":["粉色","布幔","花廊"],"cover":"/images/pink_drapery.jpg","hero":"/images/pink_drapery.jpg","images":["/images/pink_drapery.jpg"],"desc":"浅粉与奶白花艺搭配大面积垂坠布幔，呈现柔和甜美的仪式感。"},{"id":"new_chinese","name":"新中式","en":"NEW CHINESE","subtitle":"月景竹影 · 东方留白","tags":["新中式","月景","竹艺"],"cover":"/images/new_chinese.jpg","hero":"/images/new_chinese.jpg","images":["/images/new_chinese.jpg"],"desc":"结合月景、竹材与淡雅花艺，营造轻盈克制的新中式婚礼风格。"},{"id":"forest","name":"森系","en":"FOREST GARDEN","subtitle":"自然绿境 · 雾感光影","tags":["森系","白绿","自然"],"cover":"/images/forest.jpg","hero":"/images/forest.jpg","images":["/images/forest.jpg"],"desc":"以树、苔藓、白花与雾感灯光打造沉浸式自然婚礼场景。"},{"id":"european","name":"欧式","en":"EUROPEAN","subtitle":"宫廷水晶 · 粉白花瀑","tags":["欧式","水晶灯","宫廷"],"cover":"/images/european.jpg","hero":"/images/european.jpg","images":["/images/european.jpg"],"desc":"宫廷立柱、水晶灯与粉白花艺组合出华美典雅的欧式婚礼。"},{"id":"french_garden","name":"法式花园","en":"FRENCH GARDEN","subtitle":"庭院花园 · 法式浪漫","tags":["法式","花园","庭院"],"cover":"/images/french_garden.jpg","hero":"/images/french_garden.jpg","images":["/images/french_garden.jpg"],"desc":"以法式建筑语汇和缤纷花园花艺营造明亮浪漫的婚礼氛围。"},{"id":"old_money","name":"老钱风","en":"OLD MONEY","subtitle":"黑金奢华 · 晶帘烛光","tags":["老钱风","黑金","烛光"],"cover":"/images/old_money.jpg","hero":"/images/old_money.jpg","images":["/images/old_money.jpg"],"desc":"黑金空间、晶帘与烛光交织，呈现克制且贵气的高级感。"},{"id":"korean","name":"韩式","en":"KOREAN","subtitle":"象牙白 · 纯净仪式感","tags":["韩式","白色","简约"],"cover":"/images/korean.jpg","hero":"/images/korean.jpg","images":["/images/korean.jpg"],"desc":"通透白色花艺与垂幔构成简洁、纯净的韩式婚礼空间。"}]};const PHOTO={"/images/traditional_chinese.jpg":"images/traditional_chinese.jpg","/images/coffee_drapery.jpg":"images/coffee_drapery.jpg","/images/pink_drapery.jpg":"images/pink_drapery.jpg","/images/new_chinese.jpg":"images/new_chinese.jpg","/images/forest.jpg":"images/forest.jpg","/images/european.jpg":"images/european.jpg","/images/french_garden.jpg":"images/french_garden.jpg","/images/old_money.jpg":"images/old_money.jpg","/images/korean.jpg":"images/korean.jpg"};const STYLES=D.styles;
