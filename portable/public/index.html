@@ -2,26 +2,34 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
+  <base href="/wedding/">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#ffffff">
   <meta name="description" content="恩万婚礼 ENWAN WEDDING · 婚礼作品及现场布置细节">
   <title>恩万婚礼 ENWAN WEDDING｜婚礼作品</title>
-  <link rel="icon" type="image/webp" href="/images/enwan-logo.webp">
-  <link rel="stylesheet" href="/assets/app.css">
-  <script type="module" src="/assets/site.js"></script>
+  <link rel="icon" type="image/webp" href="images/enwan-logo.webp">
+  <link rel="stylesheet" href="assets/app.css">
+  <script type="module" src="assets/site.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand" href="#home" aria-label="恩万婚礼首页"><img src="/images/enwan-logo.webp" alt="恩万婚礼 ENWAN WEDDING"></a>
+      <a class="brand" href="#home" aria-label="恩万婚礼首页"><img src="images/enwan-logo.webp" alt="恩万婚礼 ENWAN WEDDING"></a>
       <nav class="main-nav" aria-label="主导航">
         <a href="#home" id="nav-home">首页</a>
         <a href="#works" id="nav-works">婚礼作品</a>
+        <a href="#favorites" id="nav-favorites">收藏</a>
       </nav>
     </div>
   </header>
   <main id="app" class="site-main"><p class="state-note">正在读取婚礼作品…</p></main>
-  <footer class="site-footer"><span>ENWAN WEDDING</span><span>每一个值得被珍藏的瞬间</span></footer>
+
+  <footer class="site-footer"><span>ENWAN WEDDING</span><span id="site-footer-contacts">电话：待配置 · 微信：待配置 · 地址：待配置</span></footer>
+  <nav class="sticky-actions" aria-label="快捷操作">
+    <button type="button" id="footer-share" class="button subtle">分享</button>
+    <a class="button solid" href="#inquiry">婚礼咨询 →</a>
+  </nav>
+  <div class="site-toast" id="site-toast" role="status" aria-live="polite" hidden></div>
   <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="婚礼照片大图">
     <button type="button" class="lightbox-close" id="lightbox-close" aria-label="关闭">×</button>
     <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="上一张照片">‹</button>
