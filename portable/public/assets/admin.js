@@ -1,7 +1,7 @@
 const $ = sel => document.querySelector(sel);
 const escape = value => String(value ?? '').replace(/[&<>"']/g,
   c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[c]);
-const safeSrc = value => /^\/(?:images|uploads)\/[\w.-]+$/.test(String(value || '')) ? String(value) : '';
+const safeSrc = value => /^\/(?:images|uploads)\/[\w.-]+$/.test(String(value || '')) ? String(value).slice(1) : '';
 let works = [], categories = [], selectedId = '', filterId = 'all', busy = false, draggedId = '';
 const login = $('#login-screen');
 const dashboard = $('#dashboard');
