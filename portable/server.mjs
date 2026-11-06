@@ -10,6 +10,13 @@ const PUBLIC = join(ROOT, 'public');
 const DATA = resolve(process.env.DATA_DIR || join(ROOT, 'data'));
 const STORE = join(DATA, 'works.json');
 const UPLOAD = join(DATA, 'uploads');
+const INQUIRY_STORE = join(DATA, 'inquiries.json');
+const WECOM_WEBHOOK = (process.env.WECOM_WEBHOOK || '').trim();
+const CONTACT = {
+  phone: process.env.CONTACT_PHONE?.trim() || '待配置',
+  wechat: process.env.CONTACT_WECHAT?.trim() || '待配置',
+  address: process.env.CONTACT_ADDRESS?.trim() || '待配置'
+};
 const PORT = Number(process.env.PORT || 3000);
 const HOST = process.env.HOST || '127.0.0.1';
 const PASSWORD = process.env.ADMIN_PASSWORD || '';
@@ -30,6 +37,10 @@ const samples = CATEGORIES.map(([category, title], index) => ({
 }));
 let works = [];
 let writes = Promise.resolve();
+let inquiries = [];
+let inquiryWrites = Promise.resolve();
+const inquiryAttempts = new Map();
+const inquiryBusy = new Set();
 const sessions = new Map();
 const failures = new Map();
 
@@ -53,6 +64,11 @@ async function initialize() {
     works = samples;
     await persist(works);
   }
+  if (existsSync(INQUIRY_STORE)) {
+    const parsed = JSON.parse(await readFile(INQUIRY_STORE, 'utf8'));
+    if (!Array.isArray(parsed.inquiries)) throw new Error('Invalid inquiries.json');
+    inquiries = parsed.inquiries;
+  } else await persistInquiries(inquiries);
 }
 async function persist(next) {
   const temporary = STORE + '.' + randomUUID() + '.tmp';
@@ -69,6 +85,75 @@ function mutate(transform) {
   });
   writes = task.catch(() => {});
   return task;
+}
+async function persistInquiries(next) {
+  const temp = INQUIRY_STORE + '.' + randomUUID() + '.tmp';
+  await writeFile(temp, JSON.stringify({version:1,inquiries:next}, null, 2), {mode:0o600});
+  await rename(temp, INQUIRY_STORE);
+}
+function mutateInquiries(transform) {
+  const job = inquiryWrites.then(async () => {
+    const next = structuredClone(inquiries);
+    const result = transform(next);
+    await persistInquiries(next);
+    inquiries = next;
+    return result;
+  });
+  inquiryWrites = job.catch(() => {});
+  return job;
+}
+function validInquiry(data) {
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw error(400, '咨询信息格式有误');
+  const name = text(data.name, 60);
+  const phone = text(data.phone, 30);
+  const date = text(data.date, 10);
+  const place = text(data.place, 120);
+  const category = text(data.category, 80);
+  const notes = text(data.notes, 800);
+  if (!name || !phone) throw error(400, '请填写称呼和联系电话');
+  if (!/^[+0-9()\-\s]{7,24}$/.test(phone)) throw error(400, '联系电话格式不正确');
+  if (date && (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(new Date(date + 'T00:00:00Z').getTime()) ||
+      new Date(date + 'T00:00:00Z').toISOString().slice(0,10) !== date)) throw error(400, '婚礼日期格式不正确');
+  if (category && !categoryIds.has(category)) throw error(400, '请选择有效婚礼风格');
+  return {name,phone,date,place,category,notes};
+}
+function inquiryMessage(item) {
+  const cat = CATEGORIES.find(x => x[0] === item.category)?.[1] || '未填写';
+  return ['【婚礼咨询】','称呼：'+item.name,'电话：'+item.phone,
+    '婚礼日期：'+(item.date||'未填写'),'地点：'+(item.place||'未填写'),
+    '喜欢的作品：'+cat,'其他需求：'+(item.notes||'未填写'),
+    '编号：'+item.id].join('\n');
+}
+async function deliverInquiry(id) {
+  if (!WECOM_WEBHOOK || inquiryBusy.has(id)) return;
+  if (!/^https:\/\/qyapi\.weixin\.qq\.com\/cgi-bin\/webhook\/send\?key=[\w-]+$/.test(WECOM_WEBHOOK)) {
+    console.error('Invalid WECOM_WEBHOOK configuration (expected official enterprise WeChat robot URL)');
+    return;
+  }
+  const item = inquiries.find(x=>x.id===id);
+  if (!item || item.status==='sent') return;
+  inquiryBusy.add(id);
+  let sent=false;
+  try {
+    const response=await fetch(WECOM_WEBHOOK,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({msgtype:'text',text:{content:inquiryMessage(item)}}),
+      signal:AbortSignal.timeout(6500)
+    });
+    if (!response.ok) throw Error('HTTP '+response.status);
+    const result=await response.json();
+    if (result.errcode!==0) throw Error('WeCom response code '+String(result.errcode));
+    sent=true;
+  } catch(err) {
+    console.error('WeCom notification failed for inquiry', id, String(err?.message||'unknown'));
+  } finally {
+    await mutateInquiries(next=>{
+      const row=next.find(x=>x.id===id);
+      if(row){row.attempts=(row.attempts||0)+1;row.status=sent?'sent':'pending';row.lastAttemptAt=new Date().toISOString();}
+    }).catch(err=>console.error('Failed to update inquiry delivery status',String(err?.message||err)));
+    inquiryBusy.delete(id);
+  }
 }
 function headers(res, status, type, extra = {}) {
   res.writeHead(status, {
@@ -176,11 +261,26 @@ async function staticFile(req, res, path, isUpload = false) {
 }
 async function handle(req, res) {
   const url = new URL(req.url || '/', 'http://localhost');
-  const p = url.pathname;
+  const p = url.pathname === '/wedding' ? '/' : url.pathname.startsWith('/wedding/') ? url.pathname.slice('/wedding'.length) : url.pathname;
   const method = req.method;
   const api = p.startsWith('/api/');
   if (api && !['GET','POST','PATCH','DELETE'].includes(method)) throw error(405, '不支持的请求方式');
   if (api && method !== 'GET') guardChange(req);
+  if (p === '/api/site-config' && method === 'GET') return send(res,200,{contacts:CONTACT});
+  if (p === '/api/inquiry' && method === 'POST') {
+    const ip=(req.socket.remoteAddress||'unknown').slice(0,100);
+    const rate=inquiryAttempts.get(ip)||[];
+    const recent=rate.filter(t=>t>Date.now()-60*60*1000);
+    if (recent.length>=6) throw error(429,'提交次数较多，请稍后再试');
+    const data=await jsonBody(req);
+    if (data.website) return send(res,202,{accepted:true});
+    const values=validInquiry(data);
+    const row={id:randomUUID(),...values,createdAt:new Date().toISOString(),status:'pending',attempts:0};
+    await mutateInquiries(next=>{next.push(row)});
+    inquiryAttempts.set(ip,[...recent,Date.now()]);
+    void deliverInquiry(row.id);
+    return send(res,202,{accepted:true});
+  }
   if (p === '/api/health' && method === 'GET') return send(res, 200, { ok: true, app: 'enwan-wedding' });
   if (p === '/api/categories' && method === 'GET') return send(res, 200, CATEGORIES.map(([id, name]) => ({ id, name })));
   if (p === '/api/works' && method === 'GET') {
@@ -208,6 +308,7 @@ async function handle(req, res) {
     return send(res, 200, { ok: true }, { 'Set-Cookie': sessionCookie('', 0) });
   }
   if (p.startsWith('/api/admin/')) requireAdmin(req);
+  if (p === '/api/admin/inquiries' && method === 'GET') return send(res,200,inquiries);
   if (p === '/api/admin/me' && method === 'GET') return send(res, 200, { authenticated: true });
   if (p === '/api/admin/works' && method === 'GET') return send(res, 200, [...works].sort((a,b) => a.position - b.position));
   if (p === '/api/admin/export' && method === 'GET') return send(res, 200, { version: 1, works });
@@ -304,6 +405,16 @@ const server = createServer((req, res) => {
     send(res, status, { error: status === 500 ? '服务端错误' : e.message });
   });
 });
+const retryTimer=setInterval(()=>{
+  const now=Date.now();
+  for(const item of inquiries){
+    if(item.status==='sent' || (item.attempts||0)>=12) continue;
+    const last=item.lastAttemptAt?Date.parse(item.lastAttemptAt):0;
+    if(now-last<Math.min(60*60*1000,60*1000*Math.pow(2,Math.min(item.attempts||0,6)))) continue;
+    void deliverInquiry(item.id);
+  }
+},60000);
+retryTimer.unref();
 server.listen(PORT, HOST, () => {
   const address = server.address();
   console.log('ENWAN listening on http://' + HOST + ':' + address.port);
