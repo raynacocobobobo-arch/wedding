@@ -1,0 +1,5 @@
+# Replace with your own domain; configure DNS before starting Caddy.
+wedding.example.com {
+  encode zstd gzip
+  reverse_proxy 127.0.0.1:3000
+}
