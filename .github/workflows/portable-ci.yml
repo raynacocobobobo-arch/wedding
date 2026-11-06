@@ -1,0 +1,25 @@
+name: Portable Wedding CMS Tests
+on:
+  push:
+    paths:
+      - "portable/**"
+      - ".github/workflows/portable-ci.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate source syntax
+        run: |
+          node --check portable/server.mjs
+          node --check portable/public/assets/site.js
+          node --check portable/public/assets/admin.js
+      - name: Run end-to-end API tests
+        working-directory: portable
+        run: npm test
