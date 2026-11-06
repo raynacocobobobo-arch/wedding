@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7f5f1">
+  <title>恩万婚礼 · 作品管理后台</title>
+  <link rel="icon" type="image/webp" href="/images/enwan-logo.webp">
+  <link rel="stylesheet" href="/assets/app.css">
+  <script type="module" src="/assets/admin.js"></script>
+</head>
+<body class="admin-body">
+  <div id="login-screen" class="login-screen" hidden>
+    <form id="login-form" class="login-card">
+      <img src="/images/enwan-logo.webp" alt="恩万婚礼" class="login-logo">
+      <p class="overline">ENWAN STUDIO</p><h1>作品管理后台</h1>
+      <p class="helper">登录后管理婚礼封面、细节图和作品分类</p>
+      <label for="password">管理密码</label>
+      <input type="password" name="password" id="password" autocomplete="current-password" required minlength="12" autofocus>
+      <button type="submit" class="button solid wide">登录后台</button>
+      <p id="login-message" class="error-text" role="alert"></p>
+      <a class="subtle-link" href="/">返回婚礼网站</a>
+    </form>
+  </div>
+  <div id="dashboard" class="dashboard" hidden>
+    <header class="admin-header">
+      <a href="/" class="admin-brand"><img src="/images/enwan-logo.webp" alt="恩万婚礼"><span>作品管理</span></a>
+      <div class="admin-header-actions">
+        <a href="/" target="_blank" rel="noopener">查看前台</a>
+        <button type="button" id="export" class="text-button">导出数据</button>
+        <button type="button" id="logout" class="text-button">退出</button>
+      </div>
+    </header>
+    <div class="workspace">
+      <aside class="work-sidebar">
+        <div class="sidebar-heading"><div><p class="overline">COLLECTIONS</p><h2>婚礼作品</h2></div><button id="create" class="button small solid">＋ 新建</button></div>
+        <label for="category-filter" class="sr-only">按分类筛选</label>
+        <select id="category-filter"><option value="all">全部风格</option></select>
+        <div id="work-list" class="work-list" aria-live="polite"></div>
+      </aside>
+      <main class="editor-pane">
+        <div id="empty-state" class="empty-editor"><span class="empty-symbol">✦</span><h2>请选择婚礼作品</h2><p>在左侧选择已有作品，或新建一场婚礼。</p></div>
+        <div id="editor" hidden>
+          <div class="editor-toolbar">
+            <div><p class="overline">WORK EDITOR</p><h1 id="editor-heading">作品编辑</h1></div>
+            <div class="toolbar-actions">
+              <a id="preview" class="button subtle" href="/" target="_blank" rel="noopener">查看前台预览</a>
+              <button type="button" id="save" class="button solid">保存作品</button>
+            </div>
+          </div>
+          <div class="editor-columns">
+            <div class="editor-primary">
+              <section class="panel">
+                <div class="section-title"><div><p class="overline">01 / PRIMARY</p><h2>一级展示 · 主封面</h2></div></div>
+                <p class="helper">首页和作品列表展示这张照片；每个作品只设置一张主封面。</p>
+                <div class="cover-area" id="cover-area"><div class="cover-placeholder">选择或拖入主封面</div></div>
+                <div class="field-row">
+                  <label class="button subtle" for="cover-input">上传 / 替换主封面</label>
+                  <span class="helper">JPG、PNG、WebP · 每张不超过 12 MB</span>
+                </div>
+                <input type="file" id="cover-input" class="visually-hidden" accept="image/jpeg,image/png,image/webp">
+              </section>
+              <section class="panel">
+                <div class="section-title"><div><p class="overline">02 / DETAILS</p><h2>二级展示 · 婚礼细节图</h2></div><label for="details-input" class="button subtle">＋ 上传细节图</label></div>
+                <p class="helper">可批量上传照片，按展示顺序调整。客户点击封面进入详情页后看到这些图片。</p>
+                <div id="details-list" class="details-list"></div>
+                <input type="file" id="details-input" class="visually-hidden" accept="image/jpeg,image/png,image/webp" multiple>
+                <p id="upload-status" class="upload-status" aria-live="polite"></p>
+              </section>
+            </div>
+            <div class="editor-secondary">
+              <section class="panel">
+                <p class="overline">BASIC INFORMATION</p><h2>作品信息</h2>
+                <form id="work-form">
+                  <label for="work-title">作品名称</label><input id="work-title" maxlength="100" required placeholder="例如：法式花园婚礼 A">
+                  <label for="work-category">所属风格</label><select id="work-category" required></select>
+                  <label for="work-subtitle">作品副标题</label><input id="work-subtitle" maxlength="120" placeholder="例如：奶油白 · 室内仪式">
+                  <label for="work-description">作品介绍</label><textarea id="work-description" rows="5" maxlength="1000" placeholder="描述实际布置、色彩、区域和设计亮点"></textarea>
+                  <label for="work-position">显示顺序</label><input id="work-position" type="number" min="0" max="100000" step="1">
+                  <label class="publish-toggle"><input id="work-published" type="checkbox"><span><strong>公开发布</strong><small>开启后，客户可在前台看到此作品</small></span></label>
+                </form>
+              </section>
+              <section class="panel warning-panel">
+                <p class="overline">DANGER ZONE</p><h2>删除作品</h2>
+                <p class="helper">删除作品会同时删除已上传的图片。操作无法撤销，请先备份。</p>
+                <button type="button" id="delete-work" class="button danger">删除当前作品</button>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <div class="toast-message" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
