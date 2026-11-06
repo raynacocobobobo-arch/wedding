@@ -2,31 +2,32 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
+  <base href="/wedding/">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#f7f5f1">
   <title>恩万婚礼 · 作品管理后台</title>
-  <link rel="icon" type="image/webp" href="/images/enwan-logo.webp">
-  <link rel="stylesheet" href="/assets/app.css">
-  <script type="module" src="/assets/admin.js"></script>
+  <link rel="icon" type="image/webp" href="images/enwan-logo.webp">
+  <link rel="stylesheet" href="assets/app.css">
+  <script type="module" src="assets/admin.js"></script>
 </head>
 <body class="admin-body">
   <div id="login-screen" class="login-screen" hidden>
     <form id="login-form" class="login-card">
-      <img src="/images/enwan-logo.webp" alt="恩万婚礼" class="login-logo">
+      <img src="images/enwan-logo.webp" alt="恩万婚礼" class="login-logo">
       <p class="overline">ENWAN STUDIO</p><h1>作品管理后台</h1>
       <p class="helper">登录后管理婚礼封面、细节图和作品分类</p>
       <label for="password">管理密码</label>
       <input type="password" name="password" id="password" autocomplete="current-password" required minlength="12" autofocus>
       <button type="submit" class="button solid wide">登录后台</button>
       <p id="login-message" class="error-text" role="alert"></p>
-      <a class="subtle-link" href="/">返回婚礼网站</a>
+      <a class="subtle-link" href="./">返回婚礼网站</a>
     </form>
   </div>
   <div id="dashboard" class="dashboard" hidden>
     <header class="admin-header">
-      <a href="/" class="admin-brand"><img src="/images/enwan-logo.webp" alt="恩万婚礼"><span>作品管理</span></a>
+      <a href="./" class="admin-brand"><img src="images/enwan-logo.webp" alt="恩万婚礼"><span>作品管理</span></a>
       <div class="admin-header-actions">
-        <a href="/" target="_blank" rel="noopener">查看前台</a>
+        <a href="./" target="_blank" rel="noopener">查看前台</a>
         <button type="button" id="export" class="text-button">导出数据</button>
         <button type="button" id="logout" class="text-button">退出</button>
       </div>
@@ -44,7 +45,7 @@
           <div class="editor-toolbar">
             <div><p class="overline">WORK EDITOR</p><h1 id="editor-heading">作品编辑</h1></div>
             <div class="toolbar-actions">
-              <a id="preview" class="button subtle" href="/" target="_blank" rel="noopener">查看前台预览</a>
+              <a id="preview" class="button subtle" href="./" target="_blank" rel="noopener">查看前台预览</a>
               <button type="button" id="save" class="button solid">保存作品</button>
             </div>
           </div>
