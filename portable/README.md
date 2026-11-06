@@ -84,3 +84,16 @@ Docker 部署：先创建目录 data 并确保容器内 UID 1000 对目录有写
 ## 素材授权
 
 婚礼图片及品牌 Logo 由项目所有者提供，保留原有权利。此仓库不因此授权第三方转载或商用这些素材。
+
+
+## 企微通知及客户咨询
+
+前台新增 #inquiry 咨询表单，提交到同源 /api/inquiry，信息先持久保存在 data/inquiries.json，然后由服务端推送到企微群机器人。请把 WECOM_WEBHOOK 配在私有 .env 中（不能提交 GitHub）；如果未配置或发送失败，咨询仍保留为 pending 并自动重试。后台已提供需认证的 GET /api/admin/inquiries 读取咨询记录接口。
+
+后台可配置 CONTACT_PHONE、CONTACT_WECHAT、CONTACT_ADDRESS，留空则前台显示“待配置”。收藏只保存在当前浏览器 localStorage；分享优先使用系统分享，回退复制链接。
+
+**部署子路径：** 腾讯云当前在 /wedding/ 下代理本项目；页面保留 base href=/wedding/ 且服务端接受 /wedding/* 路径。代理必须保留原始 URI 前缀，不得重复添加或剥除路径。如需换路径，须同步更新 HTML base 与代理规则。
+
+**可信代理 IP：** 若 Node 只监听本机回环并通过 Nginx/Caddy 代理，设置 TRUST_PROXY=1，并保证反向代理始终覆盖 X-Real-IP 为真实客户端地址（例如 Nginx: proxy_set_header X-Real-IP $remote_addr;）。未开启时将按直连 IP 限流，共用一个反代 IP 可能触发误限流。请勿让任意公网请求自行伪造 X-Real-IP。
+
+**数据备份：** 除 data/works.json 和 data/uploads 外，还须备份 data/inquiries.json；这里包含客户姓名、电话，属于私密资料，请控制访问权限、保存周期和备份范围。
