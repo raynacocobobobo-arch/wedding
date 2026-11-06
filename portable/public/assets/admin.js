@@ -12,7 +12,7 @@ async function api(path, options = {}) {
   const response = await fetch(path, { credentials:'same-origin', ...options, headers });
   const payload = await response.json().catch(() => ({}));
   if (!response.ok) {
-    if (response.status === 401 && path !== '/api/admin/login') showLogin();
+    if (response.status === 401 && path !== 'api/admin/login') showLogin();
     throw new Error(payload.error || '网络请求失败');
   }
   return payload;
@@ -39,9 +39,9 @@ function showDashboard() {
 }
 async function bootstrap() {
   try {
-    categories = await api('/api/categories');
+    categories = await api('api/categories');
     fillCategories();
-    await api('/api/admin/me');
+    await api('api/admin/me');
     showDashboard();
     await refresh();
   } catch (error) { showLogin(); }
@@ -55,7 +55,7 @@ function fillCategories() {
 function label(id) { return categories.find(c => c.id === id)?.name || id; }
 function chosen() { return works.find(w => w.id === selectedId); }
 async function refresh(prefer = selectedId) {
-  works = await api('/api/admin/works');
+  works = await api('api/admin/works');
   selectedId = works.some(w => w.id === prefer) ? prefer : (works[0]?.id || '');
   renderList();
   renderEditor();
@@ -83,7 +83,7 @@ function renderEditor() {
   $('#work-position').value = w.position || 0;
   $('#work-published').checked = Boolean(w.published);
   const preview = $('#preview');
-  preview.href = w.published ? '/#work/' + encodeURIComponent(w.id) : '/';
+  preview.href = w.published ? './#work/' + encodeURIComponent(w.id) : './';
   preview.textContent = w.published ? '查看已发布作品' : '草稿尚未公开';
   preview.style.pointerEvents = w.published ? 'auto' : 'none';
   preview.style.opacity = w.published ? '1' : '.45';
@@ -115,7 +115,7 @@ async function saveWork() {
     published:$('#work-published').checked
   };
   busy = true;
-  try { await json('/api/admin/works/' + w.id, 'PATCH', data); await refresh(w.id); notify('作品已保存'); }
+  try { await json('api/admin/works/' + w.id, 'PATCH', data); await refresh(w.id); notify('作品已保存'); }
   catch (e) { notify(e.message, true); } finally { busy = false; }
 }
 async function createWork() {
@@ -123,7 +123,7 @@ async function createWork() {
   const category = filterId === 'all' ? (categories[0]?.id) : filterId;
   busy = true;
   try {
-    const row = await json('/api/admin/works', 'POST', { title:'未命名婚礼作品', category });
+    const row = await json('api/admin/works', 'POST', { title:'未命名婚礼作品', category });
     await refresh(row.id);
     notify('已创建草稿。请上传封面、填写信息后再发布。');
     $('#work-title').focus();
@@ -147,7 +147,7 @@ async function upload(files, role) {
   try {
     for (const f of list) {
       status.textContent = '正在上传 ' + (sent + 1) + ' / ' + list.length + ' · ' + f.name;
-      await api('/api/admin/works/' + w.id + '/images?role=' + role, {
+      await api('api/admin/works/' + w.id + '/images?role=' + role, {
         method:'POST', headers:{ 'Content-Type':f.type }, body:f
       });
       sent++;
@@ -166,7 +166,7 @@ async function orderDetails(ids) {
   if (!w || busy) return;
   busy = true;
   try {
-    await json('/api/admin/works/' + w.id + '/details-order', 'PATCH', { ids });
+    await json('api/admin/works/' + w.id + '/details-order', 'PATCH', { ids });
     await refresh(w.id); notify('展示顺序已调整');
   } catch (e) { notify(e.message, true); } finally { busy = false; }
 }
@@ -184,7 +184,7 @@ async function removeDetail(imageId) {
   if (!w || busy || !confirm('确定永久删除这张细节图吗？')) return;
   busy = true;
   try {
-    await api('/api/admin/works/' + w.id + '/images/' + imageId, { method:'DELETE' });
+    await api('api/admin/works/' + w.id + '/images/' + imageId, { method:'DELETE' });
     await refresh(w.id); notify('细节图片已删除');
   } catch (e) { notify(e.message, true); } finally { busy = false; }
 }
@@ -193,7 +193,7 @@ async function deleteWork() {
   if (!w || busy || !confirm('确认永久删除「' + w.title + '」及所有上传的图片？此操作无法撤销。')) return;
   busy = true;
   try {
-    await api('/api/admin/works/' + w.id, { method:'DELETE' });
+    await api('api/admin/works/' + w.id, { method:'DELETE' });
     selectedId = '';
     await refresh();
     notify('作品已删除');
@@ -201,7 +201,7 @@ async function deleteWork() {
 }
 async function exportMetadata() {
   try {
-    const data = await api('/api/admin/export');
+    const data = await api('api/admin/export');
     const blob = new Blob([JSON.stringify(data,null,2)], { type:'application/json' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
@@ -216,7 +216,7 @@ $('#login-form').addEventListener('submit', async e => {
   const button = e.currentTarget.querySelector('button[type=submit]');
   button.disabled = true;
   try {
-    await json('/api/admin/login', 'POST', { password:$('#password').value });
+    await json('api/admin/login', 'POST', { password:$('#password').value });
     $('#password').value = '';
     await bootstrap();
   } catch (err) { $('#login-message').textContent = err.message; }
@@ -276,7 +276,7 @@ for (const [selector, role] of [['#cover-area','cover'],['#details-list','detail
 }
 $('#export').addEventListener('click', exportMetadata);
 $('#logout').addEventListener('click', async () => {
-  try { await api('/api/admin/logout', { method:'POST' }); }
+  try { await api('api/admin/logout', { method:'POST' }); }
   catch { /* session may already be gone */ }
   works = []; selectedId = ''; showLogin();
 });
