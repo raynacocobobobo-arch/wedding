@@ -33,7 +33,7 @@ let writes = Promise.resolve();
 const sessions = new Map();
 const failures = new Map();
 
-if (PASSWORD.length < 12 || SECRET.length < 32) {
+if (PASSWORD.startsWith('REPLACE_WITH') || SECRET.startsWith('REPLACE_WITH') || PASSWORD.length < 12 || SECRET.length < 32) {
   console.error('Please set ADMIN_PASSWORD (12+ chars) and COOKIE_SECRET (32+ chars) in .env.');
   process.exit(1);
 }
