@@ -109,7 +109,7 @@ test('Tencent Cloud /wedding/ routing, inquiry, privacy and front-end contracts'
     assert.equal(r.status,404,'Unpublished image becomes private again');
     const page=await request('/wedding/').then(res=>res.text());
     assert.match(page,/<base href="\/wedding\/">/);
-    for(const required of ['id="nav-favorites"','id="footer-share"','href="#inquiry"','id="site-footer-contacts"']){
+    for(const required of ['id="nav-favorites"','id="footer-share"','id="footer-wechat"','id="site-footer-contacts"']){
       assert.ok(page.includes(required),'UI element: '+required);
     }
     assert.doesNotMatch(page,/class="(island|system-right|menu-pill)"/);
