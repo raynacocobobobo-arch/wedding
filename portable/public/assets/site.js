@@ -24,6 +24,8 @@ function contactText(){
   return ['电话：'+(contacts.phone||'待配置'),'微信：'+(contacts.wechat||'待配置'),'地址：'+(contacts.address||'待配置')];
 }
 let gallery = [], photoIndex = 0;
+let heroIndex=0, heroTimer=null, heroVersion=0, heroTouchX=null;
+let wechatPreviousFocus=null;
 
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char =>
   ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[char]);
@@ -44,6 +46,48 @@ async function load() {
   } catch (err) {
     app.innerHTML = '<div class="state-note"><h2>作品暂时无法载入</h2><p>请确认恩万婚礼服务已启动。</p></div>';
   }
+}
+function heroList(){return works.filter(w=>w.cover).slice(0,9)}
+function heroMarkup(w,i,total){
+  return '<section class="hero"><div class="hero-frame">' +
+    '<a class="hero-main-link" href="#work/'+encodeURIComponent(w.id)+'" aria-label="查看'+escape(w.title)+'作品">' +
+    '<img class="hero-main-image" src="'+source(w.cover)+'" alt="'+escape(w.title)+' 婚礼场景">' +
+    '<div class="hero-copy"><p class="overline">ENWAN WEDDING COLLECTION</p><h1>'+escape(w.title)+'</h1>' +
+    '<span class="hero-cta">探索这场婚礼 →</span></div></a>' +
+    '<div class="hero-controls"><button type="button" data-hero-prev aria-label="上一张">‹</button>' +
+    '<span class="hero-count" aria-live="polite">'+String(i+1).padStart(2,'0')+' / '+total+'</span>' +
+    '<button type="button" data-hero-next aria-label="下一张">›</button></div></div></section>';
+}
+function stopHero(){
+  if(heroTimer!==null)clearInterval(heroTimer);
+  heroTimer=null;heroVersion++;
+}
+function changeHero(delta){
+  const list=heroList(),mount=app.querySelector('[data-home-hero]');
+  if(!mount||list.length<2)return;
+  const next=(heroIndex+delta+list.length)%list.length, w=list[next], token=++heroVersion;
+  const pre=new Image();
+  const renderNext=()=>{
+    if(token!==heroVersion||!app.contains(mount))return;
+    heroIndex=next;
+    mount.innerHTML=heroMarkup(w,next,list.length);
+    mount.classList.add('hero-appearing');
+    requestAnimationFrame(()=>mount.classList.remove('hero-appearing'));
+  };
+  pre.onload=renderNext;pre.onerror=renderNext;
+  pre.src=source(w.cover);
+  if(pre.complete)renderNext();
+}
+function startHero(){
+  stopHero();
+  if(document.hidden||heroList().length<2)return;
+  heroTimer=setInterval(()=>changeHero(1),4300);
+}
+function manualHero(delta){
+  changeHero(delta);
+  if(heroTimer!==null)clearInterval(heroTimer);
+  heroTimer=null;
+  if(!document.hidden&&heroList().length>1)heroTimer=setInterval(()=>changeHero(1),4300);
 }
 function styleName(id) { return categories.find(item => item.id === id)?.name || ''; }
 function card(work) {
@@ -67,18 +111,19 @@ function grid() {
   if (!list.length) return '<p class="state-note">此风格尚未发布婚礼作品。</p>';
   return '<div class="work-grid">' + list.map(card).join('') + '</div>';
 }
-function home() {
-  const featured = works.find(w => w.category === 'korean') || works[0];
-  const hero = featured ?
-    '<section class="hero"><div class="hero-frame"><img src="' + source(featured.cover) +
-    '" alt="' + escape(featured.title) + ' 婚礼场景"><div class="hero-copy">' +
-    '<p class="overline">ENWAN WEDDING COLLECTION</p><h1>' + escape(featured.title) +
-    '</h1><a href="#work/' + encodeURIComponent(featured.id) + '">探索这场婚礼 →</a></div>' +
-    '<span class="hero-count">01 / ' + works.length + '</span></div></section>' : '';
-  return hero + '<section class="section-wrap"><div class="section-heading"><div>' +
-    '<p class="overline">THE COLLECTION</p><h2>婚礼作品</h2><p>不同风格、不同区域，记录每一场婚礼的布置细节。</p></div>' +
-    '<a href="#works" class="more-link">全部作品 →</a></div>' + filterBar() + grid() + '</section>' +
-    '<section class="home-contact"><p class="overline">LET\'S BEGIN</p><h2>一起开始策划你们的婚礼</h2><p>告诉我们日期、城市与喜欢的风格。</p><a class="button solid" href="#inquiry">咨询婚礼方案 →</a></section>';
+function home(){
+  const slides=heroList();
+  if(heroIndex>=slides.length)heroIndex=0;
+  const hero=slides.length?'<div data-home-hero>'+heroMarkup(slides[heroIndex],heroIndex,slides.length)+'</div>':'';
+  const trust='<section class="trust-bar" aria-label="服务介绍">' +
+    '<div class="trust-item"><strong>11年</strong><span>婚礼影像积累</span></div>' +
+    '<div class="trust-item"><strong>4种风格</strong><span>纪实 · 时尚 · 唯美 · AI</span></div>' +
+    '<div class="trust-item"><strong>当日快剪</strong><span>婚礼现场快速出片</span></div>' +
+    '<div class="trust-item"><strong>任丘本地</strong><span>团队上门拍摄</span></div></section>';
+  return hero+trust+'<section class="section-wrap"><div class="section-heading"><div>' +
+    '<p class="overline">THE COLLECTION</p><h2>婚礼作品</h2>' +
+    '<p>不同风格、不同区域，记录每一场婚礼的布置细节。</p></div>' +
+    '<a href="#works" class="more-link">全部作品 →</a></div>'+filterBar()+grid()+'</section>';
 }
 function listing() {
   return '<section class="section-wrap"><div class="section-heading"><div>' +
@@ -161,11 +206,13 @@ function render(scroll=true) {
   document.querySelector('#nav-home').classList.toggle('active',path==='home');
   document.querySelector('#nav-works').classList.toggle('active',path==='works'||path==='work');
   document.querySelector('#nav-favorites').classList.toggle('active',path==='favorites');
+  stopHero();
   if(path==='work'){
     gallery=[{src:work.cover,alt:work.title},...work.details];app.innerHTML=detail(work);
   }else{
     gallery=[];
     app.innerHTML=path==='works'?listing():path==='favorites'?favoritesPage():path==='inquiry'?inquiryPage():home();
+    if(path==='home')startHero();
   }
   document.querySelector('#site-footer-contacts').textContent=contactText().join(' · ');
   if(scroll)window.scrollTo({top:0,behavior:'instant'});
@@ -189,6 +236,9 @@ function closePhoto() {
   viewer.removeAttribute('src');
 }
 app.addEventListener('click', event => {
+  if(event.target.closest('[data-hero-prev]')){manualHero(-1);return;}
+  if(event.target.closest('[data-hero-next]')){manualHero(1);return;}
+  if(event.target.closest('[data-wechat]')){showWechat();return;}
   const fav=event.target.closest('[data-favorite]');
   if(fav){event.preventDefault();toggleFav(fav.dataset.favorite);return;}
   const filter = event.target.closest('[data-filter]');
@@ -230,5 +280,17 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowLeft') openPhoto(photoIndex - 1);
   if (event.key === 'ArrowRight') openPhoto(photoIndex + 1);
 });
-window.addEventListener('hashchange', render);
+app.addEventListener('touchstart',e=>{
+  if(e.target.closest('.hero-frame'))heroTouchX=e.changedTouches[0]?.clientX??null;
+},{passive:true});
+app.addEventListener('touchend',e=>{
+  if(heroTouchX===null)return;
+  const distance=(e.changedTouches[0]?.clientX??heroTouchX)-heroTouchX;heroTouchX=null;
+  if(Math.abs(distance)>48&&e.target.closest('.hero-frame'))manualHero(distance<0?1:-1);
+},{passive:true});
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden)stopHero();
+  else if(app.querySelector('[data-home-hero]'))startHero();
+});
+window.addEventListener('hashchange',render);
 load();
