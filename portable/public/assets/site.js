@@ -63,8 +63,26 @@ function showWechat(){
     if(event.target.closest('[data-copy-wechat]'))copyWechat();
   });
   dialog.querySelector('img').addEventListener('error',event=>{
-    const p=document.createElement('p');p.className='wechat-qr-error';
-    p.textContent='二维码暂无法显示，请联系工作人员';event.target.replaceWith(p);
+    // Portable fallback: same WeChat QR destination, without overwriting the original uploaded PNG.
+    const matrix='AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+r09z+AQXnR1QQC6VL866AXQhqrXQC6L2nC6AQSpYdQQD+qqqr+AACuw7AABDnYYsGAbr0stZABzZlJ6uAQhDQkcADrsRWaEAerk1vpgBeQnxc2AMuosljwAfrZx2qAbjlpVKABbfTtUaAfp4RXQQDSRkLj6AUuXljtgC2pL6SOAepyEm6gDDV+xv4ARpQRFzQCPZ6QiGASE7oStACqfCNPqAAEb2jGAD+uBn66AQTrqjGQC6et/foAXTB3KagC6GcmFaAQVthlqQD+ctKayAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=';
+    try{
+      const bits=Uint8Array.from(atob(matrix),c=>c.charCodeAt(0)),size=45;
+      let path='';
+      for(let y=0;y<size;y++)for(let x=0;x<size;x++){
+        const index=y*size+x;
+        if(bits[index>>3]&(1<<(7-(index&7))))path+='M'+x+' '+y+'h1v1h-1z';
+      }
+      const ns='http://www.w3.org/2000/svg';
+      const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 45 45');
+      svg.setAttribute('role','img');svg.setAttribute('aria-label','扫码添加微信二维码');
+      svg.classList.add('wechat-qr');
+      const bg=document.createElementNS(ns,'rect');bg.setAttribute('width','45');bg.setAttribute('height','45');bg.setAttribute('fill','#fff');
+      const p=document.createElementNS(ns,'path');p.setAttribute('fill','#008fd5');p.setAttribute('d',path);
+      svg.append(bg,p);event.target.replaceWith(svg);
+    }catch{
+      const p=document.createElement('p');p.className='wechat-qr-error';
+      p.textContent='二维码暂无法显示，请联系工作人员';event.target.replaceWith(p);
+    }
   });
   document.body.append(dialog);document.body.classList.add('wechat-open');
   dialog.querySelector('[data-wechat-close]').focus();
