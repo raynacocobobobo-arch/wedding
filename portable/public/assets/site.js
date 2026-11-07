@@ -91,7 +91,7 @@ document.addEventListener('keydown',event=>{
   if(event.key==='Escape'&&document.querySelector('#wechat-dialog'))closeWechat();
 });
 
-let heroIndex=0, heroTimer=null, heroVersion=0, heroTouchX=null;
+let heroIndex=0, heroTimer=null, heroVersion=0, heroTouchX=null, suppressHeroClickUntil=0;
 let wechatPreviousFocus=null;
 
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char =>
@@ -303,6 +303,7 @@ function closePhoto() {
   viewer.removeAttribute('src');
 }
 app.addEventListener('click', event => {
+  if(event.target.closest('.hero-main-link') && Date.now()<suppressHeroClickUntil){event.preventDefault();return;}
   if(event.target.closest('[data-hero-prev]')){manualHero(-1);return;}
   if(event.target.closest('[data-hero-next]')){manualHero(1);return;}
   if(event.target.closest('[data-wechat]')){showWechat();return;}
@@ -355,7 +356,7 @@ app.addEventListener('touchstart',e=>{
 app.addEventListener('touchend',e=>{
   if(heroTouchX===null)return;
   const distance=(e.changedTouches[0]?.clientX??heroTouchX)-heroTouchX;heroTouchX=null;
-  if(Math.abs(distance)>48&&e.target.closest('.hero-frame'))manualHero(distance<0?1:-1);
+  if(Math.abs(distance)>48&&e.target.closest('.hero-frame')){suppressHeroClickUntil=Date.now()+600;manualHero(distance<0?1:-1);}
 },{passive:true});
 document.addEventListener('visibilitychange',()=>{
   if(document.hidden)stopHero();
