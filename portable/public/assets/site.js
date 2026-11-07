@@ -24,6 +24,55 @@ function contactText(){
   return ['电话：'+(contacts.phone||'待配置'),'微信：'+(contacts.wechat||'待配置'),'地址：'+(contacts.address||'待配置')];
 }
 let gallery = [], photoIndex = 0;
+
+function copyWechat(){
+  const wc=(contacts.wechat||'').trim();
+  if(!wc||wc==='待配置'){toast('微信号待配置');return;}
+  const fallback=()=>{
+    const el=document.createElement('textarea');el.value=wc;
+    el.style.cssText='position:fixed;opacity:0;pointer-events:none';
+    document.body.append(el);el.select();
+    const copied=document.execCommand('copy');el.remove();
+    if(!copied)throw Error('copy unavailable');
+  };
+  const action=navigator.clipboard?.writeText?navigator.clipboard.writeText(wc):Promise.resolve().then(fallback);
+  Promise.resolve(action).then(()=>toast('微信号已复制')).catch(()=>toast('复制失败，请手动添加微信'));
+}
+function closeWechat(){
+  const el=document.querySelector('#wechat-dialog');
+  if(!el)return;
+  el.remove();document.body.classList.remove('wechat-open');
+  if(wechatPreviousFocus?.isConnected)wechatPreviousFocus.focus();
+}
+function showWechat(){
+  if(document.querySelector('#wechat-dialog'))return;
+  wechatPreviousFocus=document.activeElement;
+  const wc=(contacts.wechat||'').trim();
+  const dialog=document.createElement('div');
+  dialog.className='wechat-dialog';dialog.id='wechat-dialog';
+  dialog.setAttribute('role','dialog');dialog.setAttribute('aria-modal','true');
+  dialog.setAttribute('aria-label','扫码添加微信');
+  dialog.innerHTML='<div class="wechat-box"><button class="wechat-close" data-wechat-close aria-label="关闭" type="button">×</button>'+
+    '<p class="overline">ENWAN WEDDING</p><h3>扫码添加微信</h3>'+
+    '<img class="wechat-qr" src="images/wechat-qr.png" alt="婚礼咨询微信二维码">'+
+    '<p class="wechat-hint">微信扫一扫，或长按识别二维码</p>'+
+    (wc&&wc!=='待配置'?'<button type="button" class="button subtle" data-copy-wechat>复制微信号：'+escape(wc)+'</button>':'')+
+    '</div>';
+  dialog.addEventListener('click',event=>{
+    if(event.target===dialog||event.target.closest('[data-wechat-close]')){closeWechat();return;}
+    if(event.target.closest('[data-copy-wechat]'))copyWechat();
+  });
+  dialog.querySelector('img').addEventListener('error',event=>{
+    const p=document.createElement('p');p.className='wechat-qr-error';
+    p.textContent='二维码暂无法显示，请联系工作人员';event.target.replaceWith(p);
+  });
+  document.body.append(dialog);document.body.classList.add('wechat-open');
+  dialog.querySelector('[data-wechat-close]').focus();
+}
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&document.querySelector('#wechat-dialog'))closeWechat();
+});
+
 let heroIndex=0, heroTimer=null, heroVersion=0, heroTouchX=null;
 let wechatPreviousFocus=null;
 
@@ -138,7 +187,7 @@ function detail(work) {
     '" data-photo="0" tabindex="0" role="button" aria-label="打开主封面大图">' +
     '<div class="detail-header"><div><p class="overline">' + escape(styleName(work.category)) + '</p>' +
     '<h1>' + escape(work.title) + '</h1><p>' + escape(work.description || work.subtitle || '') +
-    '</p><div class="detail-cta"><button type="button" class="button subtle fav-button-detail" data-favorite="'+escape(work.id)+'">'+(isFav(work.id)?'♥ 已收藏':'♡ 收藏作品')+'</button><a class="button solid" href="#inquiry?style='+encodeURIComponent(work.category)+'">咨询这种风格 →</a></div></div><span class="detail-count">' + images.length + ' PHOTOS</span></div>';
+    '</p><div class="detail-cta"><button type="button" class="button subtle fav-button-detail" data-favorite="'+escape(work.id)+'">'+(isFav(work.id)?'♥ 已收藏':'♡ 收藏作品')+'</button><button type="button" class="button solid" data-wechat>加微信咨询 →</button></div></div><span class="detail-count">' + images.length + ' PHOTOS</span></div>';
   if (!work.details.length) return body + '</section>';
   const photoGrid = work.details.map((item, index) =>
     '<button type="button" data-photo="' + (index + 1) + '" aria-label="查看第' + (index + 2) + '张婚礼照片">' +
@@ -250,6 +299,8 @@ app.addEventListener('submit',event=>{
   if(event.target.id!=='inquiry-form')return;
   event.preventDefault();void submitInquiry(event.target);
 });
+document.querySelector('#footer-wechat')?.addEventListener('click',showWechat);
+document.querySelector('#wechat-float')?.addEventListener('click',showWechat);
 document.querySelector('#footer-share').addEventListener('click',async()=>{
   const url=location.href,title='恩万婚礼 ENWAN WEDDING';
   if(navigator.share){try{await navigator.share({title,url});return;}catch(e){if(e.name==='AbortError')return;}}
