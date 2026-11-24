@@ -2686,7 +2686,11 @@ window.ENWAN_DATA = {
       "title": "低头抬头",
       "prompt": "先看捧花，再抬头看远处",
       "camera": "中近景，保持面部光线稳定",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/32.jpg",
+        "assets/references/legacy/bride/f/39.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C01-03",
@@ -2705,7 +2709,12 @@ window.ENWAN_DATA = {
       "title": "整理头发",
       "prompt": "把耳边头发整理一下",
       "camera": "近景与手部细节",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/24.jpg",
+        "assets/references/legacy/bride/f/28.jpg",
+        "assets/references/legacy/bride/f/48.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C01-05",
@@ -2717,9 +2726,10 @@ window.ENWAN_DATA = {
         "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg",
         "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg",
         "assets/references/word/08f1d07203ab02959b98c0363b7e8ccec3f0aabbc45048033f61a94b6b95f855.jpeg",
-        "assets/references/word/89eab37d4a6396d85a2489130a6ac3766eeca3f32387d943db61f9db8e215207.jpeg"
+        "assets/references/word/89eab37d4a6396d85a2489130a6ac3766eeca3f32387d943db61f9db8e215207.jpeg",
+        "assets/references/legacy/bride/f/25.jpg"
       ],
-      "reference_note": "《婚礼.docx》《常规调度_副本2.docx》原画面复核；非婚礼场景仅借鉴动作、构图与机位，连续截图仅作景别或遮挡关系参考，不证明实际运镜。"
+      "reference_note": "《婚礼.docx》《常规调度_副本2.docx》原画面复核；非婚礼场景仅借鉴动作、构图与机位，连续截图仅作景别或遮挡关系参考，不证明实际运镜。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C01-06",
@@ -2744,9 +2754,10 @@ window.ENWAN_DATA = {
       "prompt": "照镜子看看自己",
       "camera": "镜面与人物同框",
       "images": [
-        "assets/references/legacy/bride/f/29.jpg"
+        "assets/references/legacy/bride/f/29.jpg",
+        "assets/references/legacy/bride/f/39.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C01-09",
@@ -2775,9 +2786,12 @@ window.ENWAN_DATA = {
       "prompt": "整理一下领结",
       "camera": "手部接面部中近景",
       "images": [
-        "assets/references/legacy/groom/f/30.jpg"
+        "assets/references/legacy/groom/f/30.jpg",
+        "assets/references/legacy/groom/f/36.jpg",
+        "assets/references/legacy/groom/f/41.jpg",
+        "assets/references/legacy/groom/f/53.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C02-02",
@@ -2852,9 +2866,10 @@ window.ENWAN_DATA = {
       "prompt": "看窗外，不用做表情",
       "camera": "侧面肖像",
       "images": [
-        "assets/references/legacy/groom/f/33.jpg"
+        "assets/references/legacy/groom/f/33.jpg",
+        "assets/references/legacy/groom/f/38.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C02-10",
@@ -2935,7 +2950,10 @@ window.ENWAN_DATA = {
       "title": "整理衣领",
       "prompt": "帮对方整理领口",
       "camera": "手部、面部及回应",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/53.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C03-07",
@@ -2943,7 +2961,11 @@ window.ENWAN_DATA = {
       "title": "整理捧花",
       "prompt": "一起看看捧花",
       "camera": "中景与手部",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/86.jpg",
+        "assets/references/legacy/groom/f/87.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C03-08",
@@ -2991,7 +3013,10 @@ window.ENWAN_DATA = {
       "title": "轻握手掌",
       "prompt": "牵手时自然握紧",
       "camera": "近景记录接触与放松",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/98.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C03-12",
@@ -3009,9 +3034,12 @@ window.ENWAN_DATA = {
       "camera": "平衡构图",
       "images": [
         "assets/references/legacy/groom/f/54.jpg",
-        "assets/references/legacy/bride/f/46.jpg"
+        "assets/references/legacy/bride/f/46.jpg",
+        "assets/references/legacy/groom/f/34.jpg",
+        "assets/references/legacy/groom/f/50.jpg",
+        "assets/references/legacy/bride/f/45.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C04-02",
@@ -3027,7 +3055,14 @@ window.ENWAN_DATA = {
       "title": "围绕新人聊天",
       "prompt": "聊一件共同经历",
       "camera": "记录真实反应",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/41.jpg",
+        "assets/references/legacy/bride/f/42.jpg",
+        "assets/references/legacy/bride/f/43.jpg",
+        "assets/references/legacy/groom/f/83.jpg",
+        "assets/references/legacy/groom/f/85.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C04-04",
@@ -3058,9 +3093,10 @@ window.ENWAN_DATA = {
         "assets/references/legacy/groom/f/50.jpg",
         "assets/references/legacy/groom/f/52.jpg",
         "assets/references/legacy/bride/f/42.jpg",
-        "assets/references/legacy/bride/f/45.jpg"
+        "assets/references/legacy/bride/f/45.jpg",
+        "assets/references/legacy/bride/f/46.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C05-01",
@@ -3068,7 +3104,11 @@ window.ENWAN_DATA = {
       "title": "父母整理衣物",
       "prompt": "自然协助新人",
       "camera": "中景及手部",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/94.jpg",
+        "assets/references/legacy/groom/f/95.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C05-02",
@@ -3103,7 +3143,12 @@ window.ENWAN_DATA = {
       "title": "父母等待",
       "prompt": "无需引导",
       "camera": "远处观察",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/56.jpg",
+        "assets/references/legacy/bride/f/58.jpg",
+        "assets/references/legacy/groom/f/56.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C05-06",
@@ -3113,9 +3158,12 @@ window.ENWAN_DATA = {
       "camera": "捕捉谈话与倾听反应",
       "images": [
         "assets/references/legacy/groom/f/60.jpg",
-        "assets/references/legacy/groom/f/61.jpg"
+        "assets/references/legacy/groom/f/61.jpg",
+        "assets/references/legacy/groom/f/58.jpg",
+        "assets/references/legacy/groom/f/59.jpg",
+        "assets/references/legacy/bride/f/51.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C06-01",
@@ -3123,7 +3171,11 @@ window.ENWAN_DATA = {
       "title": "双手相握",
       "prompt": "自然牵手",
       "camera": "近景，注意戒指",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/40.jpg",
+        "assets/references/legacy/groom/f/98.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C06-02",
@@ -3132,9 +3184,12 @@ window.ENWAN_DATA = {
       "prompt": "看看熟悉的照片",
       "camera": "照片、手部、面部反应",
       "images": [
-        "assets/references/legacy/groom/f/49.jpg"
+        "assets/references/legacy/groom/f/49.jpg",
+        "assets/references/legacy/bride/f/56.jpg",
+        "assets/references/legacy/bride/f/57.jpg",
+        "assets/references/legacy/bride/f/58.jpg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C06-03",
@@ -3154,7 +3209,11 @@ window.ENWAN_DATA = {
       "title": "整理捧花",
       "prompt": "轻轻调整花束",
       "camera": "手部及花材",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/86.jpg",
+        "assets/references/legacy/groom/f/87.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C06-05",
@@ -3162,7 +3221,12 @@ window.ENWAN_DATA = {
       "title": "整理发丝",
       "prompt": "自然拨一下头发",
       "camera": "近景保留动作",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/24.jpg",
+        "assets/references/legacy/bride/f/28.jpg",
+        "assets/references/legacy/bride/f/48.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C06-06",
@@ -3178,7 +3242,11 @@ window.ENWAN_DATA = {
       "title": "端杯敬茶",
       "prompt": "正常递茶与接茶",
       "camera": "手部接触、动作衔接",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/96.jpg",
+        "assets/references/legacy/groom/f/97.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C06-08",
@@ -3301,7 +3369,14 @@ window.ENWAN_DATA = {
       "title": "推门进入",
       "prompt": "打开门走进去",
       "camera": "开门细节、人物进入、空间揭示",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/79.jpg",
+        "assets/references/legacy/groom/f/80.jpg",
+        "assets/references/legacy/groom/f/81.jpg",
+        "assets/references/legacy/groom/f/82.jpg",
+        "assets/references/legacy/groom/f/101.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C07-10",
@@ -3309,7 +3384,11 @@ window.ENWAN_DATA = {
       "title": "一前一后",
       "prompt": "按自然距离前后走",
       "camera": "长焦或侧面，避免重叠",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/100.jpg",
+        "assets/references/legacy/groom/f/81.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C07-11",
@@ -3428,9 +3507,10 @@ window.ENWAN_DATA = {
       "camera": "安全高机位，观察空间几何",
       "images": [
         "assets/references/word/8df14e1a19825863caa934c1af764dbe0a490738f37e83c56cf12e28eb9cfea1.jpeg",
-        "assets/references/word/8dba21a2d947467681140887f5263fe72d6d8dc8cbe37251ea25c5e36dda5793.jpeg"
+        "assets/references/word/8dba21a2d947467681140887f5263fe72d6d8dc8cbe37251ea25c5e36dda5793.jpeg",
+        "assets/references/legacy/groom/f/52.jpg"
       ],
-      "reference_note": "《婚礼.docx》《常规调度_副本2.docx》原画面复核；非婚礼场景仅借鉴动作、构图与机位，连续截图仅作景别或遮挡关系参考，不证明实际运镜。"
+      "reference_note": "《婚礼.docx》《常规调度_副本2.docx》原画面复核；非婚礼场景仅借鉴动作、构图与机位，连续截图仅作景别或遮挡关系参考，不证明实际运镜。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C08-05",
@@ -3662,9 +3742,11 @@ window.ENWAN_DATA = {
       "images": [
         "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
         "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg",
-        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg"
+        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg",
+        "assets/references/legacy/groom/f/44.jpg",
+        "assets/references/legacy/groom/f/45.jpg"
       ],
-      "reference_note": "《婚礼.docx》原稿视觉复核：同场景遮挡前、遮挡时、遮挡后画面组，供真实遮挡的衔接设计；不据截图断言跨场景转场。"
+      "reference_note": "《婚礼.docx》原稿视觉复核：同场景遮挡前、遮挡时、遮挡后画面组，供真实遮挡的衔接设计；不据截图断言跨场景转场。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C09-13",
@@ -3690,9 +3772,11 @@ window.ENWAN_DATA = {
       "images": [
         "assets/references/word/0fb550ede5f3848ac814efd653e05d0f41166dacb9c4ebd2a231dea6deec6369.jpeg",
         "assets/references/word/fe8d6f6ad97a810da0a3f0cb12f9ac6c33840ff28a1e93bbdb87e62a38c52555.jpeg",
-        "assets/references/word/4f3f6bbf063f1a2c6758069d92c29fe64b3ab37446e36f8f9e71994c0fd8f61d.jpeg"
+        "assets/references/word/4f3f6bbf063f1a2c6758069d92c29fe64b3ab37446e36f8f9e71994c0fd8f61d.jpeg",
+        "assets/references/legacy/groom/f/47.jpg",
+        "assets/references/legacy/bride/f/56.jpg"
       ],
-      "reference_note": "《婚礼.docx》《常规调度_副本2.docx》原画面复核；非婚礼场景仅借鉴动作、构图与机位，连续截图仅作景别或遮挡关系参考，不证明实际运镜。"
+      "reference_note": "《婚礼.docx》《常规调度_副本2.docx》原画面复核；非婚礼场景仅借鉴动作、构图与机位，连续截图仅作景别或遮挡关系参考，不证明实际运镜。 旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C09-15",
@@ -3737,7 +3821,13 @@ window.ENWAN_DATA = {
       "title": "回忆蒙太奇",
       "prompt": "翻看照片或信件",
       "camera": "肖像、手部、旧照与环境衔接",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/56.jpg",
+        "assets/references/legacy/bride/f/57.jpg",
+        "assets/references/legacy/bride/f/58.jpg",
+        "assets/references/legacy/groom/f/49.jpg"
+      ],
+      "reference_note": "旧版婚礼参考画面已逐张查看；人物关系或道具不一致时只作对应手势、构图、站位与调度参考，不将截图当作运镜证据。"
     },
     {
       "id": "C10-03",
