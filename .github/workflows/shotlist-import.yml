@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Release tag containing v3.zip and v4.zip'
+        description: 'Release tag containing v4.zip (optional v3.zip)'
         required: true
         type: string
   release:
@@ -32,13 +32,20 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/shotlist-import"
-          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'v3.zip' --pattern 'v4.zip' --dir "$RUNNER_TEMP/shotlist-import"
-          test -s "$RUNNER_TEMP/shotlist-import/v3.zip"
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'v4.zip' --dir "$RUNNER_TEMP/shotlist-import"
           test -s "$RUNNER_TEMP/shotlist-import/v4.zip"
+          if gh release view "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --json assets --jq '.assets[].name' | grep -Fxq 'v3.zip'; then
+            gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'v3.zip' --dir "$RUNNER_TEMP/shotlist-import"
+            test -s "$RUNNER_TEMP/shotlist-import/v3.zip"
+          fi
       - name: Audit and import original files
         run: |
           set -euo pipefail
-          python shotlist/import_v4.py "$RUNNER_TEMP/shotlist-import/v4.zip" --baseline "$RUNNER_TEMP/shotlist-import/v3.zip" --apply
+          if test -s "$RUNNER_TEMP/shotlist-import/v3.zip"; then
+            python shotlist/import_v4.py "$RUNNER_TEMP/shotlist-import/v4.zip" --baseline "$RUNNER_TEMP/shotlist-import/v3.zip" --apply
+          else
+            python shotlist/import_v4.py "$RUNNER_TEMP/shotlist-import/v4.zip" --allow-unverified-baseline --apply
+          fi
       - name: Prepare thumbnails and mobile guide
         run: |
           set -euo pipefail
