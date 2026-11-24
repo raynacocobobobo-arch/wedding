@@ -5,14 +5,14 @@
   "original_thumbnails": 188,
   "legacy_cards": 62,
   "original_source_items": 265,
-  "new_cards_with_images": 27,
+  "new_cards_with_images": 36,
   "new_cards": 102,
   "source_docx_images_imported": false,
   "failures": [],
-  "new_cards_with_four_or_five_images": 5,
-  "new_card_image_links": 57,
-  "new_card_unique_originals": 42,
-  "new_card_matching_method": "visual review of existing recovered thumbnails, matched only by visible action or composition",
+  "new_cards_with_four_or_five_images": 11,
+  "new_card_image_links": 90,
+  "new_card_unique_originals": 64,
+  "new_card_matching_method": "Visual review of recovered legacy and Word source frames; matched by visible action/composition, never inferred camera motion from a single still.",
   "word_original_images": 47,
   "word_thumbnails": 47,
   "word_images_by_source": {
@@ -22,5 +22,7 @@
   "word_expected_originals": 1482,
   "word_source_groups": 3,
   "word_transfer_commit": "c900bee67757294dc19fe01cf1d1f7206819a42f",
-  "word_image_hash_failures": 0
+  "word_image_hash_failures": 0,
+  "new_card_word_image_links": 33,
+  "new_card_word_unique_originals": 22
 }

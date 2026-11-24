@@ -2671,7 +2671,13 @@ window.ENWAN_DATA = {
       "title": "背身回眸",
       "prompt": "背对镜头，慢慢回头",
       "camera": "侧后方中近景，保留回头起止",
-      "images": []
+      "images": [
+        "assets/references/word/2ffdbe0ec1306d2861600db68aa7516a6e964468b11e728045a45950b52a75cf.jpeg",
+        "assets/references/word/cb807bfdc25ca5041132e625835972715f782f84317d4626ab2c623b96fc3a87.jpeg",
+        "assets/references/word/04024ce5f5798653ca36421d19689d08272576191841b745de59818730e32f49.jpeg",
+        "assets/references/word/4180ac04cf43db6efe7b8321dce9942ece708f5a627cd0fe646cd194151953d0.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C01-02",
@@ -3161,9 +3167,11 @@ window.ENWAN_DATA = {
       "prompt": "按自己的速度走过来",
       "camera": "稳定后退或固定长焦，注意安全",
       "images": [
-        "assets/references/legacy/groom/f/35.jpg"
+        "assets/references/legacy/groom/f/35.jpg",
+        "assets/references/word/24ed3a75c755c7e3b1e6d32dd25032f69aabc2060c3b740fdf5c8bc42b141997.jpeg",
+        "assets/references/word/087dbf21e112d3375ab5f7ab0f0fe2b406c81f2e475de9a33b5526c10cd1fa6e.jpeg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C07-02",
@@ -3171,7 +3179,10 @@ window.ENWAN_DATA = {
       "title": "侧面行走",
       "prompt": "沿直线正常走",
       "camera": "平行侧移，留前进空间",
-      "images": []
+      "images": [
+        "assets/references/word/9336de0198472038043e4dd5f7c3fe17cae93dff36854635ce734bacbc1b05e0.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C07-03",
@@ -3179,7 +3190,13 @@ window.ENWAN_DATA = {
       "title": "背影跟拍",
       "prompt": "向前走，不用回头",
       "camera": "后方跟拍",
-      "images": []
+      "images": [
+        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg",
+        "assets/references/word/09fa87f6add99042703501b94b0b1b10f6478a453f6223cd94cfd2e2d2d7cb51.jpeg",
+        "assets/references/word/14ffa37339d944e2c1b13dc723d19a5d0fb65fcb08e96aff51c847de81d56805.jpeg",
+        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C07-04",
@@ -3203,7 +3220,11 @@ window.ENWAN_DATA = {
       "title": "建筑大景行走",
       "prompt": "沿建筑通道前进",
       "camera": "固定大景，人物尺度小",
-      "images": []
+      "images": [
+        "assets/references/word/14ffa37339d944e2c1b13dc723d19a5d0fb65fcb08e96aff51c847de81d56805.jpeg",
+        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C07-07",
@@ -3211,7 +3232,13 @@ window.ENWAN_DATA = {
       "title": "行走回眸",
       "prompt": "走时自然回头",
       "camera": "侧后方，保持动作连续",
-      "images": []
+      "images": [
+        "assets/references/word/cb807bfdc25ca5041132e625835972715f782f84317d4626ab2c623b96fc3a87.jpeg",
+        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
+        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg",
+        "assets/references/word/619444a9fb298f13332381da1c5afa57c2e3070f1cdb5e827a8c988bf3650eb2.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C07-08",
@@ -3291,7 +3318,12 @@ window.ENWAN_DATA = {
       "title": "大景小人物",
       "prompt": "站在合适的位置",
       "camera": "环境占主导",
-      "images": []
+      "images": [
+        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg",
+        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg",
+        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C08-02",
@@ -3333,9 +3365,10 @@ window.ENWAN_DATA = {
       "camera": "按背景测光，保留轮廓",
       "images": [
         "assets/references/legacy/groom/f/33.jpg",
-        "assets/references/legacy/groom/f/43.jpg"
+        "assets/references/legacy/groom/f/43.jpg",
+        "assets/references/word/9a67335cc7287cbbb0a96fec47a5c05967fb0f3162b3ccb2c423e25c0509d309.jpeg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C08-06",
@@ -3343,7 +3376,11 @@ window.ENWAN_DATA = {
       "title": "户外自然大景",
       "prompt": "自然站立或散步",
       "camera": "保留地景层次",
-      "images": []
+      "images": [
+        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg",
+        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C08-07",
@@ -3354,9 +3391,11 @@ window.ENWAN_DATA = {
       "images": [
         "assets/references/legacy/bride/f/28.jpg",
         "assets/references/legacy/bride/f/39.jpg",
-        "assets/references/legacy/bride/f/44.jpg"
+        "assets/references/legacy/bride/f/44.jpg",
+        "assets/references/word/f49dc2eaac4c9b957752546a297a093dd93c4d50f6e2e348892a134329b8d36e.jpeg",
+        "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg"
       ],
-      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。 《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C08-08",
@@ -3364,7 +3403,11 @@ window.ENWAN_DATA = {
       "title": "平衡不对称",
       "prompt": "站在空间一侧",
       "camera": "建筑或光线平衡另一侧",
-      "images": []
+      "images": [
+        "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg",
+        "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C08-09",
@@ -3372,7 +3415,13 @@ window.ENWAN_DATA = {
       "title": "纵深引导线",
       "prompt": "沿空间方向站立",
       "camera": "利用走廊、楼梯、道路",
-      "images": []
+      "images": [
+        "assets/references/word/09fa87f6add99042703501b94b0b1b10f6478a453f6223cd94cfd2e2d2d7cb51.jpeg",
+        "assets/references/word/14ffa37339d944e2c1b13dc723d19a5d0fb65fcb08e96aff51c847de81d56805.jpeg",
+        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg",
+        "assets/references/word/f3603fd150f4f73b687bec8fb965195e7d9a3784aeb0fe5e9d2266baf9566374.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C08-10",
@@ -3502,9 +3551,11 @@ window.ENWAN_DATA = {
       "camera": "保持轴线和视线匹配",
       "images": [
         "assets/references/legacy/groom/f/87.jpg",
-        "assets/references/legacy/groom/f/88.jpg"
+        "assets/references/legacy/groom/f/88.jpg",
+        "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg",
+        "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg"
       ],
-      "reference_note": "同一献花环节的两侧反应画面，供正反打构图参考。"
+      "reference_note": "同一献花环节的两侧反应画面，供正反打构图参考。 《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
     },
     {
       "id": "C09-16",
