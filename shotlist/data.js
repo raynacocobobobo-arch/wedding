@@ -4817,6 +4817,48 @@ window.ENWAN_DATA = {
         62,
         63
       ]
+    },
+    {
+      "id": "W-0001-1",
+      "category": "婚礼原稿 · 镜头参考",
+      "title": "男友POV · 原稿参考 1",
+      "prompt": "参考《婚礼.docx》原稿分类，现场按实际关系自然引导。",
+      "camera": "按原稿图片顺序展示；尚未逐帧判定连续运镜。",
+      "images": [
+        "assets/references/word/9d1b02bb795cb0bedce674ce2720b73446d452361e4cac323ef2921175cc5e12.jpeg",
+        "assets/references/word/19018ac2f223c414d22cec4f6603f554b69dd16010a5a9a44d84dc79bfa530a3.jpeg",
+        "assets/references/word/6587515df6df549fbf5886307b6af85eafc7ecded417e1f667a3748bc3a2b94d.jpeg",
+        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》· 男友Pov；内嵌原图，保留原始字节。"
+    },
+    {
+      "id": "W-0001-2",
+      "category": "婚礼原稿 · 镜头参考",
+      "title": "男友POV · 原稿参考 2",
+      "prompt": "参考《婚礼.docx》原稿分类，现场按实际关系自然引导。",
+      "camera": "按原稿图片顺序展示；尚未逐帧判定连续运镜。",
+      "images": [
+        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg",
+        "assets/references/word/2ffdbe0ec1306d2861600db68aa7516a6e964468b11e728045a45950b52a75cf.jpeg",
+        "assets/references/word/cb807bfdc25ca5041132e625835972715f782f84317d4626ab2c623b96fc3a87.jpeg",
+        "assets/references/word/e60c83619e3f45a12d569fc1f24ba23b43a96ab603afdebda8dab818219bb33b.png"
+      ],
+      "reference_note": "《婚礼.docx》· 男友Pov；内嵌原图，保留原始字节。"
+    },
+    {
+      "id": "W-0001-3",
+      "category": "婚礼原稿 · 镜头参考",
+      "title": "男友POV · 原稿参考 3",
+      "prompt": "参考《婚礼.docx》原稿分类，现场按实际关系自然引导。",
+      "camera": "按原稿图片顺序展示；尚未逐帧判定连续运镜。",
+      "images": [
+        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
+        "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg",
+        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg",
+        "assets/references/word/0a77e12affb017b2bfac0570021f5a2394b15bc7fe6bf2403830ca8b9b185f45.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》· 男友Pov；内嵌原图，保留原始字节。"
     }
   ]
 };
