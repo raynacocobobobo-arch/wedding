@@ -2666,2492 +2666,599 @@ window.ENWAN_DATA = {
   ],
   "cards": [
     {
-      "id": "C01-01",
-      "category": "新娘单人摆拍",
-      "title": "背身回眸",
-      "prompt": "背对镜头，慢慢回头",
-      "camera": "侧后方中近景，保留回头起止",
-      "images": []
-    },
-    {
-      "id": "C01-02",
-      "category": "新娘单人摆拍",
-      "title": "低头抬头",
-      "prompt": "先看捧花，再抬头看远处",
-      "camera": "中近景，保持面部光线稳定",
-      "images": [
-        "assets/references/legacy/bride/f/32.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C01-03",
-      "category": "新娘单人摆拍",
-      "title": "窗边远望",
-      "prompt": "看向窗外，放松肩膀",
-      "camera": "侧面或过肩，利用窗光",
-      "images": [
-        "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C01-04",
-      "category": "新娘单人摆拍",
-      "title": "整理头发",
-      "prompt": "把耳边头发整理一下",
-      "camera": "近景与手部细节",
-      "images": []
-    },
-    {
-      "id": "C01-05",
-      "category": "新娘单人摆拍",
-      "title": "抬眼特写",
-      "prompt": "头不动，慢慢抬眼",
-      "camera": "眼部近景，焦点锁眼睛",
-      "images": []
-    },
-    {
-      "id": "C01-06",
-      "category": "新娘单人摆拍",
-      "title": "整理裙摆",
-      "prompt": "自然整理婚纱",
-      "camera": "全身及手部，拍布料落下",
-      "images": []
-    },
-    {
-      "id": "C01-07",
-      "category": "新娘单人摆拍",
-      "title": "捧花轻转",
-      "prompt": "放松捧花，身体轻转",
-      "camera": "半身侧面，避免刻意舞蹈",
-      "images": []
-    },
-    {
-      "id": "C01-08",
-      "category": "新娘单人摆拍",
-      "title": "镜前肖像",
-      "prompt": "照镜子看看自己",
-      "camera": "镜面与人物同框",
-      "images": [
-        "assets/references/legacy/bride/f/29.jpg",
-        "assets/references/legacy/bride/f/39.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C01-09",
-      "category": "新娘单人摆拍",
-      "title": "戴耳饰",
-      "prompt": "正常戴好耳饰",
-      "camera": "耳饰与脸侧近景",
-      "images": []
-    },
-    {
-      "id": "C01-10",
-      "category": "新娘单人摆拍",
-      "title": "婚纱背影",
-      "prompt": "自然站在窗边",
-      "camera": "全身背影，突出婚纱线条",
-      "images": []
-    },
-    {
-      "id": "C02-01",
-      "category": "新郎单人摆拍",
-      "title": "调整领结",
-      "prompt": "整理一下领结",
-      "camera": "手部接面部中近景",
-      "images": [
-        "assets/references/legacy/groom/f/30.jpg",
-        "assets/references/legacy/groom/f/36.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C02-02",
-      "category": "新郎单人摆拍",
-      "title": "整理袖口与袖扣",
-      "prompt": "自然整理袖口，扣好袖扣",
-      "camera": "近景拍手腕、袖口及衣料细节",
-      "images": [
-        "assets/references/legacy/groom/f/29.jpg",
-        "assets/references/legacy/groom/f/37.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C02-03",
-      "category": "新郎单人摆拍",
-      "title": "穿西装",
-      "prompt": "自然穿好外套",
-      "camera": "全身或半身，保留动作过程",
-      "images": [
-        "assets/references/legacy/groom/f/31.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C02-04",
-      "category": "新郎单人摆拍",
-      "title": "戴手表",
-      "prompt": "像平常一样戴表",
-      "camera": "手部及侧面肖像",
-      "images": []
-    },
-    {
-      "id": "C02-05",
-      "category": "新郎单人摆拍",
-      "title": "戴眼镜",
-      "prompt": "拿起眼镜戴好",
-      "camera": "手部接侧面",
-      "images": []
-    },
-    {
-      "id": "C02-06",
-      "category": "新郎单人摆拍",
-      "title": "推眼镜",
-      "prompt": "自然调整镜框",
-      "camera": "近景，动作轻微",
-      "images": [
-        "assets/references/legacy/groom/f/43.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C02-07",
-      "category": "新郎单人摆拍",
-      "title": "镜前整理",
-      "prompt": "看看衣领和头发",
-      "camera": "镜前中景，避开摄影师倒影",
-      "images": []
-    },
-    {
-      "id": "C02-08",
-      "category": "新郎单人摆拍",
-      "title": "背身回头",
-      "prompt": "回头看向镜头旁边",
-      "camera": "侧后方中景",
-      "images": []
-    },
-    {
-      "id": "C02-09",
-      "category": "新郎单人摆拍",
-      "title": "窗边远望",
-      "prompt": "看窗外，不用做表情",
-      "camera": "侧面肖像",
-      "images": [
-        "assets/references/legacy/groom/f/33.jpg",
-        "assets/references/legacy/groom/f/38.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C02-10",
-      "category": "新郎单人摆拍",
-      "title": "坐姿等待",
-      "prompt": "舒服地坐着即可",
-      "camera": "中近景与双手细节",
-      "images": [
-        "assets/references/legacy/groom/f/32.jpg",
-        "assets/references/legacy/groom/f/38.jpg",
-        "assets/references/legacy/groom/f/39.jpg",
-        "assets/references/legacy/groom/f/41.jpg",
-        "assets/references/legacy/groom/f/47.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-01",
-      "category": "新人双人摆拍",
-      "title": "并肩聊天",
-      "prompt": "聊一句今天最期待的事",
-      "camera": "中景及自然表情",
-      "images": [
-        "assets/references/word/24ed3a75c755c7e3b1e6d32dd25032f69aabc2060c3b740fdf5c8bc42b141997.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-02",
-      "category": "新人双人摆拍",
-      "title": "牵手站立",
-      "prompt": "牵着手，自然站好",
-      "camera": "全身及手部特写",
-      "images": []
-    },
-    {
-      "id": "C03-03",
-      "category": "新人双人摆拍",
-      "title": "相视",
-      "prompt": "看对方一眼",
-      "camera": "正反打或双人近景",
-      "images": [
-        "assets/references/legacy/groom/f/86.jpg",
-        "assets/references/legacy/groom/f/87.jpg",
-        "assets/references/legacy/groom/f/88.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-04",
-      "category": "新人双人摆拍",
-      "title": "侧身拥抱",
-      "prompt": "靠近一点，抱一下",
-      "camera": "中近景，保留肩背反应",
-      "images": [
-        "assets/references/word/125ce5cd560802b779d89d702045a7a99477580635b52695bf79d1822925a1a3.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-05",
-      "category": "新人双人摆拍",
-      "title": "头靠肩膀",
-      "prompt": "轻轻靠一下对方",
-      "camera": "侧面近景，注意发型",
-      "images": [
-        "assets/references/legacy/groom/f/106.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-06",
-      "category": "新人双人摆拍",
-      "title": "整理衣领",
-      "prompt": "帮对方整理领口",
-      "camera": "手部、面部及回应",
-      "images": [
-        "assets/references/legacy/groom/f/53.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-07",
-      "category": "新人双人摆拍",
-      "title": "整理捧花",
-      "prompt": "一起看看捧花",
-      "camera": "中景与手部",
-      "images": []
-    },
-    {
-      "id": "C03-08",
-      "category": "新人双人摆拍",
-      "title": "交换视线",
-      "prompt": "先看远处，再看对方",
-      "camera": "视线动机明确",
-      "images": []
-    },
-    {
-      "id": "C03-09",
-      "category": "新人双人摆拍",
-      "title": "背影并肩",
-      "prompt": "并肩看向远处",
-      "camera": "全身与环境",
-      "images": []
-    },
-    {
-      "id": "C03-10",
-      "category": "新人双人摆拍",
-      "title": "共同坐姿",
-      "prompt": "坐在一起聊天",
-      "camera": "双人中景，记录停顿",
-      "images": [
-        "assets/references/legacy/groom/f/68.jpg",
-        "assets/references/legacy/groom/f/69.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-11",
-      "category": "新人双人摆拍",
-      "title": "轻握手掌",
-      "prompt": "牵手时自然握紧",
-      "camera": "近景记录接触与放松",
-      "images": [
-        "assets/references/legacy/groom/f/98.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C03-12",
-      "category": "新人双人摆拍",
-      "title": "隔窗相望",
-      "prompt": "隔着窗或门框看对方",
-      "camera": "安全位置，利用框景",
-      "images": []
-    },
-    {
-      "id": "C04-01",
-      "category": "伴郎伴娘",
-      "title": "并肩站立",
-      "prompt": "大家自然站好",
-      "camera": "平衡构图",
-      "images": [
-        "assets/references/legacy/groom/f/54.jpg",
-        "assets/references/legacy/bride/f/46.jpg",
-        "assets/references/legacy/groom/f/34.jpg",
-        "assets/references/legacy/groom/f/50.jpg",
-        "assets/references/legacy/bride/f/45.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C04-02",
-      "category": "伴郎伴娘",
-      "title": "并排行走",
-      "prompt": "一起向前走",
-      "camera": "正面全景和侧面中景",
-      "images": []
-    },
-    {
-      "id": "C04-03",
-      "category": "伴郎伴娘",
-      "title": "围绕新人聊天",
-      "prompt": "聊一件共同经历",
-      "camera": "记录真实反应",
-      "images": [
-        "assets/references/legacy/bride/f/41.jpg",
-        "assets/references/legacy/bride/f/42.jpg",
-        "assets/references/legacy/bride/f/43.jpg",
-        "assets/references/legacy/groom/f/83.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C04-04",
-      "category": "伴郎伴娘",
-      "title": "帮忙整理衣物",
-      "prompt": "帮新人看一下造型",
-      "camera": "动作及反应",
-      "images": [
-        "assets/references/legacy/groom/f/53.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C04-05",
-      "category": "伴郎伴娘",
-      "title": "碰杯",
-      "prompt": "自然碰一下杯",
-      "camera": "手部、全景和表情",
-      "images": []
-    },
-    {
-      "id": "C04-06",
-      "category": "伴郎伴娘",
-      "title": "小组合影",
-      "prompt": "靠近一点看镜头",
-      "camera": "稳定全景与自然花絮",
-      "images": [
-        "assets/references/legacy/groom/f/50.jpg",
-        "assets/references/legacy/groom/f/52.jpg",
-        "assets/references/legacy/bride/f/42.jpg",
-        "assets/references/legacy/bride/f/45.jpg",
-        "assets/references/legacy/bride/f/46.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C05-01",
-      "category": "家庭与亲友",
-      "title": "父母整理衣物",
-      "prompt": "自然协助新人",
-      "camera": "中景及手部",
-      "images": [
-        "assets/references/legacy/groom/f/94.jpg",
-        "assets/references/legacy/groom/f/95.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C05-02",
-      "category": "家庭与亲友",
-      "title": "母女牵手",
-      "prompt": "牵一下手",
-      "camera": "近景兼顾双方面部",
-      "images": [
-        "assets/references/legacy/groom/f/98.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C05-03",
-      "category": "家庭与亲友",
-      "title": "父子并肩",
-      "prompt": "一起站一会儿",
-      "camera": "侧面或背影",
-      "images": []
-    },
-    {
-      "id": "C05-04",
-      "category": "家庭与亲友",
-      "title": "家庭拥抱",
-      "prompt": "自然道别或拥抱",
-      "camera": "中景及反应",
-      "images": []
-    },
-    {
-      "id": "C05-05",
-      "category": "家庭与亲友",
-      "title": "父母等待",
-      "prompt": "无需引导",
-      "camera": "远处观察",
-      "images": []
-    },
-    {
-      "id": "C05-06",
-      "category": "家庭与亲友",
-      "title": "亲友交流",
-      "prompt": "无需引导",
-      "camera": "捕捉谈话与倾听反应",
-      "images": [
-        "assets/references/legacy/groom/f/60.jpg",
-        "assets/references/legacy/groom/f/61.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C06-01",
-      "category": "手部与局部",
-      "title": "双手相握",
-      "prompt": "自然牵手",
-      "camera": "近景，注意戒指",
-      "images": [
-        "assets/references/legacy/groom/f/98.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C06-02",
-      "category": "手部与局部",
-      "title": "翻看照片",
-      "prompt": "看看熟悉的照片",
-      "camera": "照片、手部、面部反应",
-      "images": [
-        "assets/references/legacy/groom/f/49.jpg",
-        "assets/references/legacy/bride/f/56.jpg",
-        "assets/references/legacy/bride/f/57.jpg",
-        "assets/references/legacy/bride/f/58.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C06-03",
-      "category": "手部与局部",
-      "title": "佩戴戒指",
-      "prompt": "按仪式正常进行",
-      "camera": "动作起止特写",
-      "images": [
-        "assets/references/legacy/groom/f/121.jpg",
-        "assets/references/legacy/groom/f/124.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C06-04",
-      "category": "手部与局部",
-      "title": "整理捧花",
-      "prompt": "轻轻调整花束",
-      "camera": "手部及花材",
-      "images": []
-    },
-    {
-      "id": "C06-05",
-      "category": "手部与局部",
-      "title": "整理发丝",
-      "prompt": "自然拨一下头发",
-      "camera": "近景保留动作",
-      "images": []
-    },
-    {
-      "id": "C06-06",
-      "category": "手部与局部",
-      "title": "翻开誓言卡",
-      "prompt": "正常阅读",
-      "camera": "过肩与局部，保护私密内容",
-      "images": []
-    },
-    {
-      "id": "C06-07",
-      "category": "手部与局部",
-      "title": "端杯敬茶",
-      "prompt": "正常递茶与接茶",
-      "camera": "手部接触、动作衔接",
-      "images": []
-    },
-    {
-      "id": "C06-08",
-      "category": "手部与局部",
-      "title": "衣料与婚鞋",
-      "prompt": "正常走动或整理",
-      "camera": "低机位及局部纹理",
-      "images": [
-        "assets/references/legacy/bride/f/31.jpg",
-        "assets/references/legacy/bride/f/38.jpg",
-        "assets/references/legacy/groom/f/36.jpg",
-        "assets/references/legacy/groom/f/99.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C07-01",
-      "category": "行走与走位",
-      "title": "正面行走",
-      "prompt": "按自己的速度走过来",
-      "camera": "稳定后退或固定长焦，注意安全",
-      "images": [
-        "assets/references/legacy/groom/f/35.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C07-02",
-      "category": "行走与走位",
-      "title": "侧面行走",
-      "prompt": "沿直线正常走",
-      "camera": "平行侧移，留前进空间",
-      "images": []
-    },
-    {
-      "id": "C07-03",
-      "category": "行走与走位",
-      "title": "背影跟拍",
-      "prompt": "向前走，不用回头",
-      "camera": "后方跟拍",
-      "images": [
-        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg",
-        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C07-04",
-      "category": "行走与走位",
-      "title": "脚步特写",
-      "prompt": "正常走路",
-      "camera": "低机位拍完整步态",
-      "images": [
-        "assets/references/word/6587515df6df549fbf5886307b6af85eafc7ecded417e1f667a3748bc3a2b94d.jpeg",
-        "assets/references/word/f5c3717fa1a9eeb50289875b29b3e5afa5678ae049007bda4ed2dc1db6ef5dfb.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C07-05",
-      "category": "行走与走位",
-      "title": "高位俯拍行走",
-      "prompt": "按原路线走",
-      "camera": "安全高机位，观察图形关系",
-      "images": []
-    },
-    {
-      "id": "C07-06",
-      "category": "行走与走位",
-      "title": "建筑大景行走",
-      "prompt": "沿建筑通道前进",
-      "camera": "固定大景，人物尺度小",
-      "images": [
-        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C07-07",
-      "category": "行走与走位",
-      "title": "行走回眸",
-      "prompt": "走时自然回头",
-      "camera": "侧后方，保持动作连续",
-      "images": []
-    },
-    {
-      "id": "C07-08",
-      "category": "行走与走位",
-      "title": "穿过前景",
-      "prompt": "沿原方向走过门框",
-      "camera": "利用真实遮挡",
-      "images": []
-    },
-    {
-      "id": "C07-09",
-      "category": "行走与走位",
-      "title": "推门进入",
-      "prompt": "打开门走进去",
-      "camera": "开门细节、人物进入、空间揭示",
-      "images": [
-        "assets/references/legacy/groom/f/81.jpg",
-        "assets/references/legacy/groom/f/82.jpg",
-        "assets/references/legacy/groom/f/101.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C07-10",
-      "category": "行走与走位",
-      "title": "一前一后",
-      "prompt": "按自然距离前后走",
-      "camera": "长焦或侧面，避免重叠",
-      "images": []
-    },
-    {
-      "id": "C07-11",
-      "category": "行走与走位",
-      "title": "多人并排",
-      "prompt": "一起往前走",
-      "camera": "全景保持边缘完整",
-      "images": []
-    },
-    {
-      "id": "C07-12",
-      "category": "行走与走位",
-      "title": "时尚行走",
-      "prompt": "正常走，姿态放松",
-      "camera": "干净背景，全身和局部",
-      "images": []
-    },
-    {
-      "id": "C07-13",
-      "category": "行走与走位",
-      "title": "边走边观察",
-      "prompt": "走着看看周围",
-      "camera": "保留视线对象",
-      "images": []
-    },
-    {
-      "id": "C07-14",
-      "category": "行走与走位",
-      "title": "轻松快步",
-      "prompt": "自然走快一点",
-      "camera": "条件允许选拍，不要求穿婚鞋奔跑",
-      "images": []
-    },
-    {
-      "id": "C07-15",
-      "category": "行走与走位",
-      "title": "走入走出画面",
-      "prompt": "沿原方向继续走",
-      "camera": "固定机位，保留空画面",
-      "images": []
-    },
-    {
-      "id": "C07-16",
-      "category": "行走与走位",
-      "title": "行走中改变构图",
-      "prompt": "继续向前走",
-      "camera": "三分构图逐渐转到中心附近",
-      "images": []
-    },
-    {
-      "id": "C08-01",
-      "category": "空间与人物构图",
-      "title": "大景小人物",
-      "prompt": "站在合适的位置",
-      "camera": "环境占主导",
-      "images": []
-    },
-    {
-      "id": "C08-02",
-      "category": "空间与人物构图",
-      "title": "中轴对称",
-      "prompt": "站在通道中轴",
-      "camera": "校正垂直水平",
-      "images": [
-        "assets/references/legacy/groom/f/125.jpg",
-        "assets/references/legacy/groom/f/124.jpg",
-        "assets/references/legacy/groom/f/35.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-03",
-      "category": "空间与人物构图",
-      "title": "建筑框景",
-      "prompt": "站在门洞或廊道内",
-      "camera": "真实门框构成画面边界",
-      "images": [
-        "assets/references/legacy/groom/f/35.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-04",
-      "category": "空间与人物构图",
-      "title": "高位俯拍",
-      "prompt": "自然站立或行走",
-      "camera": "安全高机位，观察空间几何",
-      "images": [
-        "assets/references/legacy/groom/f/52.jpg",
-        "assets/references/word/8dba21a2d947467681140887f5263fe72d6d8dc8cbe37251ea25c5e36dda5793.jpeg",
-        "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-05",
-      "category": "空间与人物构图",
-      "title": "逆光剪影",
-      "prompt": "站在明亮窗门前",
-      "camera": "按背景测光，保留轮廓",
-      "images": [
-        "assets/references/legacy/groom/f/33.jpg",
-        "assets/references/legacy/groom/f/43.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-06",
-      "category": "空间与人物构图",
-      "title": "户外自然大景",
-      "prompt": "自然站立或散步",
-      "camera": "保留地景层次",
-      "images": [
-        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-07",
-      "category": "空间与人物构图",
-      "title": "前景分层",
-      "prompt": "保持自然状态",
-      "camera": "花艺、玻璃、柱体形成层次",
-      "images": [
-        "assets/references/legacy/bride/f/28.jpg",
-        "assets/references/legacy/bride/f/39.jpg",
-        "assets/references/legacy/bride/f/44.jpg",
-        "assets/references/word/6869b365752e59317118554e12d0c547022cd6b0d17da9435566fb45595760aa.jpeg",
-        "assets/references/word/7afeb34b71420c198af6edbf12331fc22eefddacd0bd25e06dd3f35e3e0ac633.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-08",
-      "category": "空间与人物构图",
-      "title": "平衡不对称",
-      "prompt": "站在空间一侧",
-      "camera": "建筑或光线平衡另一侧",
-      "images": [
-        "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg",
-        "assets/references/word/8dba21a2d947467681140887f5263fe72d6d8dc8cbe37251ea25c5e36dda5793.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-09",
-      "category": "空间与人物构图",
-      "title": "纵深引导线",
-      "prompt": "沿空间方向站立",
-      "camera": "利用走廊、楼梯、道路",
-      "images": [
-        "assets/references/word/09fa87f6add99042703501b94b0b1b10f6478a453f6223cd94cfd2e2d2d7cb51.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C08-10",
-      "category": "空间与人物构图",
-      "title": "高低视线关系",
-      "prompt": "从安全位置观察下方",
-      "camera": "视线与对象分镜拍摄",
-      "images": []
-    },
-    {
-      "id": "C09-01",
-      "category": "镜头语言",
-      "title": "人物静止微横移",
-      "prompt": "保持自然站姿",
-      "camera": "微幅横移，主体稳定",
-      "images": [
-        "assets/references/word/9276df7e479284ba4a52a6a5e74689c7b6c99e12046853592eeceff6f584fd39.jpeg",
-        "assets/references/word/493ef9e98676c79d54cced3337a8fae54db579d066d1142b40b35814336fcbb4.jpeg",
-        "assets/references/word/a7d420c8db7738ff8e6b32106ec0948567cee93f7255301e2dbf5168488f38e2.jpeg",
-        "assets/references/word/4db06c73f04d53fbfae4244910243c630495797e01376f38dfc2531870658dd8.jpeg",
-        "assets/references/word/90b8d857aa4cfa7def3348bd66c12a95e329271454ac10b0ee54dd07518e3add.jpeg",
-        "assets/references/word/d8aa3ad4b6d165fed501ff4687f3abf2f724e9cf15d65e55a0a5dc1b47b29860.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C09-02",
-      "category": "镜头语言",
-      "title": "人物静止微前推",
-      "prompt": "保持自然站姿",
-      "camera": "缓慢推进，控制焦点",
-      "images": [
-        "assets/references/word/55fe494a03baf838bb39c119e3ae3971b95ecfe56b0cc7c56af4dac182de3c8a.jpeg",
-        "assets/references/word/b29784bf973aa55080e16faee931715c757c8e08343bc64a0af45dbd6497fde9.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C09-03",
-      "category": "镜头语言",
-      "title": "前景揭示",
-      "prompt": "无需额外配合",
-      "camera": "从遮挡后显露主体",
-      "images": [
-        "assets/references/word/d47b69a98e74ce80972852e05293940b6fb6e22c578375acb3bbd0d4754c17fd.jpeg",
-        "assets/references/word/e2999fcb736ed9d58a5ab9cbe9148b177f598ea36258fde45e955169028bc52b.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C09-04",
-      "category": "镜头语言",
-      "title": "过前景推进",
-      "prompt": "无需额外配合",
-      "camera": "穿过真实前景，注意安全",
-      "images": []
-    },
-    {
-      "id": "C09-05",
-      "category": "镜头语言",
-      "title": "过前景横移",
-      "prompt": "无需额外配合",
-      "camera": "横向移动，利用遮挡",
-      "images": []
-    },
-    {
-      "id": "C09-06",
-      "category": "镜头语言",
-      "title": "空间拉出",
-      "prompt": "保持自然状态",
-      "camera": "由局部退至完整环境",
-      "images": []
-    },
-    {
-      "id": "C09-07",
-      "category": "镜头语言",
-      "title": "小幅环绕",
-      "prompt": "自然站立",
-      "camera": "控制半径和速度",
-      "images": []
-    },
-    {
-      "id": "C09-08",
-      "category": "镜头语言",
-      "title": "仰拍建筑前推",
-      "prompt": "无需人物配合",
-      "camera": "建筑立面与空间线条",
-      "images": []
-    },
-    {
-      "id": "C09-09",
-      "category": "镜头语言",
-      "title": "高度变化",
-      "prompt": "保持自然状态",
-      "camera": "平滑升降机位",
-      "images": []
-    },
-    {
-      "id": "C09-10",
-      "category": "镜头语言",
-      "title": "高度与横移结合",
-      "prompt": "保持自然状态",
-      "camera": "同步改变机位高度与横向位置",
-      "images": []
-    },
-    {
-      "id": "C09-11",
-      "category": "镜头语言",
-      "title": "视线剪辑",
-      "prompt": "记录真实观察",
-      "camera": "视线、对象、反应",
-      "images": [
-        "assets/references/word/89eab37d4a6396d85a2489130a6ac3766eeca3f32387d943db61f9db8e215207.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C09-12",
-      "category": "镜头语言",
-      "title": "遮挡转场",
-      "prompt": "按原动作继续",
-      "camera": "利用真实遮挡衔接",
-      "images": [
-        "assets/references/legacy/groom/f/44.jpg",
-        "assets/references/legacy/groom/f/45.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C09-13",
-      "category": "镜头语言",
-      "title": "动势转场",
-      "prompt": "自然转身或行走",
-      "camera": "保持方向、速度及景别衔接",
-      "images": []
-    },
-    {
-      "id": "C09-14",
-      "category": "镜头语言",
-      "title": "固定机位观察",
-      "prompt": "不干预",
-      "camera": "完整记录动作及声音",
-      "images": []
-    },
-    {
-      "id": "C09-15",
-      "category": "镜头语言",
-      "title": "正反打与反应",
-      "prompt": "不干预",
-      "camera": "保持轴线和视线匹配",
-      "images": [
-        "assets/references/legacy/groom/f/87.jpg",
-        "assets/references/legacy/groom/f/88.jpg",
-        "assets/references/word/89eab37d4a6396d85a2489130a6ac3766eeca3f32387d943db61f9db8e215207.jpeg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C09-16",
-      "category": "镜头语言",
-      "title": "同动作多景别",
-      "prompt": "正常完成动作",
-      "camera": "先完整记录，再自然补近景",
-      "images": [
-        "assets/references/legacy/groom/f/86.jpg",
-        "assets/references/legacy/groom/f/87.jpg",
-        "assets/references/legacy/groom/f/88.jpg",
-        "assets/references/legacy/groom/f/89.jpg",
-        "assets/references/legacy/groom/f/90.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C10-01",
-      "category": "创意拍摄",
-      "title": "投影肖像",
-      "prompt": "自然站在投影前",
-      "camera": "使用有权使用的影像，控制曝光",
-      "images": []
-    },
-    {
-      "id": "C10-02",
-      "category": "创意拍摄",
-      "title": "回忆蒙太奇",
-      "prompt": "翻看照片或信件",
-      "camera": "肖像、手部、旧照与环境衔接",
-      "images": [
-        "assets/references/legacy/bride/f/56.jpg",
-        "assets/references/legacy/bride/f/57.jpg",
-        "assets/references/legacy/bride/f/58.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C10-03",
-      "category": "创意拍摄",
-      "title": "快速推进",
-      "prompt": "不需人物表演",
-      "camera": "稳定器空间转场选拍",
-      "images": []
-    },
-    {
-      "id": "C10-04",
-      "category": "创意拍摄",
-      "title": "旋转与变速",
-      "prompt": "不需人物表演",
-      "camera": "保持运动连贯",
-      "images": []
-    },
-    {
-      "id": "C10-05",
-      "category": "创意拍摄",
-      "title": "逐格人物拖尾",
-      "prompt": "按正常活动状态记录",
-      "camera": "稳定机位采集素材",
-      "images": []
-    },
-    {
-      "id": "C10-06",
-      "category": "创意拍摄",
-      "title": "自然光剪影",
-      "prompt": "站在合适光线中",
-      "camera": "保留真实空间",
-      "images": [
-        "assets/references/legacy/groom/f/33.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C10-07",
-      "category": "创意拍摄",
-      "title": "玻璃反射",
-      "prompt": "保持自然状态",
-      "camera": "控制杂乱反射",
-      "images": [
-        "assets/references/legacy/bride/f/39.jpg"
-      ],
-      "reference_note": "复审后保留的实际画面候选；单帧仅供动作、构图和机位参考。运镜须结合原稿标题及连续帧判断。"
-    },
-    {
-      "id": "C10-08",
-      "category": "创意拍摄",
-      "title": "定格与环境运动",
-      "prompt": "保持自然站姿",
-      "camera": "利用人群或环境变化形成对照",
-      "images": []
-    },
-    {
-      "id": "L-groom-01-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "小区空镜 · 男方",
-      "prompt": "原流程拍摄点：小区大门 / 门头环境；楼栋外立面 + 天空；单元门 / 楼道入口；小区道路与绿化",
-      "camera": "1组 · 2-3个镜头；一般作为片头，慢速运镜保持画面稳定",
-      "images": [
-        "assets/references/legacy/groom/f/1.jpg",
-        "assets/references/legacy/groom/f/2.jpg",
-        "assets/references/legacy/groom/f/3.jpg",
-        "assets/references/legacy/groom/f/4.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 1,
-      "source_image_ids": [
-        1,
-        2,
-        3,
-        4
-      ]
-    },
-    {
-      "id": "L-groom-02-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "主家房子空镜 · 男方",
-      "prompt": "原流程拍摄点：房子外景 / 大门口全景；门楣喜字与对联；婚房窗户 + 喜字贴；客厅整体环境",
-      "camera": "1组 · 2-3个镜头；先交代这是谁家，喜字、对联务必拍全",
-      "images": [
-        "assets/references/legacy/groom/f/5.jpg",
-        "assets/references/legacy/groom/f/6.jpg",
-        "assets/references/legacy/groom/f/7.jpg",
-        "assets/references/legacy/groom/f/8.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 2,
-      "source_image_ids": [
-        5,
-        6,
-        7,
-        8
-      ]
-    },
-    {
-      "id": "L-groom-03-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "屋里空镜 · 男方（1/2）",
-      "prompt": "原流程拍摄点：喜字 / 窗花 / 拉花；喜床与四件套；果盘 / 喜糖 / 茶具；气球与背景墙布置；灯光与窗帘细节；客厅 / 餐厅整体环境；相框 / 摆件等小物件",
-      "camera": "2组 · 5-8个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/9.jpg",
-        "assets/references/legacy/groom/f/10.jpg",
-        "assets/references/legacy/groom/f/11.jpg",
-        "assets/references/legacy/groom/f/12.jpg",
-        "assets/references/legacy/groom/f/13.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 3,
-      "source_image_ids": [
-        9,
-        10,
-        11,
-        12,
-        13
-      ]
-    },
-    {
-      "id": "L-groom-03-2",
-      "category": "原流程参考 · 环境与静物",
-      "title": "屋里空镜 · 男方（2/2）",
-      "prompt": "原流程拍摄点：喜字 / 窗花 / 拉花；喜床与四件套；果盘 / 喜糖 / 茶具；气球与背景墙布置；灯光与窗帘细节；客厅 / 餐厅整体环境；相框 / 摆件等小物件",
-      "camera": "2组 · 5-8个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/14.jpg",
-        "assets/references/legacy/groom/f/15.jpg",
-        "assets/references/legacy/groom/f/16.jpg",
-        "assets/references/legacy/groom/f/17.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 3,
-      "source_image_ids": [
-        14,
-        15,
-        16,
-        17
-      ]
-    },
-    {
-      "id": "L-groom-04-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "细节空镜：戒指、手捧花、秀禾 · 男方（1/2）",
-      "prompt": "原流程拍摄点：戒指特写（旋转 / 光影）；手捧花特写；秀禾服面料与刺绣细节；头饰 / 首饰细节；婚鞋 / 团扇等配饰",
-      "camera": "2组 · 3-6个镜头；细节镜头决定片子的质感，一定要拍足",
-      "images": [
-        "assets/references/legacy/groom/f/18.jpg",
-        "assets/references/legacy/groom/f/19.jpg",
-        "assets/references/legacy/groom/f/20.jpg",
-        "assets/references/legacy/groom/f/21.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 4,
-      "source_image_ids": [
-        18,
-        19,
-        20,
-        21
-      ]
-    },
-    {
-      "id": "L-groom-04-2",
-      "category": "原流程参考 · 环境与静物",
-      "title": "细节空镜：戒指、手捧花、秀禾 · 男方（2/2）",
-      "prompt": "原流程拍摄点：戒指特写（旋转 / 光影）；手捧花特写；秀禾服面料与刺绣细节；头饰 / 首饰细节；婚鞋 / 团扇等配饰",
-      "camera": "2组 · 3-6个镜头；细节镜头决定片子的质感，一定要拍足",
-      "images": [
-        "assets/references/legacy/groom/f/22.jpg",
-        "assets/references/legacy/groom/f/23.jpg",
-        "assets/references/legacy/groom/f/24.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 4,
-      "source_image_ids": [
-        22,
-        23,
-        24
-      ]
-    },
-    {
-      "id": "L-groom-05-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎 化妆 · 男方",
-      "prompt": "原流程拍摄点：发型造型过程；面部 / 侧脸特写；化妆师补妆工作镜头；镜中倒影",
-      "camera": "1组 · 2-3个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/25.jpg",
-        "assets/references/legacy/groom/f/26.jpg",
-        "assets/references/legacy/groom/f/27.jpg",
-        "assets/references/legacy/groom/f/28.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 5,
-      "source_image_ids": [
-        25,
-        26,
-        27,
-        28
-      ]
-    },
-    {
-      "id": "L-groom-06-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "穿衣 · 男方（1/2）",
-      "prompt": "原流程拍摄点：甩西服，穿上西服；整理袖口与领口；系扣子 / 打领带；更换秀禾（中式礼服）；穿鞋穿袜；镜前整理仪容",
-      "camera": "2组 · 6-8个镜头；换装过程建议多机位或多次补拍",
-      "images": [
-        "assets/references/legacy/groom/f/29.jpg",
-        "assets/references/legacy/groom/f/30.jpg",
-        "assets/references/legacy/groom/f/31.jpg",
-        "assets/references/legacy/groom/f/32.jpg",
-        "assets/references/legacy/groom/f/33.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 6,
-      "source_image_ids": [
-        29,
-        30,
-        31,
-        32,
-        33
-      ]
-    },
-    {
-      "id": "L-groom-06-2",
-      "category": "原流程参考 · 新郎准备",
-      "title": "穿衣 · 男方（2/2）",
-      "prompt": "原流程拍摄点：甩西服，穿上西服；整理袖口与领口；系扣子 / 打领带；更换秀禾（中式礼服）；穿鞋穿袜；镜前整理仪容",
-      "camera": "2组 · 6-8个镜头；换装过程建议多机位或多次补拍",
-      "images": [
-        "assets/references/legacy/groom/f/34.jpg",
-        "assets/references/legacy/groom/f/35.jpg",
-        "assets/references/legacy/groom/f/36.jpg",
-        "assets/references/legacy/groom/f/37.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 6,
-      "source_image_ids": [
-        34,
-        35,
-        36,
-        37
-      ]
-    },
-    {
-      "id": "L-groom-07-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎酷炫造型镜头 · 男方（1/2）",
-      "prompt": "原流程拍摄点：甩披风 / 西装（慢动作）；走位转身、回头；侧脸剪影 / 逆光；低角度仰拍；整理领结 / 袖口的小动作；墨镜、道具造型",
-      "camera": "3-4组 · 每组3-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/38.jpg",
-        "assets/references/legacy/groom/f/39.jpg",
-        "assets/references/legacy/groom/f/40.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 7,
-      "source_image_ids": [
-        38,
-        39,
-        40
-      ]
-    },
-    {
-      "id": "L-groom-07-2",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎酷炫造型镜头 · 男方（2/2）",
-      "prompt": "原流程拍摄点：甩披风 / 西装（慢动作）；走位转身、回头；侧脸剪影 / 逆光；低角度仰拍；整理领结 / 袖口的小动作；墨镜、道具造型",
-      "camera": "3-4组 · 每组3-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/41.jpg",
-        "assets/references/legacy/groom/f/42.jpg",
-        "assets/references/legacy/groom/f/43.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 7,
-      "source_image_ids": [
-        41,
-        42,
-        43
-      ]
-    },
-    {
-      "id": "L-groom-08-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎变装（转场镜头） · 男方",
-      "prompt": "原流程拍摄点：第一套造型 → 第二套造型转场；遮挡转场（手 / 门 / 衣服挡镜头）；换装定格 / 快速剪辑素材",
-      "camera": "1组 · 2-4个镜头；转场点要拍干净，方便后期剪辑卡点",
-      "images": [
-        "assets/references/legacy/groom/f/44.jpg",
-        "assets/references/legacy/groom/f/45.jpg",
-        "assets/references/legacy/groom/f/46.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 8,
-      "source_image_ids": [
-        44,
-        45,
-        46
-      ]
-    },
-    {
-      "id": "L-groom-09-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎情感镜头 · 男方",
-      "prompt": "原流程拍摄点：采访：新娘的十个优点；采访：十件难忘的事；给新娘打电话（通话过程与表情）；翻看婚纱照 / 相册；独白 / 望向窗外",
-      "camera": "3组 · 每组3-5个镜头；情感段落是全片的高潮，务必保证同期声",
-      "images": [
-        "assets/references/legacy/groom/f/47.jpg",
-        "assets/references/legacy/groom/f/48.jpg",
-        "assets/references/legacy/groom/f/49.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 9,
-      "source_image_ids": [
-        47,
-        48,
-        49
-      ]
-    },
-    {
-      "id": "L-groom-10-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "伴郎 · 男方（1/2）",
-      "prompt": "原流程拍摄点：伴郎拿手机闪光灯拍新郎；展示红包；扔红包给新郎；给新郎整理衣服；伴郎团互动 / 合影",
-      "camera": "2组 · 2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/50.jpg",
-        "assets/references/legacy/groom/f/51.jpg",
-        "assets/references/legacy/groom/f/52.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 10,
-      "source_image_ids": [
-        50,
-        51,
-        52
-      ]
-    },
-    {
-      "id": "L-groom-10-2",
-      "category": "原流程参考 · 新郎准备",
-      "title": "伴郎 · 男方（2/2）",
-      "prompt": "原流程拍摄点：伴郎拿手机闪光灯拍新郎；展示红包；扔红包给新郎；给新郎整理衣服；伴郎团互动 / 合影",
-      "camera": "2组 · 2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/53.jpg",
-        "assets/references/legacy/groom/f/54.jpg",
-        "assets/references/legacy/groom/f/55.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 10,
-      "source_image_ids": [
-        53,
-        54,
-        55
-      ]
-    },
-    {
-      "id": "L-groom-11-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎父母 · 男方",
-      "prompt": "原流程拍摄点：摆果盘；接待宾客；发放 / 佩戴胸花；父母为儿子整理衣装；父母叮嘱 / 不舍的表情",
-      "camera": "2组 · 3-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/56.jpg",
-        "assets/references/legacy/groom/f/57.jpg",
-        "assets/references/legacy/groom/f/58.jpg",
-        "assets/references/legacy/groom/f/59.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 11,
-      "source_image_ids": [
-        56,
-        57,
-        58,
-        59
-      ]
-    },
-    {
-      "id": "L-groom-12-1",
-      "category": "原流程参考 · 新郎准备",
-      "title": "新郎亲友 · 男方",
-      "prompt": "原流程拍摄点：宾客聊天发笑；众人交谈；亲友签到 / 合影",
-      "camera": "1组 · 2-3个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/60.jpg",
-        "assets/references/legacy/groom/f/61.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 12,
-      "source_image_ids": [
-        60,
-        61
-      ]
-    },
-    {
-      "id": "L-groom-13-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "出发仪式 · 男方",
-      "prompt": "原流程拍摄点：客厅出发仪式（主机位）；出发仪式（侧机位）；新人出门跟拍；家人送别 / 开门红包",
-      "camera": "1组 · 1主1侧 · 不断机；主机位不关机，从仪式一路跟到出门上车",
-      "images": [
-        "assets/references/legacy/groom/f/62.jpg",
-        "assets/references/legacy/groom/f/63.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 13,
-      "source_image_ids": [
-        62,
-        63
-      ]
-    },
-    {
-      "id": "L-groom-14-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "上车镜头 · 男方",
-      "prompt": "原流程拍摄点：出门到上车全过程（主机位）；新人上车特写（侧机位）；婚车花饰 / 车头特写；车队启动出发",
-      "camera": "2组 · 1主一侧 · 出发特写2-3个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/64.jpg",
-        "assets/references/legacy/groom/f/65.jpg",
-        "assets/references/legacy/groom/f/66.jpg",
-        "assets/references/legacy/groom/f/67.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 14,
-      "source_image_ids": [
-        64,
-        65,
-        66,
-        67
-      ]
-    },
-    {
-      "id": "L-groom-15-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "车内镜头 · 男方",
-      "prompt": "原流程拍摄点：新人在车内状态；车内互动 / 牵手细节；车窗外的风景",
-      "camera": "1组 · 2-3个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/68.jpg",
-        "assets/references/legacy/groom/f/69.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 15,
-      "source_image_ids": [
-        68,
-        69
-      ]
-    },
-    {
-      "id": "L-groom-16-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "车队镜头 · 男方（1/2）",
-      "prompt": "原流程拍摄点：车辆启动；出发；抵达；头车行驶；车队侧面；车轮行驶；路边行驶空镜；航拍（2-5个镜头）",
-      "camera": "1组 · 3-5个镜头 + 航拍2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/70.jpg",
-        "assets/references/legacy/groom/f/71.jpg",
-        "assets/references/legacy/groom/f/72.jpg",
-        "assets/references/legacy/groom/f/73.jpg",
-        "assets/references/legacy/groom/f/74.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 16,
-      "source_image_ids": [
-        70,
-        71,
-        72,
-        73,
-        74
-      ]
-    },
-    {
-      "id": "L-groom-16-2",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "车队镜头 · 男方（2/2）",
-      "prompt": "原流程拍摄点：车辆启动；出发；抵达；头车行驶；车队侧面；车轮行驶；路边行驶空镜；航拍（2-5个镜头）",
-      "camera": "1组 · 3-5个镜头 + 航拍2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/75.jpg",
-        "assets/references/legacy/groom/f/76.jpg",
-        "assets/references/legacy/groom/f/77.jpg",
-        "assets/references/legacy/groom/f/78.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 16,
-      "source_image_ids": [
-        75,
-        76,
-        77,
-        78
-      ]
-    },
-    {
-      "id": "L-groom-17-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "挤门镜头 · 男方",
-      "prompt": "原流程拍摄点：门外挤门（主机位）；门缝塞红包（侧机位）；开门瞬间",
-      "camera": "1主一侧 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/79.jpg",
-        "assets/references/legacy/groom/f/80.jpg",
-        "assets/references/legacy/groom/f/81.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 17,
-      "source_image_ids": [
-        79,
-        80,
-        81
-      ]
-    },
-    {
-      "id": "L-groom-18-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "新郎伴郎挤门进门热闹的镜头 · 男方",
-      "prompt": "原流程拍摄点：挤门热闹场面；进门瞬间；打礼花 / 撒红包",
-      "camera": "双机位 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/82.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 18,
-      "source_image_ids": [
-        82
-      ]
-    },
-    {
-      "id": "L-groom-19-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "游戏镜头 · 男方",
-      "prompt": "原流程拍摄点：游戏过程（主机位）；新郎视角（正打）；新娘视角（反打）；伴郎伴娘互动",
-      "camera": "1主2侧 · 主机位与新郎新娘正反打不断机",
-      "images": [
-        "assets/references/legacy/groom/f/83.jpg",
-        "assets/references/legacy/groom/f/84.jpg",
-        "assets/references/legacy/groom/f/85.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 19,
-      "source_image_ids": [
-        83,
-        84,
-        85
-      ]
-    },
-    {
-      "id": "L-groom-20-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "献花、亲吻 · 男方（1/2）",
-      "prompt": "原流程拍摄点：献花全过程（主机位 · 不断机）；献花（侧机位）；亲吻瞬间；新人与父母 / 亲友互动",
-      "camera": "1主一侧 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/86.jpg",
-        "assets/references/legacy/groom/f/87.jpg",
-        "assets/references/legacy/groom/f/88.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 20,
-      "source_image_ids": [
-        86,
-        87,
-        88
-      ]
-    },
-    {
-      "id": "L-groom-20-2",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "献花、亲吻 · 男方（2/2）",
-      "prompt": "原流程拍摄点：献花全过程（主机位 · 不断机）；献花（侧机位）；亲吻瞬间；新人与父母 / 亲友互动",
-      "camera": "1主一侧 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/89.jpg",
-        "assets/references/legacy/groom/f/90.jpg",
-        "assets/references/legacy/groom/f/91.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 20,
-      "source_image_ids": [
-        89,
-        90,
-        91
-      ]
-    },
-    {
-      "id": "L-groom-21-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "女方家接亲仪式 · 男方",
-      "prompt": "原流程拍摄点：新人吃饭；被喂饭镜头；敬茶 / 改口；长辈祝福",
-      "camera": "1组 · 2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/92.jpg",
-        "assets/references/legacy/groom/f/93.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 21,
-      "source_image_ids": [
-        92,
-        93
-      ]
-    },
-    {
-      "id": "L-groom-22-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "女方出发仪式 · 男方（1/2）",
-      "prompt": "原流程拍摄点：盖盖头；上轿饭；送苹果；穿婚鞋；出门 / 上轿；母女告别",
-      "camera": "双机位 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/94.jpg",
-        "assets/references/legacy/groom/f/95.jpg",
-        "assets/references/legacy/groom/f/96.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 22,
-      "source_image_ids": [
-        94,
-        95,
-        96
-      ]
-    },
-    {
-      "id": "L-groom-22-2",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "女方出发仪式 · 男方（2/2）",
-      "prompt": "原流程拍摄点：盖盖头；上轿饭；送苹果；穿婚鞋；出门 / 上轿；母女告别",
-      "camera": "双机位 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/97.jpg",
-        "assets/references/legacy/groom/f/98.jpg",
-        "assets/references/legacy/groom/f/99.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 22,
-      "source_image_ids": [
-        97,
-        98,
-        99
-      ]
-    },
-    {
-      "id": "L-groom-23-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "车队镜头（返程） · 男方（1/2）",
-      "prompt": "原流程拍摄点：车辆启动；出发；抵达；头车行驶；车队侧面；车轮行驶；路边行驶空镜；航拍（2-5个镜头）",
-      "camera": "1组 · 3-5个镜头 + 航拍2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/70.jpg",
-        "assets/references/legacy/groom/f/71.jpg",
-        "assets/references/legacy/groom/f/72.jpg",
-        "assets/references/legacy/groom/f/73.jpg",
-        "assets/references/legacy/groom/f/74.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 23,
-      "source_image_ids": [
-        70,
-        71,
-        72,
-        73,
-        74
-      ]
-    },
-    {
-      "id": "L-groom-23-2",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "车队镜头（返程） · 男方（2/2）",
-      "prompt": "原流程拍摄点：车辆启动；出发；抵达；头车行驶；车队侧面；车轮行驶；路边行驶空镜；航拍（2-5个镜头）",
-      "camera": "1组 · 3-5个镜头 + 航拍2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/75.jpg",
-        "assets/references/legacy/groom/f/76.jpg",
-        "assets/references/legacy/groom/f/77.jpg",
-        "assets/references/legacy/groom/f/78.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 23,
-      "source_image_ids": [
-        75,
-        76,
-        77,
-        78
-      ]
-    },
-    {
-      "id": "L-groom-24-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "车内镜头（返程） · 男方",
-      "prompt": "原流程拍摄点：新人在车内状态；车内互动 / 牵手细节；车窗外的风景",
-      "camera": "1组 · 2-3个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/68.jpg",
-        "assets/references/legacy/groom/f/69.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 24,
-      "source_image_ids": [
-        68,
-        69
-      ]
-    },
-    {
-      "id": "L-groom-25-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "男方家挤门镜头 · 男方",
-      "prompt": "原流程拍摄点：新人挤门；发红包；进门打礼花；进门瞬间",
-      "camera": "双机位 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/100.jpg",
-        "assets/references/legacy/groom/f/101.jpg",
-        "assets/references/legacy/groom/f/102.jpg",
-        "assets/references/legacy/groom/f/103.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 25,
-      "source_image_ids": [
-        100,
-        101,
-        102,
-        103
-      ]
-    },
-    {
-      "id": "L-groom-26-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "男方家接亲仪式 · 男方",
-      "prompt": "原流程拍摄点：穿裤子；洗脸；挂窗帘；敬茶 / 改口",
-      "camera": "双机位 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/104.jpg",
-        "assets/references/legacy/groom/f/105.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 26,
-      "source_image_ids": [
-        104,
-        105
-      ]
-    },
-    {
-      "id": "L-groom-27-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "男方家唯美镜头 · 男方",
-      "prompt": "原流程拍摄点：新人唯美摆拍（2-3组）；光影 / 逆光剪影；场地大景 / 小景；手部 / 眼神细节",
-      "camera": "2-3组 · 6-7个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/106.jpg",
-        "assets/references/legacy/groom/f/107.jpg",
-        "assets/references/legacy/groom/f/108.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 27,
-      "source_image_ids": [
-        106,
-        107,
-        108
-      ]
-    },
-    {
-      "id": "L-groom-28-1",
-      "category": "原流程参考 · 接亲与转场",
-      "title": "有无 first look · 男方",
-      "prompt": "原流程拍摄点：first look（新郎等待 → 回头）；反应特写（新郎）；反应特写（新娘）；相拥 / 亲吻",
-      "camera": "3-4个机位 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/109.jpg",
-        "assets/references/legacy/groom/f/110.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 28,
-      "source_image_ids": [
-        109,
-        110
-      ]
-    },
-    {
-      "id": "L-groom-29-1",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "去酒店车队 · 男方（1/2）",
-      "prompt": "原流程拍摄点：车辆启动；出发；抵达；头车行驶；车队侧面；车轮行驶；路边行驶空镜；航拍（2-5个镜头）",
-      "camera": "1组 · 3-5个镜头 + 航拍2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/70.jpg",
-        "assets/references/legacy/groom/f/71.jpg",
-        "assets/references/legacy/groom/f/72.jpg",
-        "assets/references/legacy/groom/f/73.jpg",
-        "assets/references/legacy/groom/f/74.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 29,
-      "source_image_ids": [
-        70,
-        71,
-        72,
-        73,
-        74
-      ]
-    },
-    {
-      "id": "L-groom-29-2",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "去酒店车队 · 男方（2/2）",
-      "prompt": "原流程拍摄点：车辆启动；出发；抵达；头车行驶；车队侧面；车轮行驶；路边行驶空镜；航拍（2-5个镜头）",
-      "camera": "1组 · 3-5个镜头 + 航拍2-5个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/75.jpg",
-        "assets/references/legacy/groom/f/76.jpg",
-        "assets/references/legacy/groom/f/77.jpg",
-        "assets/references/legacy/groom/f/78.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 29,
-      "source_image_ids": [
-        75,
-        76,
-        77,
-        78
-      ]
-    },
-    {
-      "id": "L-groom-30-1",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "酒店下车、入门镜头 · 男方",
-      "prompt": "原流程拍摄点：下车；跟随新人进入酒店；亲友迎接 / 撒花；走廊 / 电梯跟拍",
-      "camera": "2-3组 · 不断机",
-      "images": [
-        "assets/references/legacy/groom/f/77.jpg",
-        "assets/references/legacy/groom/f/78.jpg",
-        "assets/references/legacy/groom/f/111.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 30,
-      "source_image_ids": [
-        77,
-        78,
-        111
-      ]
-    },
-    {
-      "id": "L-groom-31-1",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "酒店的空镜 · 男方",
-      "prompt": "原流程拍摄点：酒店外景 / 门头；酒店大堂环境；指示牌 / 迎宾区",
-      "camera": "1组 · 2-3个镜头",
-      "images": [
-        "assets/references/legacy/groom/f/112.jpg",
-        "assets/references/legacy/groom/f/113.jpg",
-        "assets/references/legacy/groom/f/114.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 31,
-      "source_image_ids": [
-        112,
-        113,
-        114
-      ]
-    },
-    {
-      "id": "L-groom-32-1",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "酒店场布空镜 · 男方（1/2）",
-      "prompt": "原流程拍摄点：签到台 / 迎宾区；主舞台布置；花艺 / 桌花细节；灯牌 / LOGO 细节；餐桌布置；喜糖 / 伴手礼",
-      "camera": "5-9个镜头；客人入场前拍完，避免画面里有人",
-      "images": [
-        "assets/references/legacy/groom/f/115.jpg",
-        "assets/references/legacy/groom/f/116.jpg",
-        "assets/references/legacy/groom/f/117.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 32,
-      "source_image_ids": [
-        115,
-        116,
-        117
-      ]
-    },
-    {
-      "id": "L-groom-32-2",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "酒店场布空镜 · 男方（2/2）",
-      "prompt": "原流程拍摄点：签到台 / 迎宾区；主舞台布置；花艺 / 桌花细节；灯牌 / LOGO 细节；餐桌布置；喜糖 / 伴手礼",
-      "camera": "5-9个镜头；客人入场前拍完，避免画面里有人",
-      "images": [
-        "assets/references/legacy/groom/f/118.jpg",
-        "assets/references/legacy/groom/f/119.jpg",
-        "assets/references/legacy/groom/f/120.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 32,
-      "source_image_ids": [
-        118,
-        119,
-        120
-      ]
-    },
-    {
-      "id": "L-groom-33-1",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "酒店典礼 · 男方",
-      "prompt": "原流程拍摄点：典礼全景（固定大景机位）；典礼主机位（不断机）；侧机位（新人反应）；亲友反应 / 宾客席；交换戒指 / 誓词特写",
-      "camera": "3-4个机位 · 不断机；典礼全程不断机，提前确认机位与走位",
-      "images": [
-        "assets/references/legacy/groom/f/121.jpg",
-        "assets/references/legacy/groom/f/122.jpg",
-        "assets/references/legacy/groom/f/123.jpg",
-        "assets/references/legacy/groom/f/124.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 33,
-      "source_image_ids": [
-        121,
-        122,
-        123,
-        124
-      ]
-    },
-    {
-      "id": "L-groom-34-1",
-      "category": "原流程参考 · 婚礼仪式",
-      "title": "大合影 · 男方",
-      "prompt": "原流程拍摄点：全家福大合影；男方家族合影；女方家族合影；伴郎伴娘团合影；朋友 / 同事合影",
-      "camera": "根据拍摄合影数量拍摄；提前让司仪组织，分组合影效率最高",
-      "images": [
-        "assets/references/legacy/groom/f/125.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/groom.html",
-      "source_segment": 34,
-      "source_image_ids": [
-        125
-      ]
-    },
-    {
-      "id": "L-bride-01-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "小区空镜 · 女方",
-      "prompt": "原流程拍摄点：小区大门 / 门头环境；楼栋外立面 + 天空；单元门 / 楼道入口；小区道路与绿化",
-      "camera": "1组 · 2-3个镜头；原文此处有一句未写完的备注（只有一个摄影师时如何取舍），建议按现场人力自行决定",
-      "images": [
-        "assets/references/legacy/bride/f/1.jpg",
-        "assets/references/legacy/bride/f/2.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 1,
-      "source_image_ids": [
-        1,
-        2
-      ]
-    },
-    {
-      "id": "L-bride-02-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "主家房子布置空镜 · 女方（1/2）",
-      "prompt": "原流程拍摄点：房子外景 / 大门口全景；门楣喜字与对联；婚房窗户 + 喜字贴；客厅整体环境",
-      "camera": "1组 · 2-3个镜头；交代这是谁家，喜字、对联务必拍全",
-      "images": [
-        "assets/references/legacy/bride/f/3.jpg",
-        "assets/references/legacy/bride/f/4.jpg",
-        "assets/references/legacy/bride/f/5.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 2,
-      "source_image_ids": [
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "id": "L-bride-02-2",
-      "category": "原流程参考 · 环境与静物",
-      "title": "主家房子布置空镜 · 女方（2/2）",
-      "prompt": "原流程拍摄点：房子外景 / 大门口全景；门楣喜字与对联；婚房窗户 + 喜字贴；客厅整体环境",
-      "camera": "1组 · 2-3个镜头；交代这是谁家，喜字、对联务必拍全",
-      "images": [
-        "assets/references/legacy/bride/f/6.jpg",
-        "assets/references/legacy/bride/f/7.jpg",
-        "assets/references/legacy/bride/f/8.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 2,
-      "source_image_ids": [
-        6,
-        7,
-        8
-      ]
-    },
-    {
-      "id": "L-bride-03-1",
-      "category": "原流程参考 · 环境与静物",
-      "title": "屋里布置空镜 · 女方（1/3）",
-      "prompt": "原流程拍摄点：喜字 / 窗花 / 拉花；喜床与四件套；果盘 / 喜糖 / 茶具；气球与背景墙布置；灯光与窗帘细节；客厅 / 餐厅整体环境；相框 / 摆件等小物件",
-      "camera": "1组 · 3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/9.jpg",
-        "assets/references/legacy/bride/f/10.jpg",
-        "assets/references/legacy/bride/f/11.jpg",
-        "assets/references/legacy/bride/f/12.jpg",
-        "assets/references/legacy/bride/f/13.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 3,
-      "source_image_ids": [
-        9,
-        10,
-        11,
-        12,
-        13
-      ]
-    },
-    {
-      "id": "L-bride-03-2",
-      "category": "原流程参考 · 环境与静物",
-      "title": "屋里布置空镜 · 女方（2/3）",
-      "prompt": "原流程拍摄点：喜字 / 窗花 / 拉花；喜床与四件套；果盘 / 喜糖 / 茶具；气球与背景墙布置；灯光与窗帘细节；客厅 / 餐厅整体环境；相框 / 摆件等小物件",
-      "camera": "1组 · 3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/14.jpg",
-        "assets/references/legacy/bride/f/15.jpg",
-        "assets/references/legacy/bride/f/16.jpg",
-        "assets/references/legacy/bride/f/17.jpg",
-        "assets/references/legacy/bride/f/18.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 3,
-      "source_image_ids": [
-        14,
-        15,
-        16,
-        17,
-        18
-      ]
-    },
-    {
-      "id": "L-bride-03-3",
-      "category": "原流程参考 · 环境与静物",
-      "title": "屋里布置空镜 · 女方（3/3）",
-      "prompt": "原流程拍摄点：喜字 / 窗花 / 拉花；喜床与四件套；果盘 / 喜糖 / 茶具；气球与背景墙布置；灯光与窗帘细节；客厅 / 餐厅整体环境；相框 / 摆件等小物件",
-      "camera": "1组 · 3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/19.jpg",
-        "assets/references/legacy/bride/f/20.jpg",
-        "assets/references/legacy/bride/f/21.jpg",
-        "assets/references/legacy/bride/f/22.jpg",
-        "assets/references/legacy/bride/f/23.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 3,
-      "source_image_ids": [
-        19,
-        20,
-        21,
-        22,
-        23
-      ]
-    },
-    {
-      "id": "L-bride-05-1",
-      "category": "原流程参考 · 新娘准备",
-      "title": "化妆：镜前化妆 · 女方（1/2）",
-      "prompt": "原流程拍摄点：镜前化妆过程；面部 / 侧脸特写；眼妆 / 唇妆细节；化妆师工作镜头；镜中倒影",
-      "camera": "1组 · 3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/24.jpg",
-        "assets/references/legacy/bride/f/25.jpg",
-        "assets/references/legacy/bride/f/26.jpg",
-        "assets/references/legacy/bride/f/27.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 5,
-      "source_image_ids": [
-        24,
-        25,
-        26,
-        27
-      ]
-    },
-    {
-      "id": "L-bride-05-2",
-      "category": "原流程参考 · 新娘准备",
-      "title": "化妆：镜前化妆 · 女方（2/2）",
-      "prompt": "原流程拍摄点：镜前化妆过程；面部 / 侧脸特写；眼妆 / 唇妆细节；化妆师工作镜头；镜中倒影",
-      "camera": "1组 · 3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/28.jpg",
-        "assets/references/legacy/bride/f/29.jpg",
-        "assets/references/legacy/bride/f/30.jpg",
-        "assets/references/legacy/bride/f/31.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 5,
-      "source_image_ids": [
-        28,
-        29,
-        30,
-        31
-      ]
-    },
-    {
-      "id": "L-bride-07-1",
-      "category": "原流程参考 · 新娘准备",
-      "title": "屋里布景场景摆拍 · 女方（1/2）",
-      "prompt": "原流程拍摄点：每个布景场景拍满 2-3 组；正面 / 侧身 / 回眸 多角度；手部、裙摆、头饰细节",
-      "camera": "每个场景2-3组 · 每组2-5个镜头；条件允许可增加室外 2-3 组",
-      "images": [
-        "assets/references/legacy/bride/f/32.jpg",
-        "assets/references/legacy/bride/f/33.jpg",
-        "assets/references/legacy/bride/f/34.jpg",
-        "assets/references/legacy/bride/f/35.jpg",
-        "assets/references/legacy/bride/f/36.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 7,
-      "source_image_ids": [
-        32,
-        33,
-        34,
-        35,
-        36
-      ]
-    },
-    {
-      "id": "L-bride-07-2",
-      "category": "原流程参考 · 新娘准备",
-      "title": "屋里布景场景摆拍 · 女方（2/2）",
-      "prompt": "原流程拍摄点：每个布景场景拍满 2-3 组；正面 / 侧身 / 回眸 多角度；手部、裙摆、头饰细节",
-      "camera": "每个场景2-3组 · 每组2-5个镜头；条件允许可增加室外 2-3 组",
-      "images": [
-        "assets/references/legacy/bride/f/37.jpg",
-        "assets/references/legacy/bride/f/38.jpg",
-        "assets/references/legacy/bride/f/39.jpg",
-        "assets/references/legacy/bride/f/40.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 7,
-      "source_image_ids": [
-        37,
-        38,
-        39,
-        40
-      ]
-    },
-    {
-      "id": "L-bride-08-1",
-      "category": "原流程参考 · 新娘准备",
-      "title": "新娘伴娘晨袍摆拍 · 女方（1/2）",
-      "prompt": "原流程拍摄点：姐妹互动（说笑 / 拥抱）；摆造型合影；化妆间里的自然抓拍；一起看镜头 / 欢呼",
-      "camera": "2-3组 · 每组3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/41.jpg",
-        "assets/references/legacy/bride/f/42.jpg",
-        "assets/references/legacy/bride/f/43.jpg",
-        "assets/references/legacy/bride/f/44.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 8,
-      "source_image_ids": [
-        41,
-        42,
-        43,
-        44
-      ]
-    },
-    {
-      "id": "L-bride-08-2",
-      "category": "原流程参考 · 新娘准备",
-      "title": "新娘伴娘晨袍摆拍 · 女方（2/2）",
-      "prompt": "原流程拍摄点：姐妹互动（说笑 / 拥抱）；摆造型合影；化妆间里的自然抓拍；一起看镜头 / 欢呼",
-      "camera": "2-3组 · 每组3-5个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/45.jpg",
-        "assets/references/legacy/bride/f/46.jpg",
-        "assets/references/legacy/bride/f/47.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 8,
-      "source_image_ids": [
-        45,
-        46,
-        47
-      ]
-    },
-    {
-      "id": "L-bride-13-1",
-      "category": "原流程参考 · 新娘准备",
-      "title": "新娘情感镜头 · 女方",
-      "prompt": "原流程拍摄点：采访：与新郎相识的过程；采访：一件感动或印象深刻的事；采访：对两人未来生活的想法；情绪特写 / 眼眶",
-      "camera": "1-3组 · 每组3-5个镜头；原文：纪实才有，化妆期间拍。务必保证同期声清晰",
-      "images": [
-        "assets/references/legacy/bride/f/48.jpg",
-        "assets/references/legacy/bride/f/49.jpg",
-        "assets/references/legacy/bride/f/50.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 13,
-      "source_image_ids": [
-        48,
-        49,
-        50
-      ]
-    },
-    {
-      "id": "L-bride-14-1",
-      "category": "原流程参考 · 家庭与亲友",
-      "title": "伴娘：早上为婚礼做准备 · 女方",
-      "prompt": "原流程拍摄点：换装 / 化妆；整理道具、准备堵门；姐妹合影",
-      "camera": "2-3组 · 每组2-3个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/51.jpg",
-        "assets/references/legacy/bride/f/52.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 14,
-      "source_image_ids": [
-        51,
-        52
-      ]
-    },
-    {
-      "id": "L-bride-15-1",
-      "category": "原流程参考 · 家庭与亲友",
-      "title": "新娘父母：早上筹备婚礼 · 女方（1/2）",
-      "prompt": "原流程拍摄点：布置屋子 / 摆果盘；招呼亲友；整理喜被 / 喜庆物品；父母忙碌的背影",
-      "camera": "1-2组 · 每组2-3个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/53.jpg",
-        "assets/references/legacy/bride/f/54.jpg",
-        "assets/references/legacy/bride/f/55.jpg",
-        "assets/references/legacy/bride/f/56.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 15,
-      "source_image_ids": [
-        53,
-        54,
-        55,
-        56
-      ]
-    },
-    {
-      "id": "L-bride-15-2",
-      "category": "原流程参考 · 家庭与亲友",
-      "title": "新娘父母：早上筹备婚礼 · 女方（2/2）",
-      "prompt": "原流程拍摄点：布置屋子 / 摆果盘；招呼亲友；整理喜被 / 喜庆物品；父母忙碌的背影",
-      "camera": "1-2组 · 每组2-3个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/57.jpg",
-        "assets/references/legacy/bride/f/58.jpg",
-        "assets/references/legacy/bride/f/59.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 15,
-      "source_image_ids": [
-        57,
-        58,
-        59
-      ]
-    },
-    {
-      "id": "L-bride-17-1",
-      "category": "原流程参考 · 家庭与亲友",
-      "title": "新娘亲友：早上筹备婚礼 · 女方",
-      "prompt": "原流程拍摄点：亲友到场 / 签到；聊天发笑 / 忙碌；亲友合影",
-      "camera": "1-2组 · 每组2-3个镜头",
-      "images": [
-        "assets/references/legacy/bride/f/60.jpg",
-        "assets/references/legacy/bride/f/61.jpg",
-        "assets/references/legacy/bride/f/62.jpg",
-        "assets/references/legacy/bride/f/63.jpg"
-      ],
-      "source": "bjenwan.com/shotlist/bride.html",
-      "source_segment": 17,
-      "source_image_ids": [
-        60,
-        61,
-        62,
-        63
-      ]
-    },
-    {
-      "id": "W-9424919da790-001",
-      "category": "婚礼原稿参考",
-      "title": "男友Pov · 1/6",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/9d1b02bb795cb0bedce674ce2720b73446d452361e4cac323ef2921175cc5e12.jpeg",
-        "assets/references/word/19018ac2f223c414d22cec4f6603f554b69dd16010a5a9a44d84dc79bfa530a3.jpeg",
-        "assets/references/word/6587515df6df549fbf5886307b6af85eafc7ecded417e1f667a3748bc3a2b94d.jpeg",
-        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg",
-        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-9424919da790-002",
-      "category": "婚礼原稿参考",
-      "title": "男友Pov · 2/6",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/2ffdbe0ec1306d2861600db68aa7516a6e964468b11e728045a45950b52a75cf.jpeg",
-        "assets/references/word/cb807bfdc25ca5041132e625835972715f782f84317d4626ab2c623b96fc3a87.jpeg",
-        "assets/references/word/e60c83619e3f45a12d569fc1f24ba23b43a96ab603afdebda8dab818219bb33b.png",
-        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
-        "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-9424919da790-003",
-      "category": "婚礼原稿参考",
-      "title": "男友Pov · 3/6",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg",
-        "assets/references/word/0a77e12affb017b2bfac0570021f5a2394b15bc7fe6bf2403830ca8b9b185f45.jpeg",
-        "assets/references/word/46d9936dd1634d0bf9729d1675112881008734618c3f767b5cba41554b528b24.jpeg",
-        "assets/references/word/f49dc2eaac4c9b957752546a297a093dd93c4d50f6e2e348892a134329b8d36e.jpeg",
-        "assets/references/word/1d15eb97c73fc4699d78c92adaaff7221fcb430e3ca2ca73721c8b623c5c837c.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-9424919da790-004",
-      "category": "婚礼原稿参考",
-      "title": "男友Pov · 4/6",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/c99606293fc4ad5f7727ff2c9ddad5f78c19a049cc0f863da683f9c6a9347fdc.jpeg",
-        "assets/references/word/55dfea3b68987a61664bcb091ca2465a68f222997e51c0cf4a2f5547390c00a7.jpeg",
-        "assets/references/word/2539f7b4761f8065b2b5263891bada946dbad836a112ca7cebbeffd6c163a86c.jpeg",
-        "assets/references/word/f945c51ce5bff86d6d97d221789bb95d4a9e9d1066ba29a71389f0d008944e7a.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-9424919da790-005",
-      "category": "婚礼原稿参考",
-      "title": "男友Pov · 5/6",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/448716f0abc666b27422a61fed05be6649783537adcb901389ef0d218cad7abe.jpeg",
-        "assets/references/word/04024ce5f5798653ca36421d19689d08272576191841b745de59818730e32f49.jpeg",
-        "assets/references/word/3b486c626559eed233c58b8d6741a55a5ca5a4c03ceb29bfbd91db3e73d5dff8.jpeg",
-        "assets/references/word/4180ac04cf43db6efe7b8321dce9942ece708f5a627cd0fe646cd194151953d0.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-9424919da790-006",
-      "category": "婚礼原稿参考",
-      "title": "男友Pov · 6/6",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/0fb550ede5f3848ac814efd653e05d0f41166dacb9c4ebd2a231dea6deec6369.jpeg",
-        "assets/references/word/619444a9fb298f13332381da1c5afa57c2e3070f1cdb5e827a8c988bf3650eb2.jpeg",
-        "assets/references/word/fe8d6f6ad97a810da0a3f0cb12f9ac6c33840ff28a1e93bbdb87e62a38c52555.jpeg",
-        "assets/references/word/4f3f6bbf063f1a2c6758069d92c29fe64b3ab37446e36f8f9e71994c0fd8f61d.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-8e34734cb632-001",
-      "category": "婚礼原稿参考",
-      "title": "行走与散步 · 1/2",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/24ed3a75c755c7e3b1e6d32dd25032f69aabc2060c3b740fdf5c8bc42b141997.jpeg",
-        "assets/references/word/9336de0198472038043e4dd5f7c3fe17cae93dff36854635ce734bacbc1b05e0.jpeg",
-        "assets/references/word/09fa87f6add99042703501b94b0b1b10f6478a453f6223cd94cfd2e2d2d7cb51.jpeg",
-        "assets/references/word/63f4d7e85ba0e11da50ff486327087d0e3598ca711e8bf1e6944062e1367593a.jpeg",
-        "assets/references/word/087dbf21e112d3375ab5f7ab0f0fe2b406c81f2e475de9a33b5526c10cd1fa6e.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 行走与散步；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-8e34734cb632-002",
-      "category": "婚礼原稿参考",
-      "title": "行走与散步 · 2/2",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/26c936230be6b48215e4cb1b86aad5f1cfd48b30fc82ca171ecf583a35a88894.jpeg",
-        "assets/references/word/177886cd6041c9c3ef4f8c78ef687cd94561c23f18cf157c86ef038932f09839.jpeg",
-        "assets/references/word/14ffa37339d944e2c1b13dc723d19a5d0fb65fcb08e96aff51c847de81d56805.jpeg",
-        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 行走与散步；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-52f1dd149aab-001",
-      "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 1/5",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg",
-        "assets/references/word/7b544c410c5c66ed506fb4c90b52ecd4d21217ca3f2ee9a23a5c4259c4b63c57.jpeg",
-        "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg",
-        "assets/references/word/5e1dad681535b3213b17126d63956096c07156ede677b88de983c5fa3de37e9c.jpeg",
-        "assets/references/word/be2b724ffe9d4ea21b6034983ad7b2c9a463d93cc401fa06e1f5cfa5dfde8db8.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-52f1dd149aab-002",
-      "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 2/5",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/9a67335cc7287cbbb0a96fec47a5c05967fb0f3162b3ccb2c423e25c0509d309.jpeg",
-        "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg",
-        "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg",
-        "assets/references/word/1579fb23950a617509161557fb79e28baf6e2d0ba4006affe2ee3dc4f3db4880.jpeg",
-        "assets/references/word/f3603fd150f4f73b687bec8fb965195e7d9a3784aeb0fe5e9d2266baf9566374.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-52f1dd149aab-003",
-      "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 3/5",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/d47b69a98e74ce80972852e05293940b6fb6e22c578375acb3bbd0d4754c17fd.jpeg",
-        "assets/references/word/6869b365752e59317118554e12d0c547022cd6b0d17da9435566fb45595760aa.jpeg",
-        "assets/references/word/e2999fcb736ed9d58a5ab9cbe9148b177f598ea36258fde45e955169028bc52b.jpeg",
-        "assets/references/word/e72ca473436a922f7f91cbd3aa846034aabd35a29e0a55de6627a9eda28f207b.jpeg",
-        "assets/references/word/f5c3717fa1a9eeb50289875b29b3e5afa5678ae049007bda4ed2dc1db6ef5dfb.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-52f1dd149aab-004",
-      "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 4/5",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/ea1f011aab585671dceba858b358c36b5f8e2733ec752e50008368bb83d8e9be.jpeg",
-        "assets/references/word/fd4dde149cf4308c18b0518c5ba2c5845767167ec8167ce51896014331488d69.jpeg",
-        "assets/references/word/1e3c063aeb8c33fff2bd34f590b757493462b7c52dd59a1e169fec39535bb8c0.jpeg",
-        "assets/references/word/08f1d07203ab02959b98c0363b7e8ccec3f0aabbc45048033f61a94b6b95f855.jpeg",
-        "assets/references/word/125ce5cd560802b779d89d702045a7a99477580635b52695bf79d1822925a1a3.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-52f1dd149aab-005",
-      "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 5/5",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/74d178a3a2a88efba21d324581654980430d7387260d7cda4fa37b8f51b1b9c2.jpeg",
-        "assets/references/word/7afeb34b71420c198af6edbf12331fc22eefddacd0bd25e06dd3f35e3e0ac633.jpeg",
-        "assets/references/word/fa9acb5c0b8ed581462c367bc5a80fd4d1cf16f53972eb49b6f429449519b4b6.jpeg",
-        "assets/references/word/f52236419e40f922fdc5994d45fb81a54d331e5a8240221f159cd9739c3255df.jpeg",
-        "assets/references/word/89eab37d4a6396d85a2489130a6ac3766eeca3f32387d943db61f9db8e215207.jpeg"
-      ],
-      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-329e44eaf6c9-001",
-      "category": "常规调度原稿参考",
-      "title": "微镜头动势-横移与前推 · 1/3",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/8df14e1a19825863caa934c1af764dbe0a490738f37e83c56cf12e28eb9cfea1.jpeg",
-        "assets/references/word/8dba21a2d947467681140887f5263fe72d6d8dc8cbe37251ea25c5e36dda5793.jpeg",
-        "assets/references/word/e6214f791f0bb2e834e5f1e042283ac6fb2541715bfd372b7d4d9c78101ed87d.jpeg",
-        "assets/references/word/bbedb1fbfdb7f157ff4dfff42b71efd419e30afb4996a9a3e17ee30c393ade1d.jpeg",
-        "assets/references/word/9276df7e479284ba4a52a6a5e74689c7b6c99e12046853592eeceff6f584fd39.jpeg"
-      ],
-      "reference_note": "常规调度_副本2.docx · 微镜头动势-横移与前推；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-329e44eaf6c9-002",
-      "category": "常规调度原稿参考",
-      "title": "微镜头动势-横移与前推 · 2/3",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/493ef9e98676c79d54cced3337a8fae54db579d066d1142b40b35814336fcbb4.jpeg",
-        "assets/references/word/55fe494a03baf838bb39c119e3ae3971b95ecfe56b0cc7c56af4dac182de3c8a.jpeg",
-        "assets/references/word/b29784bf973aa55080e16faee931715c757c8e08343bc64a0af45dbd6497fde9.jpeg",
-        "assets/references/word/a7d420c8db7738ff8e6b32106ec0948567cee93f7255301e2dbf5168488f38e2.jpeg",
-        "assets/references/word/4db06c73f04d53fbfae4244910243c630495797e01376f38dfc2531870658dd8.jpeg"
-      ],
-      "reference_note": "常规调度_副本2.docx · 微镜头动势-横移与前推；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
-    },
-    {
-      "id": "W-329e44eaf6c9-003",
-      "category": "常规调度原稿参考",
-      "title": "微镜头动势-横移与前推 · 3/3",
-      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
-      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
-      "images": [
-        "assets/references/word/758e127981edaf641099164e3c19648ca7ff87aed3719f35fcfb9e26cdca26c5.jpeg",
-        "assets/references/word/319f293e05c4fdbd6388e184049e88b5dc4fb820780b66e530e5395c91581edb.jpeg",
-        "assets/references/word/90b8d857aa4cfa7def3348bd66c12a95e329271454ac10b0ee54dd07518e3add.jpeg",
-        "assets/references/word/d8aa3ad4b6d165fed501ff4687f3abf2f724e9cf15d65e55a0a5dc1b47b29860.jpeg"
-      ],
-      "reference_note": "常规调度_副本2.docx · 微镜头动势-横移与前推；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+      "id": "A01",
+      "category": "晨间准备",
+      "title": "新娘展示婚纱",
+      "action_level": "轻引导",
+      "applicable_when": "穿好婚纱、造型结束后，房间有自然光时。",
+      "prompt": "站在光线里，把裙摆理好，看看镜子就行。",
+      "camera": "全身交代裙型；侧面抓整理动作；用镜子或门框做前景。",
+      "delivery_check": "全身＋整理细节＋表情；不要求甩裙、旋转或重复试衣。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A02",
+      "category": "晨间准备",
+      "title": "家人帮忙整理衣服",
+      "action_level": "纪实优先",
+      "applicable_when": "父母或家人实际帮新人理衣、扣纽扣时。",
+      "prompt": "无需引导；若正准备整理，可提醒在明亮处完成。",
+      "camera": "从侧方拍完整互动，再补手部、被整理者和家人表情。",
+      "delivery_check": "动作发生前就位；不要求家人重复整理或刻意掉泪。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W453.jpeg",
+        "assets/references/reviewed/W462.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W453",
+          "reason": "A02：家人整理父亲礼服的互助动作完整，可指导西式晨间准备"
+        },
+        {
+          "source": "W462",
+          "reason": "A02：家人帮助中式妆造的动作明确，与W453礼服整理场景不同"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A03",
+      "category": "晨间准备",
+      "title": "新人与父母相见",
+      "action_level": "纪实优先",
+      "applicable_when": "父母第一次看到已换好婚服的新人时。",
+      "prompt": "只协调相见时间，不预告情绪，不安排反复进门。",
+      "camera": "一机对新人，一机对父母；有拥抱则跟拍，优先记录真实反应。",
+      "delivery_check": "相见＋父母反应＋新人反应＋自然靠近。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W380.jpeg",
+        "assets/references/reviewed/W444.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W380",
+          "reason": "A03：长辈与新人同框，手部接触和视线明确，适合见父母调度；非婚礼实拍"
+        },
+        {
+          "source": "W444",
+          "reason": "A03：新娘与长辈对视互动，婚礼环境与情绪关系清楚；不视作拥抱"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A04",
+      "category": "晨间准备",
+      "title": "与父母依偎或拥抱",
+      "action_level": "纪实优先",
+      "applicable_when": "送嫁前、仪式前或仪式结束时家人自然靠近。",
+      "prompt": "可以说“跟爸妈抱一下”，不要求说特定台词。",
+      "camera": "中景保留双人关系；侧面拍搭肩与面部；情绪浓烈时保持距离。",
+      "delivery_check": "拥抱前后各留数秒；不打断告别。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W445.jpeg",
+        "assets/references/reviewed/W452.jpeg",
+        "assets/references/reviewed/W455.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W445",
+          "reason": "A04：亲子拥抱手臂与情绪细节完整，具备纪实抓拍参考价值"
+        },
+        {
+          "source": "W452",
+          "reason": "A04：与W445正面抱不同的背后亲昵姿势，父女关系和肢体接触明确"
+        },
+        {
+          "source": "W455",
+          "reason": "A04：父女依偎不同于正面拥抱，挽臂、眼神和站姿均清晰"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A29",
+      "category": "晨间准备",
+      "title": "婚纱试穿与试装",
+      "action_level": "条件选拍",
+      "applicable_when": "婚礼前试婚纱、试头纱或试礼服时。",
+      "prompt": "按实际试穿过程记录，不要求反复换装或旋转。",
+      "camera": "镜前、试衣间、全身裙型与试穿者反应；避免拍摄更衣隐私。",
+      "delivery_check": "试穿过程、礼服整体和合身细节；与正式婚纱展示区分。",
+      "is_core": false,
+      "images": [
+        "assets/references/reviewed/W430.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W430",
+          "reason": "A29：试装后揭晓婚纱、展示给伴侣，场景及服饰关系明确"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A30",
+      "category": "晨间准备",
+      "title": "妆造与服饰细节",
+      "action_level": "纪实优先",
+      "applicable_when": "化妆、盘发、佩戴饰物、整理头纱/领带等准备过程。",
+      "prompt": "先记录化妆师和家人实际操作，不要求重复补妆。",
+      "camera": "手部、饰物、发型、面部细节与人物整体；避免只拍孤立商品。",
+      "delivery_check": "妆发、饰物、衣料和调整动作；注意不拍隐私部位。",
+      "is_core": false,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A05",
+      "category": "接亲与转场",
+      "title": "新人相见与迎接",
+      "action_level": "纪实优先",
+      "applicable_when": "接亲初见、First Look、迎接到达或重逢时。",
+      "prompt": "你们见面后按平时的方式打招呼就好。不要求背对、回头或惊讶。",
+      "camera": "先保留距离与相见的空间；双机分拍两人的第一眼。",
+      "delivery_check": "初见双方反应＋走近；只有真实初见才称首次相见。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A06",
+      "category": "接亲与转场",
+      "title": "接亲游戏与朋友反应",
+      "action_level": "纪实优先",
+      "applicable_when": "伴郎伴娘实际进行堵门、互动、游戏时。",
+      "prompt": "按主持人或亲友安排进行，不为镜头另造游戏。",
+      "camera": "门侧拍双方关系，切参与者与围观反应；不堵门口。",
+      "delivery_check": "关键互动＋参与者反应＋现场欢笑；流程不存在则略过。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A07",
+      "category": "接亲与转场",
+      "title": "离家上婚车",
+      "action_level": "纪实优先",
+      "applicable_when": "新人从家中离开并准备上车。",
+      "prompt": "不为拍摄要求再次上车；提前清理拍摄通道即可。",
+      "camera": "车外侧方拍上车；另一机从安全位置拍家人送别、车内互动。",
+      "delivery_check": "上车全景＋车门细节＋车内表情＋送别动作。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A08",
+      "category": "接亲与转场",
+      "title": "婚车内牵手与依偎",
+      "action_level": "纪实优先",
+      "applicable_when": "车内静止等待或安全行驶时，新人自然交谈。",
+      "prompt": "你们休息一下，不用看镜头。不在行驶时安排动作。",
+      "camera": "固定安全位置拍双人中景、手和靠肩；不得影响驾驶或安全带。",
+      "delivery_check": "车内环境＋牵手＋靠肩或交流。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A09",
+      "category": "新人双人补拍",
+      "title": "并肩散步",
+      "action_level": "轻引导",
+      "applicable_when": "转场或仪式前后，找平整安全且不拥挤的短路段。",
+      "prompt": "你们牵着手，慢慢往前走，边走边聊。",
+      "camera": "侧跟拍全身；前方安全定点拍迎面；后方拍背影。",
+      "delivery_check": "一个来回以内；全景、中景、背影、牵手细节。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A10",
+      "category": "新人双人补拍",
+      "title": "伸手与牵手",
+      "action_level": "轻引导",
+      "applicable_when": "散步起步前、等候时或由一方牵另一方离开。",
+      "prompt": "把手伸给对方，牵上就继续走。",
+      "camera": "手部近景跟随动作；侧面或后方带出身体关系。",
+      "delivery_check": "伸手、接触、握住、自然走开；一次即可。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W320.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W320",
+          "reason": "A10：握手及手掌覆盖关系明确，可用于牵手近景调度；非婚礼实拍"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A11",
+      "category": "新人双人补拍",
+      "title": "站定自然对视",
+      "action_level": "轻引导",
+      "applicable_when": "有安静背景、柔和光线且两人可短暂停留。",
+      "prompt": "看着对方，随便说一句今天想说的话。",
+      "camera": "从两侧拍过肩；双人中景保留距离；避免要求固定笑容。",
+      "delivery_check": "两方各一反应＋同框＋自然笑或沉默；不要求一定笑。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W356.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W356",
+          "reason": "A11：面对面站定、视线相接，双人中近景清楚；影视广告参考，保留水印"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A12",
+      "category": "新人双人补拍",
+      "title": "自然拥抱与亲密互动",
+      "action_level": "轻引导",
+      "applicable_when": "初见、等待或仪式结束后，且新人愿意。",
+      "prompt": "抱一下、靠近一点，按你们平时的方式互动；不要求奔跑扑抱、抛举或亲吻。",
+      "camera": "中景交代拥抱；两侧找真实表情；抓手臂和靠肩细节。",
+      "delivery_check": "靠近＋拥抱＋双方反应；不要求奔跑扑抱或亲吻。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W404.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W404",
+          "reason": "A12：拥抱贴肩及手部位置明确，适合亲密近景；广告调度参考"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A13",
+      "category": "新人双人补拍",
+      "title": "并肩靠在一起",
+      "action_level": "轻引导",
+      "applicable_when": "休息区、长椅、窗边或可眺望的安全位置。",
+      "prompt": "坐一会儿，靠近一点，看看外面。",
+      "camera": "先拍环境中的两人，后从侧面或背后观察肩部关系。",
+      "delivery_check": "远景＋背影＋靠肩＋放松状态；不要求摆出复杂手势。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W240.jpeg",
+        "assets/references/reviewed/W265.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W240",
+          "reason": "A13并肩靠在一起的站姿类比；非婚礼实拍，原图待上传"
+        },
+        {
+          "source": "W265",
+          "reason": "A13：侧身贴肩、单臂搂靠及同向视线清晰，适用于双人补拍；非婚礼实拍，原图待上传"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A14",
+      "category": "新人双人补拍",
+      "title": "一方回头看另一方",
+      "action_level": "轻引导",
+      "applicable_when": "散步、到达门口或新人本来在向前走时。",
+      "prompt": "你先走两步，回头看他/她一下。",
+      "camera": "保持安全距离，拍背面转向与回头后的反应；不要求甩头发。",
+      "delivery_check": "一次回头即可；有自然笑更好，不强求。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A15",
+      "category": "新人双人补拍",
+      "title": "互相拍照与看照片",
+      "action_level": "轻引导",
+      "applicable_when": "等待期间有手机或新人自己的相机。",
+      "prompt": "给对方拍张照片，然后一起看看。",
+      "camera": "拍摄影者、被拍者、相机屏幕与看图时的真实反应。",
+      "delivery_check": "完成一张真实照片；不要求故意拍丑或演争吵。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W253.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W253",
+          "reason": "A15：一方持相机记录另一方的自然状态，双人空间关系明确，可作为互拍调度参考；非婚礼实拍，原图待上传"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A16",
+      "category": "新人双人补拍",
+      "title": "双人自拍",
+      "action_level": "轻引导",
+      "applicable_when": "休息间隙或有适合自拍的背景。",
+      "prompt": "用你们平时的方式拍一张合照。",
+      "camera": "侧面拍举机及身体靠近；可拍屏幕但避免个人信息。",
+      "delivery_check": "举机＋同框＋拍下或看图；自拍是新人自己的纪念。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W331.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W331",
+          "reason": "A16：双人靠头并看向自拍手机，动作完整，适合宴会或补拍自拍参考；非婚礼实拍"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A17",
+      "category": "新人双人补拍",
+      "title": "牵手慢舞或小转身",
+      "action_level": "轻引导",
+      "applicable_when": "仅限新人喜欢、场地宽敞且衣裙鞋履安全时。",
+      "prompt": "牵着手慢慢晃两下；愿意的话轻轻转半圈。",
+      "camera": "中远景保留双人动作；补手部及微笑；不倒退盲走。",
+      "delivery_check": "一次自然动作，不要求抛举、快速旋转或练习编舞。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W392.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W392",
+          "reason": "A17：牵手举过头顶的转身动作明确、两人站位完整；非婚礼实拍"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A28",
+      "category": "新人双人补拍",
+      "title": "求婚与惊喜",
+      "action_level": "条件选拍",
+      "applicable_when": "婚礼影片确实包含求婚回忆或当天安排了求婚环节时。",
+      "prompt": "按真实安排进行；不为镜头强迫单膝、台词或重复求婚。",
+      "camera": "先交代环境与戒指/花，再拍回应、靠近和拥抱；保护当事人隐私。",
+      "delivery_check": "求婚动作、戒指/花、回应与拥抱；不把普通送花误作求婚。",
+      "is_core": false,
+      "images": [
+        "assets/references/reviewed/W387.jpeg",
+        "assets/references/reviewed/W401.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W387",
+          "reason": "A28：双方对位、求婚姿态与花束明确，适合惊喜求婚参考；非婚礼实拍"
+        },
+        {
+          "source": "W401",
+          "reason": "A28：双人坐姿求婚与情绪反应均清晰，补充W387跪姿求婚的不同场景；珠宝广告调度参考"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A32",
+      "category": "新人双人补拍",
+      "title": "双人骑行与户外道具互动",
+      "action_level": "条件选拍",
+      "applicable_when": "新人喜欢骑行，场地允许且有安全保护时。",
+      "prompt": "按平时速度同行，不要求竞速、急转或危险动作。",
+      "camera": "先拍环境与双人关系，再拍并行、前后跟随和手脚细节。",
+      "delivery_check": "骑行关系、环境和停下后的互动；安全优先。",
+      "is_core": false,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A18",
+      "category": "仪式现场",
+      "title": "入场与走向仪式区",
+      "action_level": "纪实优先",
+      "applicable_when": "司仪发出入场信号、门开或新人开始行走时。",
+      "prompt": "完全服从现场流程，不中途叫停、回头或重走。",
+      "camera": "主机守入场正面与全景，辅机拍侧后方及等待者反应。",
+      "delivery_check": "入场全程＋等待者反应；不挡宾客或仪式通道。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A19",
+      "category": "仪式现场",
+      "title": "父母陪伴与交接",
+      "action_level": "纪实优先",
+      "applicable_when": "有父母陪伴入场、交接或婚礼约定的家人互动时。",
+      "prompt": "不新增交接流程、不引导演哭；以现场实际安排为准。",
+      "camera": "侧方交代新人和家长；重点抓手部、家长表情、另一方等待。",
+      "delivery_check": "父母与新人关系＋手部交接（若有）＋双方反应。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A20",
+      "category": "仪式现场",
+      "title": "誓言与相互注视",
+      "action_level": "纪实优先",
+      "applicable_when": "仪式双方讲话、听誓言或主持人引导交流时。",
+      "prompt": "不加台词，不提示看镜头，誓言原声必须完整。",
+      "camera": "主机连续守讲话者；辅机拍倾听者及同框，避开主持人动线。",
+      "delivery_check": "双方表情、讲话与倾听关系；连续声音优先。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A21",
+      "category": "仪式现场",
+      "title": "交换戒指",
+      "action_level": "纪实优先",
+      "applicable_when": "确认戒指所在方位与交换顺序，提前就位。",
+      "prompt": "不暂停、不重戴；若仪式有安排，按主持人流程进行。",
+      "camera": "主机拍手部完整动作；辅机留双方表情与全景，不双机同侧挤位。",
+      "delivery_check": "取戒、戴戒过程、戴好后的手和自然反应。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W426.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W426",
+          "reason": "A21：戒指与指尖接触、双方手部位置明确，适合戒指佩戴近景；非仪式实拍"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A22",
+      "category": "仪式现场",
+      "title": "仪式结束拥抱与欢庆",
+      "action_level": "纪实优先",
+      "applicable_when": "仪式宣布完成、新人自然拥抱或现场庆祝时。",
+      "prompt": "不要求复刻亲吻或欢呼；如有撒花等环节遵循现场安排。",
+      "camera": "主机守新人；辅机拍家人、朋友和现场反应。",
+      "delivery_check": "完成时刻＋新人反应＋现场氛围；真实动作优先。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A23",
+      "category": "仪式现场",
+      "title": "抛捧花",
+      "action_level": "纪实优先",
+      "applicable_when": "仅在现场确实安排抛捧花时执行。",
+      "prompt": "由主持人组织，摄影师不要求多抛一次。",
+      "camera": "主机拍抛花者与花的轨迹；辅机守接花人群反应。",
+      "delivery_check": "抛出、飞行、接住或落地、真实反应；注意人群安全。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A31",
+      "category": "仪式现场",
+      "title": "场地布置与空间空镜",
+      "action_level": "纪实优先",
+      "applicable_when": "仪式区、宴会厅、签到台、婚礼静物及重要空间尚未被宾客遮挡时。",
+      "prompt": "无需引导人物；在流程前后寻找空档完成环境记录。",
+      "camera": "空间全景、入口纵深、对称/框景、布置细节和重要静物分层拍摄。",
+      "delivery_check": "场地全景、仪式区、签到/桌面布置、请柬/证件等；不把普通商品广告当婚礼布置。",
+      "is_core": false,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A33",
+      "category": "仪式现场",
+      "title": "敬茶/奉茶与递杯",
+      "action_level": "纪实优先",
+      "applicable_when": "婚礼流程确有敬茶/奉茶时；普通递杯画面只作手部动作类比。",
+      "prompt": "以实际流程为准，先确认递杯顺序和长辈位置，不重复敬茶。",
+      "camera": "主机交代新人/长辈关系，辅机拍递杯、接杯、双手和长辈反应。",
+      "delivery_check": "正式敬茶需有双方关系与完整交接；普通递杯不得标为婚礼实拍。",
+      "is_core": false,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A24",
+      "category": "宴会与收尾",
+      "title": "与亲友同框交流",
+      "action_level": "纪实优先",
+      "applicable_when": "宾客到场、宴席间隙、仪式结束后。",
+      "prompt": "你们聊你们的，不用管镜头。不要求所有人配合做动作。",
+      "camera": "用中景拍真实谈话；切发言者、倾听者、长辈与朋友。",
+      "delivery_check": "关系清晰的群体镜头＋人物反应；不影响就餐。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A25",
+      "category": "宴会与收尾",
+      "title": "交换礼物或赠花",
+      "action_level": "条件选拍",
+      "applicable_when": "确有礼物、信件或花束准备时，可安排在安静间隙。",
+      "prompt": "把你准备的东西交给对方，拆开看看就行。",
+      "camera": "先拍交付关系，再拍物品和收到礼物时的反应。",
+      "delivery_check": "交接、打开、反应；没有礼物不临时制造惊喜。",
+      "is_core": true,
+      "images": [
+        "assets/references/reviewed/W377.jpeg"
+      ],
+      "image_notes": [
+        {
+          "source": "W377",
+          "reason": "A25：红包在双手交接中心，可参考婚礼赠礼手部细节；非婚礼实拍"
+        }
+      ],
+      "reference_note": "已逐图审核的动作参考；影视或广告画面仅作为调度示范。"
+    },
+    {
+      "id": "A26",
+      "category": "宴会与收尾",
+      "title": "照片展示与回忆",
+      "action_level": "条件选拍",
+      "applicable_when": "新人自备照片、相册、拍立得或婚礼影像投影时。",
+      "prompt": "挑一张你们喜欢的照片或影像，一起看看；不用表演感动。",
+      "camera": "从侧面拍双人，补照片或相机屏幕、手与笑容。",
+      "delivery_check": "实际照片与真实反应；不要求回忆特定故事或表演感动。",
+      "is_core": true,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
+    },
+    {
+      "id": "A27",
+      "category": "宴会与收尾",
+      "title": "亲友合影",
+      "action_level": "纪实优先",
+      "applicable_when": "亲友到齐、合影流程或自然集体自拍时。",
+      "prompt": "先确认所有人到位，再按现场安排拍一张；不反复集合。",
+      "camera": "先拍完整群像，再补拍摄者、被拍者和合影后的自然反应。",
+      "delivery_check": "合影全景、人物站位和拍摄过程；不挡宾客动线。",
+      "is_core": false,
+      "images": [],
+      "image_notes": [],
+      "reference_note": ""
     }
-  ]
+  ],
+  "reviewed_release": {
+    "images": 20,
+    "core_cards": 26,
+    "additional_cards": 7
+  }
 };
