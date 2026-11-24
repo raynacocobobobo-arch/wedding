@@ -2863,7 +2863,10 @@ window.ENWAN_DATA = {
       "title": "并肩聊天",
       "prompt": "聊一句今天最期待的事",
       "camera": "中景及自然表情",
-      "images": []
+      "images": [
+        "assets/references/word/24ed3a75c755c7e3b1e6d32dd25032f69aabc2060c3b740fdf5c8bc42b141997.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿视觉复核：并肩交流的自然中景参考；原稿人物在行走中互动，并非站定聊天。"
     },
     {
       "id": "C03-02",
@@ -2937,7 +2940,12 @@ window.ENWAN_DATA = {
       "title": "背影并肩",
       "prompt": "并肩看向远处",
       "camera": "全身与环境",
-      "images": []
+      "images": [
+        "assets/references/word/09fa87f6add99042703501b94b0b1b10f6478a453f6223cd94cfd2e2d2d7cb51.jpeg",
+        "assets/references/word/14ffa37339d944e2c1b13dc723d19a5d0fb65fcb08e96aff51c847de81d56805.jpeg",
+        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿视觉复核：双人背向相机、并肩面对环境的构图；原稿为行走状态，供背影关系和环境尺度借鉴。"
     },
     {
       "id": "C03-10",
@@ -3246,7 +3254,12 @@ window.ENWAN_DATA = {
       "title": "穿过前景",
       "prompt": "沿原方向走过门框",
       "camera": "利用真实遮挡",
-      "images": []
+      "images": [
+        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
+        "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg",
+        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿视觉复核：同一场景中前景人物经过镜头、遮住画面再露出主体的画面组；门框可作为婚礼现场的等效遮挡物。"
     },
     {
       "id": "C07-09",
@@ -3286,7 +3299,12 @@ window.ENWAN_DATA = {
       "title": "边走边观察",
       "prompt": "走着看看周围",
       "camera": "保留视线对象",
-      "images": []
+      "images": [
+        "assets/references/word/63f4d7e85ba0e11da50ff486327087d0e3598ca711e8bf1e6944062e1367593a.jpeg",
+        "assets/references/word/087dbf21e112d3375ab5f7ab0f0fe2b406c81f2e475de9a33b5526c10cd1fa6e.jpeg",
+        "assets/references/word/26c936230be6b48215e4cb1b86aad5f1cfd48b30fc82ca171ecf583a35a88894.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿视觉复核：双人同行的中近景与侧面视线变化，参考行走时的观察状态；视线对象需现场补拍。"
     },
     {
       "id": "C07-14",
@@ -3517,7 +3535,12 @@ window.ENWAN_DATA = {
       "title": "视线剪辑",
       "prompt": "记录真实观察",
       "camera": "视线、对象、反应",
-      "images": []
+      "images": [
+        "assets/references/word/be2b724ffe9d4ea21b6034983ad7b2c9a463d93cc401fa06e1f5cfa5dfde8db8.jpeg",
+        "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg",
+        "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿视觉复核：双人关系画面与两个方向的近景视线，参考视线和反应的分镜组织；不据截图断言原片剪辑顺序。"
     },
     {
       "id": "C09-12",
@@ -3525,7 +3548,12 @@ window.ENWAN_DATA = {
       "title": "遮挡转场",
       "prompt": "按原动作继续",
       "camera": "利用真实遮挡衔接",
-      "images": []
+      "images": [
+        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
+        "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg",
+        "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg"
+      ],
+      "reference_note": "《婚礼.docx》原稿视觉复核：同场景遮挡前、遮挡时、遮挡后画面组，供真实遮挡的衔接设计；不据截图断言跨场景转场。"
     },
     {
       "id": "C09-13",
