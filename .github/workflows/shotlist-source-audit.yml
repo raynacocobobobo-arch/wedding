@@ -1,0 +1,30 @@
+name: Inspect original shotlist source
+on:
+  push:
+    paths:
+      - '.github/workflows/shotlist-source-audit.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Read existing public shotlist site
+        run: |
+          python - <<'PY'
+          import urllib.request, urllib.parse, re
+          base='https://bjenwan.com/shotlist/'
+          for p in ('index.html','data.js','data-bride.js','data-groom.js'):
+              url=urllib.parse.urljoin(base,p)
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'}),timeout=15) as r:
+                      data=r.read(3000000).decode('utf-8','replace')
+                      print('SOURCE',p,'status',r.status,'length',len(data))
+                      print(data[:6500])
+                      imgs=re.findall(r"""['"]([^'"]+\.(?:jpg|jpeg|png|webp|gif))['"]""",data,re.I)
+                      print('IMAGE PATHS',len(imgs),imgs[:25])
+              except Exception as e:
+                  print('ERROR',p,str(e))
+          PY
