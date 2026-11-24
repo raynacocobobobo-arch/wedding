@@ -206,6 +206,7 @@ def main():
     parser.add_argument("v4_zip", type=Path)
     parser.add_argument("--baseline", type=Path, help="V3 ZIP for exact original-file comparison")
     parser.add_argument("--apply", action="store_true", help="Import into shotlist/ after successful audit")
+    parser.add_argument("--allow-unverified-baseline", action="store_true", help="Import a self-contained V4 archive without a separate V3 ZIP; audit records that the baseline is unverified")
     args = parser.parse_args()
     with ZipFile(args.v4_zip) as z:
         entries = inventory(z, True)
@@ -214,8 +215,19 @@ def main():
         if report["errors"]:
             raise SystemExit("Audit failed; no files imported.")
         if args.apply:
+            if args.baseline and not report["baseline_verified"]:
+                raise SystemExit("Provided V3 baseline failed verification.")
+            if not report["baseline_verified"] and not args.allow_unverified_baseline:
+                raise SystemExit("Provide --baseline or explicitly opt into --allow-unverified-baseline.")
             if not report["baseline_verified"]:
-                raise SystemExit("Provide --baseline for an import that verifies preservation.")
+                if report["cards"] != 37:
+                    raise SystemExit("Expected 37 V4 supplement cards for the supplied archive.")
+                original_images = [name for name in entries
+                                   if name.startswith("img/") and PurePosixPath(name).suffix.lower() in IMAGE_EXT]
+                report["original_image_resource_count"] = len(original_images)
+                if len(original_images) < 417:
+                    raise SystemExit("Original image resource count below the expected V3 reference count.")
+                print("WARNING: archive structure checked, but original V3 hashes not independently verified.")
             import_site(z, entries, hashes)
             (DEST / "v4-audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             print("Imported into", DEST, "\nReview warnings, then commit the shotlist directory.")
