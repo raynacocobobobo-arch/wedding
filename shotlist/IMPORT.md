@@ -1,33 +1,40 @@
 # 恩万婚礼拍摄手册 / Shotlist
 
-本目录独立于根目录婚礼作品展示网站，目标部署路径为 `/shotlist/`。
+本目录与根目录婚礼作品展示站隔离。网站源码和图库最终存放在 `shotlist/`。
 
-## 当前状态
+## 自动导入 V4.0（推荐）
 
-已提交 ZIP 导入及校验程序 `import_v4.py`。实际 V4.0 网站及图片尚未导入，不应把本目录当作已发布的完整手册。
+已配置 GitHub Actions：`Import wedding shotlist V4`。本次提交只包含导入工具和自动化，两个 ZIP 尚未上传到 GitHub，手册尚未部署。
 
-## 导入现有压缩包
+1. 将 V3.0 完整源码 ZIP 重命名为 `v3.zip`；将 V4.0 增量完整版 ZIP 重命名为 `v4.zip`。
+2. 在本仓库 [新建 Release](https://github.com/raynacocobobobo-arch/wedding/releases/new)，创建新 tag，例如 `shotlist-import-v4`，目标分支选择 main。
+3. 上传两个 ZIP 为 Release 附件，确认上传成功后发布 Release。
+4. 在 [Actions](https://github.com/raynacocobobobo-arch/wedding/actions) 查看 `Import wedding shotlist V4`。也可手动运行该 workflow，输入包含这两个附件的 Release tag。
 
-在本仓库本地副本根目录执行（Python 3，无第三方依赖）：
+工作流先读取 ZIP、比较 V3 原始资源 SHA-256、核验图片路径和编号，再导入。之后生成手机缩略图、独立分类导航、大图浏览和 V4 专用离线缓存，并执行新增 JavaScript 的语法检查。只有检查通过才提交 `shotlist/`；发现冲突或错误时停止，不覆盖根目录站点。
+
+本仓库是公开仓库；Release ZIP 与最终提交的资源均公开可见。请仅上传有权公开发布的素材。
+
+## 本地导入备选方法
+
+在仓库根目录执行：
 
 ```bash
-python3 shotlist/import_v4.py "/实际路径/恩万婚礼拍摄手册_V4.0_增量完整版.zip" --baseline "/实际路径/恩万婚礼拍摄手册_V3.0_完整源码.zip"
-```
-
-先检查输出的 errors、warnings 和图片数量。确认没有错误后，同一条命令末尾增加 `--apply`，将原有站点和 V4 补充资源导入本目录，并生成 `v4-audit.json`。导入要求提供 V3 基线文件，核对原有文件的 SHA-256（首页允许增加入口）。
-
-```bash
+python3 shotlist/import_v4.py /path/to/v4.zip --baseline /path/to/v3.zip
+python3 shotlist/import_v4.py /path/to/v4.zip --baseline /path/to/v3.zip --apply
+python3 -m pip install Pillow
+python3 shotlist/prepare_v4.py
+node --check shotlist/v4/app.js
+node --check shotlist/v4/sw.js
 git add shotlist/
-git commit -m "Import audited Enwan V4 shotlist"
+git commit -m "Import and prepare Enwan V4 shotlist"
 git push origin main
 ```
 
-本程序不会写入仓库根目录的作品展示页面，也不会静默覆盖已有的不同内容。
+## 验收
 
-## 上线前检查
-
-- 按手机端与电脑端分别测试男方、女方清单、图片放大、搜索和进度保存。
-- 检查 V4 新增图库中每组 4–5 张参考图的实际相关性；运镜关键帧必须来自同一连续镜头并保持顺序。
-- 校验新增页面与图片的离线缓存；增量版本未修改原有 service worker。
-- 确认服务端 MIME 类型、相对路径以及子目录部署正确。
-- 本仓库为公开仓库，上传前确认参考图片的公开发布权限。GitHub 提交不等同于网站部署；正式域名仍需按实际发布方式配置。
+- 检查 `v4-audit.json` 中原版文件保留、图片数量、重复及缺图情况。
+- 检查 `v4-preparation.json` 中缩略图及分类数量。
+- 人工核对每张参考图的动作匹配和连续运镜帧顺序；自动程序不替代审图。
+- 新增补充库仍独立于原有标准库，跨库语义去重和卡片合并需要读取实际导入后的数据再处理。
+- 手机和电脑实测导航、搜索、放大、原版进度及离线下载；GitHub 提交不代表正式域名已经部署。
