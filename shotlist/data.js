@@ -3373,7 +3373,10 @@ window.ENWAN_DATA = {
       "title": "高位俯拍",
       "prompt": "自然站立或行走",
       "camera": "安全高机位，观察空间几何",
-      "images": []
+      "images": [
+        "assets/references/word/8df14e1a19825863caa934c1af764dbe0a490738f37e83c56cf12e28eb9cfea1.jpeg"
+      ],
+      "reference_note": "《常规调度_副本2.docx》第1页原图视觉核对；连续帧按原稿顺序，非婚礼场景仅作构图及调度参考。"
     },
     {
       "id": "C08-05",
@@ -3423,9 +3426,11 @@ window.ENWAN_DATA = {
       "camera": "建筑或光线平衡另一侧",
       "images": [
         "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg",
-        "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg"
+        "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg",
+        "assets/references/word/8df14e1a19825863caa934c1af764dbe0a490738f37e83c56cf12e28eb9cfea1.jpeg",
+        "assets/references/word/bbedb1fbfdb7f157ff4dfff42b71efd419e30afb4996a9a3e17ee30c393ade1d.jpeg"
       ],
-      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。"
+      "reference_note": "《婚礼.docx》原稿画面逐张核对，作为可见动作、机位或构图参考；非婚礼实拍时仅供调度借鉴，单帧不证明实际运镜。；《常规调度_副本2.docx》第1页原图视觉核对；连续帧按原稿顺序，非婚礼场景仅作构图及调度参考。"
     },
     {
       "id": "C08-09",
@@ -3455,7 +3460,13 @@ window.ENWAN_DATA = {
       "title": "人物静止微横移",
       "prompt": "保持自然站姿",
       "camera": "微幅横移，主体稳定",
-      "images": []
+      "images": [
+        "assets/references/word/9276df7e479284ba4a52a6a5e74689c7b6c99e12046853592eeceff6f584fd39.jpeg",
+        "assets/references/word/493ef9e98676c79d54cced3337a8fae54db579d066d1142b40b35814336fcbb4.jpeg",
+        "assets/references/word/a7d420c8db7738ff8e6b32106ec0948567cee93f7255301e2dbf5168488f38e2.jpeg",
+        "assets/references/word/4db06c73f04d53fbfae4244910243c630495797e01376f38dfc2531870658dd8.jpeg"
+      ],
+      "reference_note": "《常规调度_副本2.docx》第1页原图视觉核对；连续帧按原稿顺序，非婚礼场景仅作构图及调度参考。"
     },
     {
       "id": "C09-02",
@@ -3463,7 +3474,13 @@ window.ENWAN_DATA = {
       "title": "人物静止微前推",
       "prompt": "保持自然站姿",
       "camera": "缓慢推进，控制焦点",
-      "images": []
+      "images": [
+        "assets/references/word/55fe494a03baf838bb39c119e3ae3971b95ecfe56b0cc7c56af4dac182de3c8a.jpeg",
+        "assets/references/word/b29784bf973aa55080e16faee931715c757c8e08343bc64a0af45dbd6497fde9.jpeg",
+        "assets/references/word/90b8d857aa4cfa7def3348bd66c12a95e329271454ac10b0ee54dd07518e3add.jpeg",
+        "assets/references/word/d8aa3ad4b6d165fed501ff4687f3abf2f724e9cf15d65e55a0a5dc1b47b29860.jpeg"
+      ],
+      "reference_note": "《常规调度_副本2.docx》第1页原图视觉核对；连续帧按原稿顺序，非婚礼场景仅作构图及调度参考。"
     },
     {
       "id": "C09-03",
@@ -3511,7 +3528,11 @@ window.ENWAN_DATA = {
       "title": "仰拍建筑前推",
       "prompt": "无需人物配合",
       "camera": "建筑立面与空间线条",
-      "images": []
+      "images": [
+        "assets/references/word/e6214f791f0bb2e834e5f1e042283ac6fb2541715bfd372b7d4d9c78101ed87d.jpeg",
+        "assets/references/word/bbedb1fbfdb7f157ff4dfff42b71efd419e30afb4996a9a3e17ee30c393ade1d.jpeg"
+      ],
+      "reference_note": "《常规调度_副本2.docx》第1页原图视觉核对；连续帧按原稿顺序，非婚礼场景仅作构图及调度参考。"
     },
     {
       "id": "C09-09",
