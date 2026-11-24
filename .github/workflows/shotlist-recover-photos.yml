@@ -1,0 +1,38 @@
+name: Recover original wedding reference photos
+on:
+  push:
+    paths:
+      - '.github/workflows/shotlist-recover-photos.yml'
+      - 'shotlist/recover_legacy.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: shotlist-photo-recovery
+  cancel-in-progress: false
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow
+      - run: python shotlist/recover_legacy.py
+      - run: |
+          node --check shotlist/app.js
+          node --check shotlist/sw.js
+          node shotlist/check-data.cjs
+      - name: Commit verified originals and source grouping
+        run: |
+          git add -- shotlist/
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --cached --quiet; then
+            git commit -m "Recover original wedding reference photos and detailed source groups"
+            git push origin HEAD:main
+          fi
