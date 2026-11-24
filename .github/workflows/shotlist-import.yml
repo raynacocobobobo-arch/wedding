@@ -1,0 +1,75 @@
+name: Import wedding shotlist V4
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag containing v3.zip and v4.zip'
+        required: true
+        type: string
+  release:
+    types: [published]
+permissions:
+  contents: write
+concurrency:
+  group: shotlist-import
+  cancel-in-progress: false
+jobs:
+  import:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.release.tag_name, 'shotlist-import-')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_TAG: ${{ inputs.release_tag || github.event.release.tag_name }}
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download explicitly named source archives
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/shotlist-import"
+          gh release download "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern 'v3.zip' --pattern 'v4.zip' --dir "$RUNNER_TEMP/shotlist-import"
+          test -s "$RUNNER_TEMP/shotlist-import/v3.zip"
+          test -s "$RUNNER_TEMP/shotlist-import/v4.zip"
+      - name: Audit and import original files
+        run: |
+          set -euo pipefail
+          python shotlist/import_v4.py "$RUNNER_TEMP/shotlist-import/v4.zip" --baseline "$RUNNER_TEMP/shotlist-import/v3.zip" --apply
+      - name: Prepare thumbnails and mobile guide
+        run: |
+          set -euo pipefail
+          python -m pip install Pillow
+          python shotlist/prepare_v4.py
+          node --check shotlist/v4/app.js
+          node --check shotlist/v4/sw.js
+      - name: Confirm all changes are confined to shotlist
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import subprocess
+          from pathlib import Path
+          paths = subprocess.check_output(["git", "status", "--porcelain=v1", "-z"], text=True).split("\0")
+          for row in paths:
+              if row and not row[3:].startswith("shotlist/"):
+                  raise SystemExit("Unexpected changed path: " + repr(row))
+          for name in ("index.html", "v4/index.html", "v4-audit.json", "v4-preparation.json"):
+              if not (Path("shotlist") / name).is_file():
+                  raise SystemExit("Missing required result: " + name)
+          PY
+      - name: Commit only the shotlist directory
+        run: |
+          set -euo pipefail
+          git add -- shotlist/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git diff --cached --stat
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "Import and prepare Enwan wedding shotlist V4"
+          git push origin HEAD:main
