@@ -5016,43 +5016,121 @@ window.ENWAN_DATA = {
     {
       "id": "W-52f1dd149aab-001",
       "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 1/3",
+      "title": "情侣相遇 · 1/5",
       "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
       "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
       "images": [
         "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg",
         "assets/references/word/7b544c410c5c66ed506fb4c90b52ecd4d21217ca3f2ee9a23a5c4259c4b63c57.jpeg",
         "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg",
-        "assets/references/word/5e1dad681535b3213b17126d63956096c07156ede677b88de983c5fa3de37e9c.jpeg"
+        "assets/references/word/5e1dad681535b3213b17126d63956096c07156ede677b88de983c5fa3de37e9c.jpeg",
+        "assets/references/word/be2b724ffe9d4ea21b6034983ad7b2c9a463d93cc401fa06e1f5cfa5dfde8db8.jpeg"
       ],
       "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
     },
     {
       "id": "W-52f1dd149aab-002",
       "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 2/3",
+      "title": "情侣相遇 · 2/5",
       "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
       "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
       "images": [
-        "assets/references/word/be2b724ffe9d4ea21b6034983ad7b2c9a463d93cc401fa06e1f5cfa5dfde8db8.jpeg",
         "assets/references/word/9a67335cc7287cbbb0a96fec47a5c05967fb0f3162b3ccb2c423e25c0509d309.jpeg",
         "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg",
-        "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg"
+        "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg",
+        "assets/references/word/1579fb23950a617509161557fb79e28baf6e2d0ba4006affe2ee3dc4f3db4880.jpeg",
+        "assets/references/word/f3603fd150f4f73b687bec8fb965195e7d9a3784aeb0fe5e9d2266baf9566374.jpeg"
       ],
       "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
     },
     {
       "id": "W-52f1dd149aab-003",
       "category": "婚礼原稿参考",
-      "title": "情侣相遇 · 3/3",
+      "title": "情侣相遇 · 3/5",
       "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
       "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
       "images": [
-        "assets/references/word/1579fb23950a617509161557fb79e28baf6e2d0ba4006affe2ee3dc4f3db4880.jpeg",
-        "assets/references/word/f3603fd150f4f73b687bec8fb965195e7d9a3784aeb0fe5e9d2266baf9566374.jpeg",
-        "assets/references/word/d47b69a98e74ce80972852e05293940b6fb6e22c578375acb3bbd0d4754c17fd.jpeg"
+        "assets/references/word/d47b69a98e74ce80972852e05293940b6fb6e22c578375acb3bbd0d4754c17fd.jpeg",
+        "assets/references/word/6869b365752e59317118554e12d0c547022cd6b0d17da9435566fb45595760aa.jpeg",
+        "assets/references/word/e2999fcb736ed9d58a5ab9cbe9148b177f598ea36258fde45e955169028bc52b.jpeg",
+        "assets/references/word/e72ca473436a922f7f91cbd3aa846034aabd35a29e0a55de6627a9eda28f207b.jpeg",
+        "assets/references/word/f5c3717fa1a9eeb50289875b29b3e5afa5678ae049007bda4ed2dc1db6ef5dfb.jpeg"
       ],
       "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-52f1dd149aab-004",
+      "category": "婚礼原稿参考",
+      "title": "情侣相遇 · 4/5",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/ea1f011aab585671dceba858b358c36b5f8e2733ec752e50008368bb83d8e9be.jpeg",
+        "assets/references/word/fd4dde149cf4308c18b0518c5ba2c5845767167ec8167ce51896014331488d69.jpeg",
+        "assets/references/word/1e3c063aeb8c33fff2bd34f590b757493462b7c52dd59a1e169fec39535bb8c0.jpeg",
+        "assets/references/word/08f1d07203ab02959b98c0363b7e8ccec3f0aabbc45048033f61a94b6b95f855.jpeg",
+        "assets/references/word/125ce5cd560802b779d89d702045a7a99477580635b52695bf79d1822925a1a3.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-52f1dd149aab-005",
+      "category": "婚礼原稿参考",
+      "title": "情侣相遇 · 5/5",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/74d178a3a2a88efba21d324581654980430d7387260d7cda4fa37b8f51b1b9c2.jpeg",
+        "assets/references/word/7afeb34b71420c198af6edbf12331fc22eefddacd0bd25e06dd3f35e3e0ac633.jpeg",
+        "assets/references/word/fa9acb5c0b8ed581462c367bc5a80fd4d1cf16f53972eb49b6f429449519b4b6.jpeg",
+        "assets/references/word/f52236419e40f922fdc5994d45fb81a54d331e5a8240221f159cd9739c3255df.jpeg",
+        "assets/references/word/89eab37d4a6396d85a2489130a6ac3766eeca3f32387d943db61f9db8e215207.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-329e44eaf6c9-001",
+      "category": "常规调度原稿参考",
+      "title": "微镜头动势-横移与前推 · 1/3",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/8df14e1a19825863caa934c1af764dbe0a490738f37e83c56cf12e28eb9cfea1.jpeg",
+        "assets/references/word/8dba21a2d947467681140887f5263fe72d6d8dc8cbe37251ea25c5e36dda5793.jpeg",
+        "assets/references/word/e6214f791f0bb2e834e5f1e042283ac6fb2541715bfd372b7d4d9c78101ed87d.jpeg",
+        "assets/references/word/bbedb1fbfdb7f157ff4dfff42b71efd419e30afb4996a9a3e17ee30c393ade1d.jpeg",
+        "assets/references/word/9276df7e479284ba4a52a6a5e74689c7b6c99e12046853592eeceff6f584fd39.jpeg"
+      ],
+      "reference_note": "常规调度_副本2.docx · 微镜头动势-横移与前推；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-329e44eaf6c9-002",
+      "category": "常规调度原稿参考",
+      "title": "微镜头动势-横移与前推 · 2/3",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/493ef9e98676c79d54cced3337a8fae54db579d066d1142b40b35814336fcbb4.jpeg",
+        "assets/references/word/55fe494a03baf838bb39c119e3ae3971b95ecfe56b0cc7c56af4dac182de3c8a.jpeg",
+        "assets/references/word/b29784bf973aa55080e16faee931715c757c8e08343bc64a0af45dbd6497fde9.jpeg",
+        "assets/references/word/a7d420c8db7738ff8e6b32106ec0948567cee93f7255301e2dbf5168488f38e2.jpeg",
+        "assets/references/word/4db06c73f04d53fbfae4244910243c630495797e01376f38dfc2531870658dd8.jpeg"
+      ],
+      "reference_note": "常规调度_副本2.docx · 微镜头动势-横移与前推；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-329e44eaf6c9-003",
+      "category": "常规调度原稿参考",
+      "title": "微镜头动势-横移与前推 · 3/3",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/758e127981edaf641099164e3c19648ca7ff87aed3719f35fcfb9e26cdca26c5.jpeg",
+        "assets/references/word/319f293e05c4fdbd6388e184049e88b5dc4fb820780b66e530e5395c91581edb.jpeg",
+        "assets/references/word/90b8d857aa4cfa7def3348bd66c12a95e329271454ac10b0ee54dd07518e3add.jpeg",
+        "assets/references/word/d8aa3ad4b6d165fed501ff4687f3abf2f724e9cf15d65e55a0a5dc1b47b29860.jpeg"
+      ],
+      "reference_note": "常规调度_副本2.docx · 微镜头动势-横移与前推；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
     }
   ]
 };
