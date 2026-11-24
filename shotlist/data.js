@@ -2727,7 +2727,10 @@ window.ENWAN_DATA = {
       "title": "镜前肖像",
       "prompt": "照镜子看看自己",
       "camera": "镜面与人物同框",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/29.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C01-09",
@@ -2751,15 +2754,22 @@ window.ENWAN_DATA = {
       "title": "调整领结",
       "prompt": "整理一下领结",
       "camera": "手部接面部中近景",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/30.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C02-02",
       "category": "新郎单人摆拍",
-      "title": "整理袖扣",
-      "prompt": "扣好袖扣",
-      "camera": "近景拍手腕与袖口",
-      "images": []
+      "title": "整理袖口与袖扣",
+      "prompt": "自然整理袖口，扣好袖扣",
+      "camera": "近景拍手腕、袖口及衣料细节",
+      "images": [
+        "assets/references/legacy/groom/f/29.jpg",
+        "assets/references/legacy/groom/f/37.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C02-03",
@@ -2767,7 +2777,10 @@ window.ENWAN_DATA = {
       "title": "穿西装",
       "prompt": "自然穿好外套",
       "camera": "全身或半身，保留动作过程",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/31.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C02-04",
@@ -2791,7 +2804,10 @@ window.ENWAN_DATA = {
       "title": "推眼镜",
       "prompt": "自然调整镜框",
       "camera": "近景，动作轻微",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/43.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C02-07",
@@ -2815,7 +2831,10 @@ window.ENWAN_DATA = {
       "title": "窗边远望",
       "prompt": "看窗外，不用做表情",
       "camera": "侧面肖像",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/33.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C02-10",
@@ -2823,7 +2842,14 @@ window.ENWAN_DATA = {
       "title": "坐姿等待",
       "prompt": "舒服地坐着即可",
       "camera": "中近景与双手细节",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/32.jpg",
+        "assets/references/legacy/groom/f/38.jpg",
+        "assets/references/legacy/groom/f/39.jpg",
+        "assets/references/legacy/groom/f/41.jpg",
+        "assets/references/legacy/groom/f/47.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C03-01",
@@ -2847,7 +2873,14 @@ window.ENWAN_DATA = {
       "title": "相视",
       "prompt": "看对方一眼",
       "camera": "正反打或双人近景",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/86.jpg",
+        "assets/references/legacy/groom/f/87.jpg",
+        "assets/references/legacy/groom/f/88.jpg",
+        "assets/references/legacy/groom/f/121.jpg",
+        "assets/references/legacy/groom/f/124.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C03-04",
@@ -2863,7 +2896,10 @@ window.ENWAN_DATA = {
       "title": "头靠肩膀",
       "prompt": "轻轻靠一下对方",
       "camera": "侧面近景，注意发型",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/106.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C03-06",
@@ -2903,7 +2939,11 @@ window.ENWAN_DATA = {
       "title": "共同坐姿",
       "prompt": "坐在一起聊天",
       "camera": "双人中景，记录停顿",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/68.jpg",
+        "assets/references/legacy/groom/f/69.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C03-11",
@@ -2927,7 +2967,11 @@ window.ENWAN_DATA = {
       "title": "并肩站立",
       "prompt": "大家自然站好",
       "camera": "平衡构图",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/54.jpg",
+        "assets/references/legacy/bride/f/46.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C04-02",
@@ -2951,7 +2995,10 @@ window.ENWAN_DATA = {
       "title": "帮忙整理衣物",
       "prompt": "帮新人看一下造型",
       "camera": "动作及反应",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/53.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C04-05",
@@ -2967,7 +3014,13 @@ window.ENWAN_DATA = {
       "title": "小组合影",
       "prompt": "靠近一点看镜头",
       "camera": "稳定全景与自然花絮",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/50.jpg",
+        "assets/references/legacy/groom/f/52.jpg",
+        "assets/references/legacy/bride/f/42.jpg",
+        "assets/references/legacy/bride/f/45.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C05-01",
@@ -2983,7 +3036,10 @@ window.ENWAN_DATA = {
       "title": "母女牵手",
       "prompt": "牵一下手",
       "camera": "近景兼顾双方面部",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/98.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C05-03",
@@ -3015,7 +3071,11 @@ window.ENWAN_DATA = {
       "title": "亲友交流",
       "prompt": "无需引导",
       "camera": "捕捉谈话与倾听反应",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/60.jpg",
+        "assets/references/legacy/groom/f/61.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C06-01",
@@ -3031,7 +3091,10 @@ window.ENWAN_DATA = {
       "title": "翻看照片",
       "prompt": "看看熟悉的照片",
       "camera": "照片、手部、面部反应",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/49.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C06-03",
@@ -3039,7 +3102,11 @@ window.ENWAN_DATA = {
       "title": "佩戴戒指",
       "prompt": "按仪式正常进行",
       "camera": "动作起止特写",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/121.jpg",
+        "assets/references/legacy/groom/f/124.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C06-04",
@@ -3079,7 +3146,13 @@ window.ENWAN_DATA = {
       "title": "衣料与婚鞋",
       "prompt": "正常走动或整理",
       "camera": "低机位及局部纹理",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/31.jpg",
+        "assets/references/legacy/bride/f/38.jpg",
+        "assets/references/legacy/groom/f/36.jpg",
+        "assets/references/legacy/groom/f/99.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C07-01",
@@ -3087,7 +3160,10 @@ window.ENWAN_DATA = {
       "title": "正面行走",
       "prompt": "按自己的速度走过来",
       "camera": "稳定后退或固定长焦，注意安全",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/35.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C07-02",
@@ -3223,7 +3299,12 @@ window.ENWAN_DATA = {
       "title": "中轴对称",
       "prompt": "站在通道中轴",
       "camera": "校正垂直水平",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/125.jpg",
+        "assets/references/legacy/groom/f/124.jpg",
+        "assets/references/legacy/groom/f/35.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C08-03",
@@ -3231,7 +3312,10 @@ window.ENWAN_DATA = {
       "title": "建筑框景",
       "prompt": "站在门洞或廊道内",
       "camera": "真实门框构成画面边界",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/35.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C08-04",
@@ -3247,7 +3331,11 @@ window.ENWAN_DATA = {
       "title": "逆光剪影",
       "prompt": "站在明亮窗门前",
       "camera": "按背景测光，保留轮廓",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/33.jpg",
+        "assets/references/legacy/groom/f/43.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C08-06",
@@ -3263,7 +3351,12 @@ window.ENWAN_DATA = {
       "title": "前景分层",
       "prompt": "保持自然状态",
       "camera": "花艺、玻璃、柱体形成层次",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/28.jpg",
+        "assets/references/legacy/bride/f/39.jpg",
+        "assets/references/legacy/bride/f/44.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C08-08",
@@ -3407,7 +3500,11 @@ window.ENWAN_DATA = {
       "title": "正反打与反应",
       "prompt": "不干预",
       "camera": "保持轴线和视线匹配",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/87.jpg",
+        "assets/references/legacy/groom/f/88.jpg"
+      ],
+      "reference_note": "同一献花环节的两侧反应画面，供正反打构图参考。"
     },
     {
       "id": "C09-16",
@@ -3415,7 +3512,14 @@ window.ENWAN_DATA = {
       "title": "同动作多景别",
       "prompt": "正常完成动作",
       "camera": "先完整记录，再自然补近景",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/86.jpg",
+        "assets/references/legacy/groom/f/87.jpg",
+        "assets/references/legacy/groom/f/88.jpg",
+        "assets/references/legacy/groom/f/89.jpg",
+        "assets/references/legacy/groom/f/90.jpg"
+      ],
+      "reference_note": "同一献花及亲吻环节的多景别实例，非单一连续运镜。"
     },
     {
       "id": "C10-01",
@@ -3463,7 +3567,10 @@ window.ENWAN_DATA = {
       "title": "自然光剪影",
       "prompt": "站在合适光线中",
       "camera": "保留真实空间",
-      "images": []
+      "images": [
+        "assets/references/legacy/groom/f/33.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C10-07",
@@ -3471,7 +3578,11 @@ window.ENWAN_DATA = {
       "title": "玻璃反射",
       "prompt": "保持自然状态",
       "camera": "控制杂乱反射",
-      "images": []
+      "images": [
+        "assets/references/legacy/bride/f/29.jpg",
+        "assets/references/legacy/bride/f/39.jpg"
+      ],
+      "reference_note": "旧站素材，已按可见动作或构图匹配；单帧仅供构图参考，不证明运镜连续性。"
     },
     {
       "id": "C10-08",

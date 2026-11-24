@@ -5,8 +5,12 @@
   "original_thumbnails": 188,
   "legacy_cards": 62,
   "original_source_items": 265,
-  "new_cards_with_images": 0,
+  "new_cards_with_images": 27,
   "new_cards": 102,
   "source_docx_images_imported": false,
-  "failures": []
+  "failures": [],
+  "new_cards_with_four_or_five_images": 5,
+  "new_card_image_links": 57,
+  "new_card_unique_originals": 42,
+  "new_card_matching_method": "visual review of existing recovered thumbnails, matched only by visible action or composition"
 }
