@@ -4819,46 +4819,161 @@ window.ENWAN_DATA = {
       ]
     },
     {
-      "id": "W-0001-1",
-      "category": "婚礼原稿 · 镜头参考",
-      "title": "男友POV · 原稿参考 1",
-      "prompt": "参考《婚礼.docx》原稿分类，现场按实际关系自然引导。",
-      "camera": "按原稿图片顺序展示；尚未逐帧判定连续运镜。",
+      "id": "W-9424919da790-001",
+      "category": "婚礼原稿参考",
+      "title": "男友Pov · 1/6",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
       "images": [
         "assets/references/word/9d1b02bb795cb0bedce674ce2720b73446d452361e4cac323ef2921175cc5e12.jpeg",
         "assets/references/word/19018ac2f223c414d22cec4f6603f554b69dd16010a5a9a44d84dc79bfa530a3.jpeg",
         "assets/references/word/6587515df6df549fbf5886307b6af85eafc7ecded417e1f667a3748bc3a2b94d.jpeg",
-        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg"
+        "assets/references/word/eab6fa9dbc2a75a63ce370c6f61af435d6b30e2d96068ae144ef38913d6b47f8.jpeg",
+        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg"
       ],
-      "reference_note": "《婚礼.docx》· 男友Pov；内嵌原图，保留原始字节。"
+      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
     },
     {
-      "id": "W-0001-2",
-      "category": "婚礼原稿 · 镜头参考",
-      "title": "男友POV · 原稿参考 2",
-      "prompt": "参考《婚礼.docx》原稿分类，现场按实际关系自然引导。",
-      "camera": "按原稿图片顺序展示；尚未逐帧判定连续运镜。",
+      "id": "W-9424919da790-002",
+      "category": "婚礼原稿参考",
+      "title": "男友Pov · 2/6",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
       "images": [
-        "assets/references/word/c04d73aa387857f65d2ec738bd949d7c8526089c6e7bbba431abd51dc043783c.jpeg",
         "assets/references/word/2ffdbe0ec1306d2861600db68aa7516a6e964468b11e728045a45950b52a75cf.jpeg",
         "assets/references/word/cb807bfdc25ca5041132e625835972715f782f84317d4626ab2c623b96fc3a87.jpeg",
-        "assets/references/word/e60c83619e3f45a12d569fc1f24ba23b43a96ab603afdebda8dab818219bb33b.png"
+        "assets/references/word/e60c83619e3f45a12d569fc1f24ba23b43a96ab603afdebda8dab818219bb33b.png",
+        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
+        "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg"
       ],
-      "reference_note": "《婚礼.docx》· 男友Pov；内嵌原图，保留原始字节。"
+      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
     },
     {
-      "id": "W-0001-3",
-      "category": "婚礼原稿 · 镜头参考",
-      "title": "男友POV · 原稿参考 3",
-      "prompt": "参考《婚礼.docx》原稿分类，现场按实际关系自然引导。",
-      "camera": "按原稿图片顺序展示；尚未逐帧判定连续运镜。",
+      "id": "W-9424919da790-003",
+      "category": "婚礼原稿参考",
+      "title": "男友Pov · 3/6",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
       "images": [
-        "assets/references/word/e737b7f5c0767a85841253f21e5d4275f468046ba0c7dda28b12538cfa0cf8ed.jpeg",
-        "assets/references/word/86899baf8350fc38997924c965f249e7ec1b64ffcce85c94c6c7950b30a7d25a.jpeg",
         "assets/references/word/90c758e2898058b055e04728121adb7d6c531d13e22f49c41db4097345b55ac7.jpeg",
-        "assets/references/word/0a77e12affb017b2bfac0570021f5a2394b15bc7fe6bf2403830ca8b9b185f45.jpeg"
+        "assets/references/word/0a77e12affb017b2bfac0570021f5a2394b15bc7fe6bf2403830ca8b9b185f45.jpeg",
+        "assets/references/word/46d9936dd1634d0bf9729d1675112881008734618c3f767b5cba41554b528b24.jpeg",
+        "assets/references/word/f49dc2eaac4c9b957752546a297a093dd93c4d50f6e2e348892a134329b8d36e.jpeg",
+        "assets/references/word/1d15eb97c73fc4699d78c92adaaff7221fcb430e3ca2ca73721c8b623c5c837c.jpeg"
       ],
-      "reference_note": "《婚礼.docx》· 男友Pov；内嵌原图，保留原始字节。"
+      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-9424919da790-004",
+      "category": "婚礼原稿参考",
+      "title": "男友Pov · 4/6",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/c99606293fc4ad5f7727ff2c9ddad5f78c19a049cc0f863da683f9c6a9347fdc.jpeg",
+        "assets/references/word/55dfea3b68987a61664bcb091ca2465a68f222997e51c0cf4a2f5547390c00a7.jpeg",
+        "assets/references/word/2539f7b4761f8065b2b5263891bada946dbad836a112ca7cebbeffd6c163a86c.jpeg",
+        "assets/references/word/f945c51ce5bff86d6d97d221789bb95d4a9e9d1066ba29a71389f0d008944e7a.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-9424919da790-005",
+      "category": "婚礼原稿参考",
+      "title": "男友Pov · 5/6",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/448716f0abc666b27422a61fed05be6649783537adcb901389ef0d218cad7abe.jpeg",
+        "assets/references/word/04024ce5f5798653ca36421d19689d08272576191841b745de59818730e32f49.jpeg",
+        "assets/references/word/3b486c626559eed233c58b8d6741a55a5ca5a4c03ceb29bfbd91db3e73d5dff8.jpeg",
+        "assets/references/word/4180ac04cf43db6efe7b8321dce9942ece708f5a627cd0fe646cd194151953d0.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-9424919da790-006",
+      "category": "婚礼原稿参考",
+      "title": "男友Pov · 6/6",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/0fb550ede5f3848ac814efd653e05d0f41166dacb9c4ebd2a231dea6deec6369.jpeg",
+        "assets/references/word/619444a9fb298f13332381da1c5afa57c2e3070f1cdb5e827a8c988bf3650eb2.jpeg",
+        "assets/references/word/fe8d6f6ad97a810da0a3f0cb12f9ac6c33840ff28a1e93bbdb87e62a38c52555.jpeg",
+        "assets/references/word/4f3f6bbf063f1a2c6758069d92c29fe64b3ab37446e36f8f9e71994c0fd8f61d.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 男友Pov；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-8e34734cb632-001",
+      "category": "婚礼原稿参考",
+      "title": "行走与散步 · 1/2",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/24ed3a75c755c7e3b1e6d32dd25032f69aabc2060c3b740fdf5c8bc42b141997.jpeg",
+        "assets/references/word/9336de0198472038043e4dd5f7c3fe17cae93dff36854635ce734bacbc1b05e0.jpeg",
+        "assets/references/word/09fa87f6add99042703501b94b0b1b10f6478a453f6223cd94cfd2e2d2d7cb51.jpeg",
+        "assets/references/word/63f4d7e85ba0e11da50ff486327087d0e3598ca711e8bf1e6944062e1367593a.jpeg",
+        "assets/references/word/087dbf21e112d3375ab5f7ab0f0fe2b406c81f2e475de9a33b5526c10cd1fa6e.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 行走与散步；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-8e34734cb632-002",
+      "category": "婚礼原稿参考",
+      "title": "行走与散步 · 2/2",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/26c936230be6b48215e4cb1b86aad5f1cfd48b30fc82ca171ecf583a35a88894.jpeg",
+        "assets/references/word/177886cd6041c9c3ef4f8c78ef687cd94561c23f18cf157c86ef038932f09839.jpeg",
+        "assets/references/word/14ffa37339d944e2c1b13dc723d19a5d0fb65fcb08e96aff51c847de81d56805.jpeg",
+        "assets/references/word/d32238e9cde403a7a0042d4e99ca45abccaef41c0979f36990147b096f10eda5.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 行走与散步；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-52f1dd149aab-001",
+      "category": "婚礼原稿参考",
+      "title": "情侣相遇 · 1/3",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/92d654e443c8831f70517b4a6f1fa0d67c98895c5f64c2308a2d546effe4936b.jpeg",
+        "assets/references/word/7b544c410c5c66ed506fb4c90b52ecd4d21217ca3f2ee9a23a5c4259c4b63c57.jpeg",
+        "assets/references/word/8a022cc53ca4406fd6fc4713675664173ce1bcdc81330655033c7b7d1c3fc926.jpeg",
+        "assets/references/word/5e1dad681535b3213b17126d63956096c07156ede677b88de983c5fa3de37e9c.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-52f1dd149aab-002",
+      "category": "婚礼原稿参考",
+      "title": "情侣相遇 · 2/3",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/be2b724ffe9d4ea21b6034983ad7b2c9a463d93cc401fa06e1f5cfa5dfde8db8.jpeg",
+        "assets/references/word/9a67335cc7287cbbb0a96fec47a5c05967fb0f3162b3ccb2c423e25c0509d309.jpeg",
+        "assets/references/word/80f47ba8e3d7f82aebb6e7e2075658841ef02e657ef46f5e7141a8113a9c807e.jpeg",
+        "assets/references/word/12102426e20070129daa915678a38f6df647cad423d26853f86fe9adcc0a059b.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
+    },
+    {
+      "id": "W-52f1dd149aab-003",
+      "category": "婚礼原稿参考",
+      "title": "情侣相遇 · 3/3",
+      "prompt": "按原稿题目保留的素材；依据现场实际情况选拍，不要求新人表演。",
+      "camera": "按文档图片编号排列；连续镜头需进一步逐帧核对。",
+      "images": [
+        "assets/references/word/1579fb23950a617509161557fb79e28baf6e2d0ba4006affe2ee3dc4f3db4880.jpeg",
+        "assets/references/word/f3603fd150f4f73b687bec8fb965195e7d9a3784aeb0fe5e9d2266baf9566374.jpeg",
+        "assets/references/word/d47b69a98e74ce80972852e05293940b6fb6e22c578375acb3bbd0d4754c17fd.jpeg"
+      ],
+      "reference_note": "婚礼.docx · 情侣相遇；内嵌原图，已校验 SHA-256。此处仅为原稿归档，不代表已完成动作语义匹配。"
     }
   ]
 };

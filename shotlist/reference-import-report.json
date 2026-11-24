@@ -12,5 +12,15 @@
   "new_cards_with_four_or_five_images": 5,
   "new_card_image_links": 57,
   "new_card_unique_originals": 42,
-  "new_card_matching_method": "visual review of existing recovered thumbnails, matched only by visible action or composition"
+  "new_card_matching_method": "visual review of existing recovered thumbnails, matched only by visible action or composition",
+  "word_original_images": 47,
+  "word_thumbnails": 47,
+  "word_images_by_source": {
+    "婚礼.docx": 47
+  },
+  "word_source_cards": 11,
+  "word_expected_originals": 1482,
+  "word_source_groups": 3,
+  "word_transfer_commit": "c900bee67757294dc19fe01cf1d1f7206819a42f",
+  "word_image_hash_failures": 0
 }
